@@ -1,0 +1,1273 @@
+CRITICAL - 2023-10-20 03:48:57 --> Invalid file: "welcome_message.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('welcome_message.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('welcome_message', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('welcome_message')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 04:09:32 --> Invalid file: "tampil_data.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tampil_data.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('tampil_data', [], true)
+ 3 APPPATH\Controllers\Mahasiswa.php(16): view('tampil_data', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 04:28:47 --> Undefined constant "BASEURL"
+in APPPATH\Views\mahasiswa\add_data.php on line 8.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/add_data', [], true)
+ 4 APPPATH\Controllers\Mahasiswa.php(23): view('mahasiswa/add_data', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->add()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 04:54:01 --> Allowed fields must be specified for model: "App\Models\Mahasiswa_model"
+in SYSTEMPATH\Model.php on line 736.
+ 1 SYSTEMPATH\Model.php(736): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Mahasiswa_model')
+ 2 SYSTEMPATH\BaseModel.php(763): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Mahasiswa.php(27): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->add()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 04:54:36 --> Allowed fields must be specified for model: "App\Models\Mahasiswa_model"
+in SYSTEMPATH\Model.php on line 736.
+ 1 SYSTEMPATH\Model.php(736): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Mahasiswa_model')
+ 2 SYSTEMPATH\BaseModel.php(763): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Mahasiswa.php(27): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->add()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 04:54:45 --> Allowed fields must be specified for model: "App\Models\Mahasiswa_model"
+in SYSTEMPATH\Model.php on line 736.
+ 1 SYSTEMPATH\Model.php(736): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Mahasiswa_model')
+ 2 SYSTEMPATH\BaseModel.php(763): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Mahasiswa.php(27): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->add()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-20 05:48:57 --> mysqli_sql_exception: Table 'db_latihanci.tbl_mahasisw' doesn't exist in D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 D:\2023\latihanci4_YonArifin\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 D:\2023\latihanci4_YonArifin\app\Controllers\Mahasiswa.php(32): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(919): App\Controllers\Mahasiswa->add()
+#6 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#7 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\2023\latihanci4_YonArifin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-20 05:48:57 --> Table 'db_latihanci.tbl_mahasisw' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_mahasisw` (`nim`, `nama`, `alamat`, `no_hp`) VALUES (:nim:, :nama:, :alamat:, :no_hp:)', [...], false)
+ 2 APPPATH\Controllers\Mahasiswa.php(32): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->add()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-20 05:49:12 --> mysqli_sql_exception: Unknown column 'no_h' in 'field list' in D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 D:\2023\latihanci4_YonArifin\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 D:\2023\latihanci4_YonArifin\app\Controllers\Mahasiswa.php(32): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(919): App\Controllers\Mahasiswa->add()
+#6 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#7 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\2023\latihanci4_YonArifin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-20 05:49:12 --> Unknown column 'no_h' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_mahasiswa` (`nim`, `nama`, `alamat`, `no_h`) VALUES (:nim:, :nama:, :alamat:, :no_h:)', [...], false)
+ 2 APPPATH\Controllers\Mahasiswa.php(32): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->add()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 05:51:05 --> Undefined variable $title
+in APPPATH\Views\mahasiswa\tampil_data.php on line 6.
+ 1 APPPATH\Views\mahasiswa\tampil_data.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\tampil_data.php', 6)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\tampil_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/tampil_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(34): view('mahasiswa/tampil_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->add()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 05:51:43 --> Undefined array key "n_hp"
+in APPPATH\Controllers\Mahasiswa.php on line 29.
+ 1 APPPATH\Controllers\Mahasiswa.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "n_hp"', 'D:\\2023\\latihanci4_YonArifin\\app\\Controllers\\Mahasiswa.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->add()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 05:52:44 --> The route for "Mahasiswa" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('Mahasiswa')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Mahasiswa.php(34): redirect('Mahasiswa')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->add()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 06:05:07 --> The route for "Mahasiswa" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('Mahasiswa')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Mahasiswa.php(34): redirect('Mahasiswa', 'location')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->add()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 06:05:24 --> The route for "Mahasiswa/index" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('Mahasiswa/index')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Mahasiswa.php(34): redirect('Mahasiswa/index', 'location')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->add()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 06:06:00 --> The route for "http://localhost:8080/latihanci4_YonArifin/public/Mahasiswa/index" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost:8080/latihanci4_YonArifin/public/Mahasiswa/index')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Mahasiswa.php(34): redirect('http://localhost:8080/latihanci4_YonArifin/public/Mahasiswa/index', 'location')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->add()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 06:15:13 --> The route for "/aku" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/aku')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Mahasiswa.php(35): redirect('/aku')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->add()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 06:15:26 --> The route for "/Mahasiswa" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/Mahasiswa')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Mahasiswa.php(35): redirect('/Mahasiswa')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->add()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 06:15:39 --> The route for "/Mahasiswa/add" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/Mahasiswa/add')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Mahasiswa.php(35): redirect('/Mahasiswa/add')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->add()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 06:17:37 --> The route for "/Mahasiswa" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/Mahasiswa')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Mahasiswa.php(35): redirect('/Mahasiswa')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->add()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 06:18:29 --> The route for "Mahasiswa/index" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('Mahasiswa/index')
+ 2 APPPATH\Controllers\Mahasiswa.php(35): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->add()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 06:18:49 --> The route for "Mahasiswa" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('Mahasiswa')
+ 2 APPPATH\Controllers\Mahasiswa.php(35): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->add()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 06:18:53 --> The route for "Mahasiswa" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('Mahasiswa')
+ 2 APPPATH\Controllers\Mahasiswa.php(35): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->add()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 06:50:05 --> Undefined array key "id"
+in APPPATH\Views\mahasiswa\edit_data.php on line 13.
+ 1 APPPATH\Views\mahasiswa\edit_data.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php', 13)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(60): view('mahasiswa/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 06:51:05 --> Undefined array key "nama"
+in APPPATH\Views\mahasiswa\edit_data.php on line 13.
+ 1 APPPATH\Views\mahasiswa\edit_data.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php', 13)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(60): view('mahasiswa/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 06:51:40 --> Undefined variable $data
+in APPPATH\Views\mahasiswa\edit_data.php on line 12.
+ 1 APPPATH\Views\mahasiswa\edit_data.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(60): view('mahasiswa/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 06:52:02 --> Undefined variable $nama
+in APPPATH\Views\mahasiswa\edit_data.php on line 12.
+ 1 APPPATH\Views\mahasiswa\edit_data.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(60): view('mahasiswa/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 06:59:59 --> Undefined variable $nama
+in APPPATH\Views\mahasiswa\edit_data.php on line 12.
+ 1 APPPATH\Views\mahasiswa\edit_data.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(62): view('mahasiswa/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 07:00:00 --> Undefined variable $nama
+in APPPATH\Views\mahasiswa\edit_data.php on line 12.
+ 1 APPPATH\Views\mahasiswa\edit_data.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(62): view('mahasiswa/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 07:06:47 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\Mahasiswa.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 07:06:48 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\Mahasiswa.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 07:31:39 --> Cannot use object of type mysqli as array
+in APPPATH\Views\mahasiswa\tampil_data.php on line 22.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/tampil_data', [], true)
+ 4 APPPATH\Controllers\Mahasiswa.php(17): view('mahasiswa/tampil_data', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 07:35:14 --> Class "App\Models\Config\Database" not found
+in APPPATH\Models\Mahasiswa_model.php on line 11.
+ 1 APPPATH\Controllers\Mahasiswa.php(9): App\Models\Mahasiswa_model->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Mahasiswa->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 07:36:11 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Models\Mahasiswa_model.php on line 15.
+ 1 APPPATH\Controllers\Mahasiswa.php(15): App\Models\Mahasiswa_model->find_all()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 07:37:24 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Models\Mahasiswa_model.php on line 15.
+ 1 APPPATH\Controllers\Mahasiswa.php(15): App\Models\Mahasiswa_model->find_all()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 07:41:57 --> Call to a member function table() on null
+in APPPATH\Controllers\Mahasiswa.php on line 66.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->delete()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 07:54:10 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(184): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '39')
+ 4 APPPATH\Controllers\Mahasiswa.php(60): CodeIgniter\BaseModel->find('39')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 07:54:36 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(184): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+ 4 APPPATH\Controllers\Mahasiswa.php(60): CodeIgniter\BaseModel->find('1')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 07:55:09 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(184): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '38')
+ 4 APPPATH\Controllers\Mahasiswa.php(60): CodeIgniter\BaseModel->find('38')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:00:01 --> Cannot use object of type CodeIgniter\Database\MySQLi\Builder as array
+in APPPATH\Views\mahasiswa\edit_data.php on line 12.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 4 APPPATH\Controllers\Mahasiswa.php(62): view('mahasiswa/edit_data', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:01:49 --> syntax error, unexpected identifier "getResult", expecting ";"
+in APPPATH\Models\Mahasiswa_model.php on line 17.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\2023\\latihanci4_YonArifin\\app\\Models\\Mahasiswa_model.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Mahasiswa_model')
+ 3 APPPATH\Controllers\Mahasiswa.php(9): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Mahasiswa_model')
+ 4 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Mahasiswa->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:11:43 --> Undefined array key "id"
+in APPPATH\Views\mahasiswa\edit_data.php on line 12.
+ 1 APPPATH\Views\mahasiswa\edit_data.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(64): view('mahasiswa/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:12:16 --> Undefined array key "id"
+in APPPATH\Views\mahasiswa\edit_data.php on line 12.
+ 1 APPPATH\Views\mahasiswa\edit_data.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(64): view('mahasiswa/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:12:17 --> Undefined array key "id"
+in APPPATH\Views\mahasiswa\edit_data.php on line 12.
+ 1 APPPATH\Views\mahasiswa\edit_data.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(64): view('mahasiswa/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:14:10 --> Undefined array key 1
+in APPPATH\Controllers\Mahasiswa.php on line 63.
+ 1 APPPATH\Controllers\Mahasiswa.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'D:\\2023\\latihanci4_YonArifin\\app\\Controllers\\Mahasiswa.php', 63)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:14:17 --> Undefined array key 1
+in APPPATH\Controllers\Mahasiswa.php on line 63.
+ 1 APPPATH\Controllers\Mahasiswa.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'D:\\2023\\latihanci4_YonArifin\\app\\Controllers\\Mahasiswa.php', 63)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:14:21 --> Undefined array key 1
+in APPPATH\Controllers\Mahasiswa.php on line 63.
+ 1 APPPATH\Controllers\Mahasiswa.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'D:\\2023\\latihanci4_YonArifin\\app\\Controllers\\Mahasiswa.php', 63)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:14:55 --> Undefined array key "id"
+in APPPATH\Views\mahasiswa\edit_data.php on line 12.
+ 1 APPPATH\Views\mahasiswa\edit_data.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(64): view('mahasiswa/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:15:27 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Mahasiswa.php on line 63.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:15:43 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Mahasiswa.php on line 63.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:16:16 --> Undefined property: App\Controllers\Mahasiswa::$id
+in APPPATH\Controllers\Mahasiswa.php on line 63.
+ 1 APPPATH\Controllers\Mahasiswa.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Mahasiswa::$id', 'D:\\2023\\latihanci4_YonArifin\\app\\Controllers\\Mahasiswa.php', 63)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:20:13 --> Undefined array key "id"
+in APPPATH\Views\mahasiswa\edit_data.php on line 12.
+ 1 APPPATH\Views\mahasiswa\edit_data.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(64): view('mahasiswa/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:20:48 --> Undefined array key 1
+in APPPATH\Controllers\Mahasiswa.php on line 63.
+ 1 APPPATH\Controllers\Mahasiswa.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'D:\\2023\\latihanci4_YonArifin\\app\\Controllers\\Mahasiswa.php', 63)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:20:54 --> Undefined array key 1
+in APPPATH\Controllers\Mahasiswa.php on line 63.
+ 1 APPPATH\Controllers\Mahasiswa.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'D:\\2023\\latihanci4_YonArifin\\app\\Controllers\\Mahasiswa.php', 63)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:20:55 --> Undefined array key 1
+in APPPATH\Controllers\Mahasiswa.php on line 63.
+ 1 APPPATH\Controllers\Mahasiswa.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'D:\\2023\\latihanci4_YonArifin\\app\\Controllers\\Mahasiswa.php', 63)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:20:59 --> Undefined array key 1
+in APPPATH\Controllers\Mahasiswa.php on line 63.
+ 1 APPPATH\Controllers\Mahasiswa.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'D:\\2023\\latihanci4_YonArifin\\app\\Controllers\\Mahasiswa.php', 63)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:21:26 --> Undefined array key "id"
+in APPPATH\Views\mahasiswa\edit_data.php on line 12.
+ 1 APPPATH\Views\mahasiswa\edit_data.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(64): view('mahasiswa/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:21:31 --> Undefined array key "id"
+in APPPATH\Views\mahasiswa\edit_data.php on line 12.
+ 1 APPPATH\Views\mahasiswa\edit_data.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(64): view('mahasiswa/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:21:46 --> Undefined array key "id"
+in APPPATH\Views\mahasiswa\edit_data.php on line 12.
+ 1 APPPATH\Views\mahasiswa\edit_data.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(64): view('mahasiswa/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:21:58 --> Undefined array key "id"
+in APPPATH\Views\mahasiswa\edit_data.php on line 12.
+ 1 APPPATH\Views\mahasiswa\edit_data.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(64): view('mahasiswa/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:22:00 --> Undefined array key "id"
+in APPPATH\Views\mahasiswa\edit_data.php on line 12.
+ 1 APPPATH\Views\mahasiswa\edit_data.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(64): view('mahasiswa/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:22:00 --> Undefined array key "id"
+in APPPATH\Views\mahasiswa\edit_data.php on line 12.
+ 1 APPPATH\Views\mahasiswa\edit_data.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(64): view('mahasiswa/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:22:08 --> Undefined array key "id"
+in APPPATH\Views\mahasiswa\edit_data.php on line 12.
+ 1 APPPATH\Views\mahasiswa\edit_data.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(64): view('mahasiswa/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:22:09 --> Undefined array key "id"
+in APPPATH\Views\mahasiswa\edit_data.php on line 12.
+ 1 APPPATH\Views\mahasiswa\edit_data.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(64): view('mahasiswa/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:24:03 --> Array to string conversion
+in APPPATH\Views\mahasiswa\edit_data.php on line 10.
+ 1 APPPATH\Views\mahasiswa\edit_data.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(64): view('mahasiswa/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:24:29 --> Undefined array key "nim"
+in APPPATH\Views\mahasiswa\edit_data.php on line 10.
+ 1 APPPATH\Views\mahasiswa\edit_data.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nim"', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(64): view('mahasiswa/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:27:21 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Mahasiswa.php on line 60.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:27:37 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Mahasiswa.php on line 60.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:27:52 --> Undefined array key "id"
+in APPPATH\Views\mahasiswa\edit_data.php on line 12.
+ 1 APPPATH\Views\mahasiswa\edit_data.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(64): view('mahasiswa/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:28:55 --> Undefined array key "nim"
+in APPPATH\Views\mahasiswa\edit_data.php on line 11.
+ 1 APPPATH\Views\mahasiswa\edit_data.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nim"', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php', 11)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(64): view('mahasiswa/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:29:00 --> Undefined array key "nim"
+in APPPATH\Views\mahasiswa\edit_data.php on line 11.
+ 1 APPPATH\Views\mahasiswa\edit_data.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nim"', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php', 11)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/edit_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(64): view('mahasiswa/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 08:30:12 --> Uninitialized string offset 1
+in APPPATH\Controllers\Mahasiswa.php on line 60.
+ 1 APPPATH\Controllers\Mahasiswa.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 1', 'D:\\2023\\latihanci4_YonArifin\\app\\Controllers\\Mahasiswa.php', 60)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 12:44:25 --> unlink(D:\2023\latihanci4_YonArifin\writable\debugbar/debugbar_1697790818.817063.json): No such file or directory
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 78.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(D:\\2023\\latihanci4_YonArifin\\writable\\debugbar/debugbar_1697790818.817063.json): No such file or directory', 'D:\\2023\\latihanci4_YonArifin\\system\\Debug\\Toolbar\\Collectors\\History.php', 78)
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(78): unlink('D:\\2023\\latihanci4_YonArifin\\writable\\debugbar/debugbar_1697790818.817063.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1697805864.707271', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(476): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(152): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(434): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 12:46:38 --> unlink(D:\2023\latihanci4_YonArifin\writable\debugbar/debugbar_1697790825.278037.json): No such file or directory
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 78.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(D:\\2023\\latihanci4_YonArifin\\writable\\debugbar/debugbar_1697790825.278037.json): No such file or directory', 'D:\\2023\\latihanci4_YonArifin\\system\\Debug\\Toolbar\\Collectors\\History.php', 78)
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(78): unlink('D:\\2023\\latihanci4_YonArifin\\writable\\debugbar/debugbar_1697790825.278037.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1697805996.591605', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(476): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(152): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(434): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 13:28:50 --> Undefined variable $mahasiswa
+in APPPATH\Views\matakuliah\tampil_data.php on line 20.
+ 1 APPPATH\Views\matakuliah\tampil_data.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mahasiswa', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\tampil_data.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\tampil_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('matakuliah/tampil_data', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(17): view('matakuliah/tampil_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 14:20:45 --> Undefined array key "nama_matakuliah"
+in APPPATH\Controllers\Matakuliah.php on line 24.
+ 1 APPPATH\Controllers\Matakuliah.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_matakuliah"', 'D:\\2023\\latihanci4_YonArifin\\app\\Controllers\\Matakuliah.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->add()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 14:21:48 --> Undefined array key "nama_matakuliah"
+in APPPATH\Controllers\Matakuliah.php on line 24.
+ 1 APPPATH\Controllers\Matakuliah.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_matakuliah"', 'D:\\2023\\latihanci4_YonArifin\\app\\Controllers\\Matakuliah.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->add()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 14:21:57 --> Undefined array key "id"
+in APPPATH\Views\matakuliah\tampil_data.php on line 23.
+ 1 APPPATH\Views\matakuliah\tampil_data.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\tampil_data.php', 23)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\tampil_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('matakuliah/tampil_data', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(17): view('matakuliah/tampil_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 14:22:51 --> Undefined array key "id"
+in APPPATH\Views\matakuliah\tampil_data.php on line 23.
+ 1 APPPATH\Views\matakuliah\tampil_data.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\tampil_data.php', 23)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\tampil_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('matakuliah/tampil_data', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(17): view('matakuliah/tampil_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-20 14:24:41 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `tb...', 0)
+#1 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 D:\2023\latihanci4_YonArifin\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 D:\2023\latihanci4_YonArifin\app\Models\Matakuliah_model.php(29): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\2023\latihanci4_YonArifin\app\Controllers\Matakuliah.php(67): App\Models\Matakuliah_model->delete_data('')
+#6 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(919): App\Controllers\Matakuliah->delete()
+#7 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\latihanci4_YonArifin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-20 14:24:41 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tbl_matakuliah`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\Matakuliah_model.php(29): CodeIgniter\Database\BaseBuilder->delete()
+ 3 APPPATH\Controllers\Matakuliah.php(67): App\Models\Matakuliah_model->delete_data('')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-20 14:27:11 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `tb...', 0)
+#1 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 D:\2023\latihanci4_YonArifin\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 D:\2023\latihanci4_YonArifin\app\Models\Matakuliah_model.php(29): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\2023\latihanci4_YonArifin\app\Controllers\Matakuliah.php(67): App\Models\Matakuliah_model->delete_data('')
+#6 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(919): App\Controllers\Matakuliah->delete()
+#7 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\latihanci4_YonArifin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-20 14:27:11 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tbl_matakuliah`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\Matakuliah_model.php(29): CodeIgniter\Database\BaseBuilder->delete()
+ 3 APPPATH\Controllers\Matakuliah.php(67): App\Models\Matakuliah_model->delete_data('')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-20 14:27:32 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `tb...', 0)
+#1 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 D:\2023\latihanci4_YonArifin\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 D:\2023\latihanci4_YonArifin\app\Models\Matakuliah_model.php(29): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\2023\latihanci4_YonArifin\app\Controllers\Matakuliah.php(67): App\Models\Matakuliah_model->delete_data('a')
+#6 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(919): App\Controllers\Matakuliah->delete()
+#7 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\latihanci4_YonArifin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-20 14:27:32 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tbl_matakuliah`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\Matakuliah_model.php(29): CodeIgniter\Database\BaseBuilder->delete()
+ 3 APPPATH\Controllers\Matakuliah.php(67): App\Models\Matakuliah_model->delete_data('a')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-20 14:29:02 --> mysqli_sql_exception: Unknown column 'kode_mtakuliah' in 'where clause' in D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `tb...', 0)
+#1 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 D:\2023\latihanci4_YonArifin\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 D:\2023\latihanci4_YonArifin\app\Models\Matakuliah_model.php(29): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\2023\latihanci4_YonArifin\app\Controllers\Matakuliah.php(67): App\Models\Matakuliah_model->delete_data('a')
+#6 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(919): App\Controllers\Matakuliah->delete()
+#7 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\latihanci4_YonArifin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-20 14:29:02 --> Unknown column 'kode_mtakuliah' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tbl_matakuliah`
+WHERE `kode_mtakuliah` = :kode_mtakuliah:', [...], false)
+ 2 APPPATH\Models\Matakuliah_model.php(29): CodeIgniter\Database\BaseBuilder->delete()
+ 3 APPPATH\Controllers\Matakuliah.php(67): App\Models\Matakuliah_model->delete_data('a')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-20 14:45:41 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM t...', 0)
+#1 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 D:\2023\latihanci4_YonArifin\app\Models\Matakuliah_model.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\2023\latihanci4_YonArifin\app\Controllers\Matakuliah.php(59): App\Models\Matakuliah_model->find_data('D1A220023')
+#5 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+#6 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#7 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\2023\latihanci4_YonArifin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-20 14:45:41 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Matakuliah_model.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_matakuliah WHERE id=\'D1A220023\'')
+ 2 APPPATH\Controllers\Matakuliah.php(59): App\Models\Matakuliah_model->find_data('D1A220023')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-20 14:46:15 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM t...', 0)
+#1 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 D:\2023\latihanci4_YonArifin\app\Models\Matakuliah_model.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\2023\latihanci4_YonArifin\app\Controllers\Matakuliah.php(59): App\Models\Matakuliah_model->find_data('D1A220023')
+#5 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+#6 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#7 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\2023\latihanci4_YonArifin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-20 14:46:15 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Matakuliah_model.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_matakuliah WHERE id=\'D1A220023\'')
+ 2 APPPATH\Controllers\Matakuliah.php(59): App\Models\Matakuliah_model->find_data('D1A220023')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-20 14:46:19 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM t...', 0)
+#1 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 D:\2023\latihanci4_YonArifin\app\Models\Matakuliah_model.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\2023\latihanci4_YonArifin\app\Controllers\Matakuliah.php(59): App\Models\Matakuliah_model->find_data('D1A220023')
+#5 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+#6 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#7 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\2023\latihanci4_YonArifin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-20 14:46:19 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Matakuliah_model.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_matakuliah WHERE id=\'D1A220023\'')
+ 2 APPPATH\Controllers\Matakuliah.php(59): App\Models\Matakuliah_model->find_data('D1A220023')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-20 14:47:33 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM t...', 0)
+#1 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 D:\2023\latihanci4_YonArifin\app\Models\Matakuliah_model.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\2023\latihanci4_YonArifin\app\Controllers\Matakuliah.php(58): App\Models\Matakuliah_model->find_data('D1A220023')
+#5 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+#6 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#7 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\2023\latihanci4_YonArifin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-20 14:47:33 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Matakuliah_model.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_matakuliah WHERE id=\'D1A220023\'')
+ 2 APPPATH\Controllers\Matakuliah.php(58): App\Models\Matakuliah_model->find_data('D1A220023')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-20 14:47:37 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM t...', 0)
+#1 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 D:\2023\latihanci4_YonArifin\app\Models\Matakuliah_model.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\2023\latihanci4_YonArifin\app\Controllers\Matakuliah.php(58): App\Models\Matakuliah_model->find_data('D1A220023')
+#5 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+#6 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#7 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\2023\latihanci4_YonArifin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-20 14:47:37 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Matakuliah_model.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_matakuliah WHERE id=\'D1A220023\'')
+ 2 APPPATH\Controllers\Matakuliah.php(58): App\Models\Matakuliah_model->find_data('D1A220023')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-20 14:48:15 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM t...', 0)
+#1 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 D:\2023\latihanci4_YonArifin\app\Models\Matakuliah_model.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\2023\latihanci4_YonArifin\app\Controllers\Matakuliah.php(58): App\Models\Matakuliah_model->find_data('D1A220023')
+#5 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+#6 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#7 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\2023\latihanci4_YonArifin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-20 14:48:15 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Matakuliah_model.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_matakuliah WHERE id=\'D1A220023\'')
+ 2 APPPATH\Controllers\Matakuliah.php(58): App\Models\Matakuliah_model->find_data('D1A220023')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 14:48:17 --> Undefined array key "id"
+in APPPATH\Controllers\Matakuliah.php on line 58.
+ 1 APPPATH\Controllers\Matakuliah.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\2023\\latihanci4_YonArifin\\app\\Controllers\\Matakuliah.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-20 14:49:02 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM t...', 0)
+#1 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 D:\2023\latihanci4_YonArifin\app\Models\Matakuliah_model.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\2023\latihanci4_YonArifin\app\Controllers\Matakuliah.php(58): App\Models\Matakuliah_model->find_data('D1A220023')
+#5 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+#6 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#7 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\2023\latihanci4_YonArifin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-20 14:49:02 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Matakuliah_model.php(17): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tbl_matakuliah WHERE id=\'D1A220023\'')
+ 2 APPPATH\Controllers\Matakuliah.php(58): App\Models\Matakuliah_model->find_data('D1A220023')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 14:49:37 --> Undefined variable $mahasiswa
+in APPPATH\Views\matakuliah\edit_data.php on line 12.
+ 1 APPPATH\Views\matakuliah\edit_data.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mahasiswa', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\edit_data.php', 12)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\edit_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('matakuliah/edit_data', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(61): view('matakuliah/edit_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-20 14:51:18 --> mysqli_sql_exception: Unknown column 'kode_mtakuliah' in 'where clause' in D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `tbl_mat...', 0)
+#1 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_mat...')
+#2 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_mat...')
+#3 D:\2023\latihanci4_YonArifin\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_mat...', Array, false)
+#4 D:\2023\latihanci4_YonArifin\app\Models\Matakuliah_model.php(25): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\2023\latihanci4_YonArifin\app\Controllers\Matakuliah.php(48): App\Models\Matakuliah_model->edit_data('D1A220024', Array)
+#6 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+#7 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\latihanci4_YonArifin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-20 14:51:18 --> Unknown column 'kode_mtakuliah' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_matakuliah` SET `kode_matakuliah` = :kode_matakuliah:, `nama_matakuliah` = :nama_matakuliah:, `sks` = :sks:
+WHERE `kode_mtakuliah` = :kode_mtakuliah:', [...], false)
+ 2 APPPATH\Models\Matakuliah_model.php(25): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Matakuliah.php(48): App\Models\Matakuliah_model->edit_data('D1A220024', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-20 14:54:12 --> mysqli_sql_exception: Unknown column 'kode_mtakuliah' in 'where clause' in D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `tbl_mat...', 0)
+#1 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_mat...')
+#2 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_mat...')
+#3 D:\2023\latihanci4_YonArifin\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_mat...', Array, false)
+#4 D:\2023\latihanci4_YonArifin\app\Models\Matakuliah_model.php(25): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\2023\latihanci4_YonArifin\app\Controllers\Matakuliah.php(48): App\Models\Matakuliah_model->edit_data('D1A220024', Array)
+#6 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+#7 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\latihanci4_YonArifin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-20 14:54:12 --> Unknown column 'kode_mtakuliah' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_matakuliah` SET `kode_matakuliah` = :kode_matakuliah:, `nama_matakuliah` = :nama_matakuliah:, `sks` = :sks:
+WHERE `kode_mtakuliah` = :kode_mtakuliah:', [...], false)
+ 2 APPPATH\Models\Matakuliah_model.php(25): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Matakuliah.php(48): App\Models\Matakuliah_model->edit_data('D1A220024', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 14:54:18 --> Undefined array key "kode_matakuliah"
+in APPPATH\Controllers\Matakuliah.php on line 43.
+ 1 APPPATH\Controllers\Matakuliah.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kode_matakuliah"', 'D:\\2023\\latihanci4_YonArifin\\app\\Controllers\\Matakuliah.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 14:54:30 --> Undefined array key "kode_matakuliah"
+in APPPATH\Controllers\Matakuliah.php on line 43.
+ 1 APPPATH\Controllers\Matakuliah.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kode_matakuliah"', 'D:\\2023\\latihanci4_YonArifin\\app\\Controllers\\Matakuliah.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-20 14:54:41 --> mysqli_sql_exception: Unknown column 'kode_mtakuliah' in 'where clause' in D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `tbl_mat...', 0)
+#1 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_mat...')
+#2 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_mat...')
+#3 D:\2023\latihanci4_YonArifin\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_mat...', Array, false)
+#4 D:\2023\latihanci4_YonArifin\app\Models\Matakuliah_model.php(25): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\2023\latihanci4_YonArifin\app\Controllers\Matakuliah.php(48): App\Models\Matakuliah_model->edit_data('D1A220023', Array)
+#6 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+#7 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\latihanci4_YonArifin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-20 14:54:41 --> Unknown column 'kode_mtakuliah' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_matakuliah` SET `kode_matakuliah` = :kode_matakuliah:, `nama_matakuliah` = :nama_matakuliah:, `sks` = :sks:
+WHERE `kode_mtakuliah` = :kode_mtakuliah:', [...], false)
+ 2 APPPATH\Models\Matakuliah_model.php(25): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Matakuliah.php(48): App\Models\Matakuliah_model->edit_data('D1A220023', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-20 14:54:58 --> mysqli_sql_exception: Unknown column 'kode_mtakuliah' in 'where clause' in D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `tbl_mat...', 0)
+#1 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_mat...')
+#2 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_mat...')
+#3 D:\2023\latihanci4_YonArifin\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_mat...', Array, false)
+#4 D:\2023\latihanci4_YonArifin\app\Models\Matakuliah_model.php(25): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\2023\latihanci4_YonArifin\app\Controllers\Matakuliah.php(48): App\Models\Matakuliah_model->edit_data('D1A220023', Array)
+#6 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+#7 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\latihanci4_YonArifin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-20 14:54:58 --> Unknown column 'kode_mtakuliah' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_matakuliah` SET `kode_matakuliah` = :kode_matakuliah:, `nama_matakuliah` = :nama_matakuliah:, `sks` = :sks:
+WHERE `kode_mtakuliah` = :kode_mtakuliah:', [...], false)
+ 2 APPPATH\Models\Matakuliah_model.php(25): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Matakuliah.php(48): App\Models\Matakuliah_model->edit_data('D1A220023', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 14:58:34 --> Undefined variable $title
+in APPPATH\Views\beranda.php on line 6.
+ 1 APPPATH\Views\beranda.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\beranda.php', 6)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('beranda', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 15:02:15 --> Undefined variable $no
+in APPPATH\Views\matakuliah\tampil_data.php on line 20.
+ 1 APPPATH\Views\matakuliah\tampil_data.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\tampil_data.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\tampil_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('matakuliah/tampil_data', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(17): view('matakuliah/tampil_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 15:02:21 --> Undefined variable $no
+in APPPATH\Views\matakuliah\tampil_data.php on line 20.
+ 1 APPPATH\Views\matakuliah\tampil_data.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\tampil_data.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\tampil_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('matakuliah/tampil_data', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(17): view('matakuliah/tampil_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 15:02:38 --> Undefined variable $no
+in APPPATH\Views\matakuliah\tampil_data.php on line 20.
+ 1 APPPATH\Views\matakuliah\tampil_data.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\tampil_data.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\tampil_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('matakuliah/tampil_data', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(17): view('matakuliah/tampil_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 15:02:39 --> Undefined variable $no
+in APPPATH\Views\matakuliah\tampil_data.php on line 20.
+ 1 APPPATH\Views\matakuliah\tampil_data.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\tampil_data.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\tampil_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('matakuliah/tampil_data', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(17): view('matakuliah/tampil_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 15:02:39 --> Undefined variable $no
+in APPPATH\Views\matakuliah\tampil_data.php on line 20.
+ 1 APPPATH\Views\matakuliah\tampil_data.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\tampil_data.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\tampil_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('matakuliah/tampil_data', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(17): view('matakuliah/tampil_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 15:02:56 --> Undefined variable $no
+in APPPATH\Views\matakuliah\tampil_data.php on line 20.
+ 1 APPPATH\Views\matakuliah\tampil_data.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\tampil_data.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\tampil_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('matakuliah/tampil_data', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(17): view('matakuliah/tampil_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 15:02:57 --> Undefined variable $no
+in APPPATH\Views\matakuliah\tampil_data.php on line 20.
+ 1 APPPATH\Views\matakuliah\tampil_data.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\tampil_data.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\tampil_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('matakuliah/tampil_data', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(17): view('matakuliah/tampil_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 15:02:58 --> Undefined variable $no
+in APPPATH\Views\matakuliah\tampil_data.php on line 20.
+ 1 APPPATH\Views\matakuliah\tampil_data.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\tampil_data.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\tampil_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('matakuliah/tampil_data', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(17): view('matakuliah/tampil_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 15:03:45 --> Undefined variable $no
+in APPPATH\Views\matakuliah\tampil_data.php on line 21.
+ 1 APPPATH\Views\matakuliah\tampil_data.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\tampil_data.php', 21)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\matakuliah\\tampil_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('matakuliah/tampil_data', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(17): view('matakuliah/tampil_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-20 15:04:35 --> mysqli_sql_exception: Duplicate entry 'a' for key 'PRIMARY' in D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 D:\2023\latihanci4_YonArifin\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 D:\2023\latihanci4_YonArifin\app\Models\Matakuliah_model.php(21): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\2023\latihanci4_YonArifin\app\Controllers\Matakuliah.php(27): App\Models\Matakuliah_model->add_data(Array)
+#6 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(919): App\Controllers\Matakuliah->add()
+#7 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\latihanci4_YonArifin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-20 15:04:35 --> Duplicate entry 'a' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_matakuliah` (`kode_matakuliah`, `nama_matakuliah`, `sks`) VALUES (:kode_matakuliah:, :nama_matakuliah:, :sks:)', [...], false)
+ 2 APPPATH\Models\Matakuliah_model.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Matakuliah.php(27): App\Models\Matakuliah_model->add_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->add()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-20 15:04:51 --> mysqli_sql_exception: Duplicate entry 'a' for key 'PRIMARY' in D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 D:\2023\latihanci4_YonArifin\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 D:\2023\latihanci4_YonArifin\app\Models\Matakuliah_model.php(21): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\2023\latihanci4_YonArifin\app\Controllers\Matakuliah.php(27): App\Models\Matakuliah_model->add_data(Array)
+#6 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(919): App\Controllers\Matakuliah->add()
+#7 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\latihanci4_YonArifin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-20 15:04:51 --> Duplicate entry 'a' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_matakuliah` (`kode_matakuliah`, `nama_matakuliah`, `sks`) VALUES (:kode_matakuliah:, :nama_matakuliah:, :sks:)', [...], false)
+ 2 APPPATH\Models\Matakuliah_model.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Matakuliah.php(27): App\Models\Matakuliah_model->add_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->add()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-20 15:05:08 --> mysqli_sql_exception: Duplicate entry 'a' for key 'PRIMARY' in D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 D:\2023\latihanci4_YonArifin\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 D:\2023\latihanci4_YonArifin\app\Models\Matakuliah_model.php(21): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\2023\latihanci4_YonArifin\app\Controllers\Matakuliah.php(27): App\Models\Matakuliah_model->add_data(Array)
+#6 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(919): App\Controllers\Matakuliah->add()
+#7 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\latihanci4_YonArifin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-20 15:05:08 --> Duplicate entry 'a' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_matakuliah` (`kode_matakuliah`, `nama_matakuliah`, `sks`) VALUES (:kode_matakuliah:, :nama_matakuliah:, :sks:)', [...], false)
+ 2 APPPATH\Models\Matakuliah_model.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Matakuliah.php(27): App\Models\Matakuliah_model->add_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->add()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 15:05:45 --> Undefined variable $no
+in APPPATH\Views\mahasiswa\tampil_data.php on line 21.
+ 1 APPPATH\Views\mahasiswa\tampil_data.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no', 'D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\tampil_data.php', 21)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\latihanci4_YonArifin\\app\\Views\\mahasiswa\\tampil_data.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('mahasiswa/tampil_data', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(17): view('mahasiswa/tampil_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Mahasiswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

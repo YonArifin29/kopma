@@ -1,0 +1,68 @@
+ERROR - 2023-10-22 15:37:45 --> mysqli_sql_exception: Duplicate entry 'D1A220023' for key 'PRIMARY' in D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 D:\2023\latihanci4_YonArifin\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 D:\2023\latihanci4_YonArifin\app\Models\Matakuliah_model.php(21): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\2023\latihanci4_YonArifin\app\Controllers\Matakuliah.php(28): App\Models\Matakuliah_model->add_data(Array)
+#6 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(919): App\Controllers\Matakuliah->add()
+#7 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\latihanci4_YonArifin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-22 15:37:45 --> Duplicate entry 'D1A220023' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_matakuliah` (`kode_matakuliah`, `nama_matakuliah`, `sks`, `ruangan`) VALUES (:kode_matakuliah:, :nama_matakuliah:, :sks:, :ruangan:)', [...], false)
+ 2 APPPATH\Models\Matakuliah_model.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Matakuliah.php(28): App\Models\Matakuliah_model->add_data([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->add()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-22 15:45:59 --> mysqli_sql_exception: Unknown column 'kode_matakuliah_lama' in 'field list' in D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `tbl_mat...', 0)
+#1 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_mat...')
+#2 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_mat...')
+#3 D:\2023\latihanci4_YonArifin\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_mat...', Array, false)
+#4 D:\2023\latihanci4_YonArifin\app\Models\Matakuliah_model.php(25): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\2023\latihanci4_YonArifin\app\Controllers\Matakuliah.php(51): App\Models\Matakuliah_model->edit_data('a', Array)
+#6 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+#7 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\latihanci4_YonArifin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-22 15:45:59 --> Unknown column 'kode_matakuliah_lama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_matakuliah` SET `kode_matakuliah_lama` = :kode_matakuliah_lama:, `kode_matakuliah` = :kode_matakuliah.1:, `nama_matakuliah` = :nama_matakuliah:, `sks` = :sks:, `ruangan` = :ruangan:
+WHERE `kode_matakuliah` = :kode_matakuliah:', [...], false)
+ 2 APPPATH\Models\Matakuliah_model.php(25): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Matakuliah.php(51): App\Models\Matakuliah_model->edit_data('a', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-22 15:46:35 --> mysqli_sql_exception: Unknown column 'kode_matakuliah_lama' in 'field list' in D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\latihanci4_YonArifin\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `tbl_mat...', 0)
+#1 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_mat...')
+#2 D:\2023\latihanci4_YonArifin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_mat...')
+#3 D:\2023\latihanci4_YonArifin\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_mat...', Array, false)
+#4 D:\2023\latihanci4_YonArifin\app\Models\Matakuliah_model.php(25): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\2023\latihanci4_YonArifin\app\Controllers\Matakuliah.php(51): App\Models\Matakuliah_model->edit_data('af', Array)
+#6 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+#7 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 D:\2023\latihanci4_YonArifin\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\latihanci4_YonArifin\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-22 15:46:35 --> Unknown column 'kode_matakuliah_lama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_matakuliah` SET `kode_matakuliah_lama` = :kode_matakuliah_lama:, `kode_matakuliah` = :kode_matakuliah.1:, `nama_matakuliah` = :nama_matakuliah:, `sks` = :sks:, `ruangan` = :ruangan:
+WHERE `kode_matakuliah` = :kode_matakuliah:', [...], false)
+ 2 APPPATH\Models\Matakuliah_model.php(25): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Matakuliah.php(51): App\Models\Matakuliah_model->edit_data('af', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Matakuliah->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
