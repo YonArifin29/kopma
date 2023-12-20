@@ -1,0 +1,247 @@
+
+/* Bagian Quote */
+.contQuote {
+  display: flex;
+}
+.wrapper-quote {
+    width: 484px;
+    background-color: #eee;
+    border-radius: 15px;
+    padding: 24px 24px 20px;
+    margin: auto;
+    
+  }
+  
+  .wrapper-quote header {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .wrapper-quote .content {
+    margin: 28px 0;
+  }
+  .content .quote-area {
+    display: flex;
+    justify-content: center;
+  }
+  .quote-area i {
+    font-size: 12px;
+  }
+  .quote-area i:first-child{
+    margin: 2.4px 8px 0 0;
+  }
+  .quote-area i:last-child{
+    display: flex;
+    align-items: flex-end;
+    z-index: 1;
+    margin:  16px 16px 8px;
+  }
+  
+  .quote-area .quote {
+    font-size: 17.6px;
+    text-align: center;
+    word-break: break-all;
+  }
+  
+  .content .author {
+    display: flex;
+    margin-top: 16px;
+    justify-content: flex-end;
+    font-size: 14.4px;
+    font-style: italic;
+  }
+  
+  .author span:first-child {
+    margin: -5.6px 4px 0 0;
+    font-family: monospace;
+  }
+
+  .wrapper-quote .buttons {
+    border-top: 1px solid rgb(181, 181, 181);
+  }
+
+  .buttons .features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+
+  .features ul {
+    display: flex;
+  }
+
+  .features ul li {
+    list-style: none;
+    margin: 0 4px;
+    height: 37.6px;
+    width: 37.6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5372F0;
+    border-radius: 50%;
+    border: 2px solid #5372F0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.features ul li:hover {
+    color: #fff;
+    background-color: #5372F0;
+}
+
+.features button {
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-style: 12.8px;
+    padding: 10.4px 17.6px;
+    border-radius: 30px;
+    background-color: #5372F0;
+}
+
+button.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+
+@media (max-width: 758px) {
+
+    .wrapper-quote {
+        width: 62.5%;
+        
+    }
+
+    .wrapper-quote header {
+        font-size: 21px;
+        font-weight: 450;
+    }
+
+    .wrapper-quote .content {
+        margin: 30px 0;
+      }
+
+      .quote-area i {
+        font-size: 62.5%;
+      }
+
+      .quote-area .quote {
+        font-size: 62.5%;
+      }
+
+      .content .author {
+        font-size: 62.5%;
+      }
+
+      .features ul li {
+        height: 62.5%;
+        width: 62.5%;
+    }
+}
+
+@media (max-width: 450px) {
+    .wrapper-quote {
+        width: 55vmax;
+        background-color: #eee;
+        border-radius: 15px;
+        padding: 2em;
+        margin: auto;
+        
+      }
+
+    .wrapper-quote header {
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+
+    .wrapper-quote .content {
+        margin: 30px 0;
+      }
+
+      .quote-area i {
+        font-size: 55%;
+      }
+
+      .quote-area .quote {
+        font-size: 55%;
+      }
+
+      .content .author {
+        font-size: 55%;
+      }
+
+      /* .buttons {
+        display: none;
+      } */
+      .buttons .features {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      .features ul li {
+        height: 55%;
+        width: 55%;
+        margin: 0 2px;
+        
+        border: 1px solid #5372F0;
+    }
+
+    .features button {
+        width: 60px;
+        border: none;
+        outline: none;
+        color: #fff;
+        cursor: pointer;
+        font-style: 8.5px;
+        padding: 7px 12px;
+        border-radius: 15px;
+        background-color: #5372F0;
+        font-size: 5px;
+    }
+
+    .loading{
+        font-size: 5px;
+    }
+}
+/* End of css quote */
+
+/* bagian crop foto */
+#modal-img img{
+  display: block;
+  max-width: 100%;
+}
+.preview {
+  overflow: hidden;
+  width: 160px; 
+  height: 160px;
+  margin: 10px;
+  border: 1px solid red;
+}
+
+form #img:hover {
+  cursor: pointer;
+  color: white;
+  opacity: 0.7;
+}
+/* end of crop foto css */
+
+.paragraf {
+  text-indent: 45px;
+}
+.modalp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+}

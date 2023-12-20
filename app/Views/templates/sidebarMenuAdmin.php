@@ -1,0 +1,16 @@
+<li class='nav-item'>
+                <a href='#' class='nav-link '>
+                    <i class='nav-icon  fa-solid fa-book'></i>
+                    <p>
+                        LAPORAN PENJUALAN
+                    </p>
+                </a>
+        </li>
+  <li class='nav-item'>
+          <a href='#' class='nav-link '>
+              <i class='nav-icon  fa-solid fa-user'></i>
+              <p>
+                  KELOLA PENGGUNA
+              </p>
+          </a>
+  </li>

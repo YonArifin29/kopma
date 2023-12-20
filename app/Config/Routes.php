@@ -15,6 +15,7 @@ $routes = Services::routes();
  $routes->setAutoRoute(true);
  
 $routes->get('/', 'Home::index');
+// $routes->get('/latihan', 'Latihan::index',['filter' => 'authGuard']);
 
 if(file_exists(APPPATH.'Config/'.ENVIRONMENT.'/Routes.php')) {
     require APPPATH.'Config/'.ENVIRONMENT.'/Routes.php';

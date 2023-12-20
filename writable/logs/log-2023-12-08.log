@@ -1,0 +1,200 @@
+INFO - 2023-12-08 06:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 06:36:46 --> Undefined array key "login"
+in VENDORPATH\myth\auth\src\Controllers\AuthController.php on line 58.
+ 1 VENDORPATH\myth\auth\src\Controllers\AuthController.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'D:\\2023\\koprasi-mahasiswa\\vendor\\myth\\auth\\src\\Controllers\\AuthController.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Myth\Auth\Controllers\AuthController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 06:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 06:36:53 --> Undefined array key "login"
+in VENDORPATH\myth\auth\src\Controllers\AuthController.php on line 58.
+ 1 VENDORPATH\myth\auth\src\Controllers\AuthController.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'D:\\2023\\koprasi-mahasiswa\\vendor\\myth\\auth\\src\\Controllers\\AuthController.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Myth\Auth\Controllers\AuthController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 06:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 06:37:36 --> Undefined array key "login"
+in VENDORPATH\myth\auth\src\Controllers\AuthController.php on line 58.
+ 1 VENDORPATH\myth\auth\src\Controllers\AuthController.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'D:\\2023\\koprasi-mahasiswa\\vendor\\myth\\auth\\src\\Controllers\\AuthController.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Myth\Auth\Controllers\AuthController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 06:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:37:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:37:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 06:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 16:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 16:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 16:50:30 --> Undefined array key "login"
+in VENDORPATH\myth\auth\src\Controllers\AuthController.php on line 58.
+ 1 VENDORPATH\myth\auth\src\Controllers\AuthController.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'D:\\2023\\koprasi-mahasiswa\\vendor\\myth\\auth\\src\\Controllers\\AuthController.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Myth\Auth\Controllers\AuthController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 16:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 16:50:55 --> Undefined array key "login"
+in VENDORPATH\myth\auth\src\Controllers\AuthController.php on line 58.
+ 1 VENDORPATH\myth\auth\src\Controllers\AuthController.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'D:\\2023\\koprasi-mahasiswa\\vendor\\myth\\auth\\src\\Controllers\\AuthController.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Myth\Auth\Controllers\AuthController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 16:50:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 16:50:56 --> Undefined array key "login"
+in VENDORPATH\myth\auth\src\Controllers\AuthController.php on line 58.
+ 1 VENDORPATH\myth\auth\src\Controllers\AuthController.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'D:\\2023\\koprasi-mahasiswa\\vendor\\myth\\auth\\src\\Controllers\\AuthController.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(919): Myth\Auth\Controllers\AuthController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 16:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 16:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 16:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 16:51:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 16:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 16:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 16:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 16:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 16:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 16:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 16:55:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 16:56:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 16:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 16:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 16:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 16:56:53 --> Invalid file: "template.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template.php')
+ 2 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('template', [], true)
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('user/forgetPass', [], true)
+ 4 APPPATH\Controllers\User.php(53): view('user/forgetPass', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\User->forgetPass()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 16:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 16:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 16:58:20 --> Invalid file: "login/forgetPass.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login/forgetPass.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('login/forgetPass', [], true)
+ 3 APPPATH\Controllers\User.php(53): view('login/forgetPass', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\User->forgetPass()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 16:58:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 16:58:41 --> Invalid file: "viewes/login/forgetPass.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('viewes/login/forgetPass.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('viewes/login/forgetPass', [], true)
+ 3 APPPATH\Controllers\User.php(53): view('viewes/login/forgetPass', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\User->forgetPass()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 16:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 16:59:29 --> Invalid file: "forgetPass.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('forgetPass.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('forgetPass', [], true)
+ 3 APPPATH\Controllers\User.php(53): view('forgetPass', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\User->forgetPass()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 16:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 16:59:30 --> Invalid file: "forgetPass.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('forgetPass.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('forgetPass', [], true)
+ 3 APPPATH\Controllers\User.php(53): view('forgetPass', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\User->forgetPass()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 16:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 16:59:41 --> Invalid file: "login\forgetPass.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login\\forgetPass.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('login\\forgetPass', [], true)
+ 3 APPPATH\Controllers\User.php(53): view('login\\forgetPass', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\User->forgetPass()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 16:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 16:59:55 --> Invalid file: "Viewes/login/forgetPass.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Viewes/login/forgetPass.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Viewes/login/forgetPass', [], true)
+ 3 APPPATH\Controllers\User.php(53): view('Viewes/login/forgetPass', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\User->forgetPass()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 16:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 16:59:56 --> Invalid file: "Viewes/login/forgetPass.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Viewes/login/forgetPass.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Viewes/login/forgetPass', [], true)
+ 3 APPPATH\Controllers\User.php(53): view('Viewes/login/forgetPass', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\User->forgetPass()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 16:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 16:59:56 --> Invalid file: "Viewes/login/forgetPass.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Viewes/login/forgetPass.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Viewes/login/forgetPass', [], true)
+ 3 APPPATH\Controllers\User.php(53): view('Viewes/login/forgetPass', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\User->forgetPass()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 16:59:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 16:59:57 --> Invalid file: "Viewes/login/forgetPass.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Viewes/login/forgetPass.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Viewes/login/forgetPass', [], true)
+ 3 APPPATH\Controllers\User.php(53): view('Viewes/login/forgetPass', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\User->forgetPass()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 17:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:00:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-08 17:00:43 --> Invalid file: "Viewes/login/forgetPass.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Viewes/login/forgetPass.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Viewes/login/forgetPass', [], true)
+ 3 APPPATH\Controllers\User.php(53): view('Viewes/login/forgetPass', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\User->forgetPass()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 17:00:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:03:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 17:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
