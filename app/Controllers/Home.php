@@ -12,14 +12,14 @@ class Home extends BaseController
 
     public function index()
     {
-         if (!session()->get('logged_in'))
-        {
+        if (!session()->get('logged_in')) {
             return redirect()->to('/Home/homePage');
         } else {
             $data = [
                 'title' => 'Beranda',
+                'title2' => 'Halaman Beranda',
                 'jenisLogin' => $this->session->get('jenisLog'),
-                'activeHome' => 'active' 
+                'activeHome' => 'active'
             ];
             return view('home/index', $data);
         }
