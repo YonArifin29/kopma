@@ -1,78 +1,179 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home Page</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css' rel='stylesheet' type='text/css'>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOPMA</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="<?= base_url() ?>css/adminlte.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="<?= base_url() ?>css/style2.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Nautigal Font-->
+  <link href='https://fonts.googleapis.com/css?family=The Nautigal' rel='stylesheet'>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">SIAKAD</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">KOPMA</a>
+      <button class="navbar-toggler" type="button" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav collapse navbar-collapse justify-content-center">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="<?= base_url('Pages') ?>">Login</a>
+            <a class="nav-link" href="#">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mitra</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <div class="btn btn-outline-success">Search</div>
-        </form>
+        <ul class="navbar-nav ms-2 mb-lg-0">
+          <li class="nav-but">
+            <a class="btn btn-dark" href="<?= base_url('pages') ?>"><i class="fa-solid fa-user"></i> Login</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
+  <!-- Beranda -->
+  <div class="wrapper">
+    <div class="image">
+      <img class="background" src="<?= base_url() ?>img/bgberanda.jpg">
+      <div class="content">
+        <h1>Welcome To</h1>
+        <p>KOPMA</p>
+      </div>
+    </div>
+  </div>
+  </header>
+  <!--Best Seller-->
+  <div class="container py-3">
+    <h1 class="text-center">Best Seller</h1>
+    <div class="row row-cols-1 row-cols-md-4 g-4 py-3">
+      <div class="col">
+        <div class="card">
+          <img src="<?= base_url() ?>img/card1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ayam Krispy</h5>
+          </div>
+          <div class="mb-5 d-flex justify-content-around">
+            <h4>Rp. 11.000</h4>
+            <button class="btn btn-dark">Beli Sekarang</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="<?= base_url() ?>img/card2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nasi Goreng</h5>
+          </div>
+          <div class="mb-5 d-flex justify-content-around">
+            <h4>Rp. 11.000</h4>
+            <button class="btn btn-dark">Beli Sekarang</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="<?= base_url() ?>img/card3.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ayam Krispy</h5>
+          </div>
+          <div class="mb-5 d-flex justify-content-around">
+            <h4>Rp. 11.000</h4>
+            <button class="btn btn-dark">Beli Sekarang</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="<?= base_url() ?>img/card4.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ayam Krispy</h5>
+          </div>
+          <div class="mb-5 d-flex justify-content-around">
+            <h4>Rp. 11.000</h4>
+            <button class="btn btn-dark">Beli Sekarang</button>
+          </div>
+        </div>
+      </div>
 
-  <div class="swal" data-swal="<?= session()->getFlashdata('message'); ?>"></div>
-  <?= $this->renderSection('content') ?>
+    </div>
+  </div>
+  <!--Menu-->
+  <section class="menu">
+    <h1 class="kategori-menu text-center">Menu</h1>
+    <button class="pre-btn"><i class="fa-solid fa-arrow-left"></i></button>
+    <button class="nex-btn"><i class="fa-solid fa-arrow-right"></i></button>
+    <div class="container py-1">
+      <div class="row row-cols-1 row-cols-md-4 g-4 py-3">
 
-  <!-- bostrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <div class="col">
+          <div class="card">
+            <img src="<?= base_url() ?>img/card1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ayam Krispy</h5>
+            </div>
+            <div class="mb-5 d-flex justify-content-around">
+              <h4>Rp. 11.000</h4>
+              <button class="btn btn-dark">Beli Sekarang</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="<?= base_url() ?>img/card2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nasi Goreng</h5>
+            </div>
+            <div class="mb-5 d-flex justify-content-around">
+              <h4>Rp. 11.000</h4>
+              <button class="btn btn-dark">Beli Sekarang</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="<?= base_url() ?>img/card3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ayam Krispy</h5>
+            </div>
+            <div class="mb-5 d-flex justify-content-around">
+              <h4>Rp. 11.000</h4>
+              <button class="btn btn-dark">Beli Sekarang</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="<?= base_url() ?>img/card4.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ayam Krispy</h5>
+            </div>
+            <div class="mb-5 d-flex justify-content-around">
+              <h4>Rp. 11.000</h4>
+              <button class="btn btn-dark">Beli Sekarang</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- jquery -->
-  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-
-  <!-- my script -->
-  <!-- <script src="../latihanci4_YonArifin/public/js/script.js"></script> -->
-  <script>
-    // tambah, edit, hapus
-    const swal = $('.swal').data('swal');
-    if (swal) {
-      Swal.fire({
-        position: 'top-end',
-        icon: 'success',
-        title: 'Data berhasil ' + swal,
-        showConfirmButton: false,
-        timer: 1500
-      })
-    }
-    // hapus
-    $(document).on('click', '.btn-hapus', function(e) {
-      e.preventDefault();
-      const href = $(this).attr('href');
-      Swal.fire({
-        title: 'Apakah anda yakin?',
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Ya, hapus!',
-        cancelButtonText: 'Batal'
-      }).then((result) => {
-        if (result.isConfirmed) {
-          document.location.href = href;
-        }
-      })
-    });
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.minjs" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>

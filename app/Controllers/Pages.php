@@ -28,7 +28,7 @@ class Pages extends BaseController
         $username = $this->request->getVar('username');
         $password = $this->request->getVar('password');
 
-        $user = $this->userModel->getDataUserss($username);
+        $user = $this->userModel->getDataUsers($username);
         if (!$user) {
             return redirect()->to(base_url('Pages'));
         }

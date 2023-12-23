@@ -9,7 +9,7 @@ class UserModel extends Model
 
     protected $table = 'pengguna';
     protected $primaryKey = 'id_pengguna';
-    protected $allowedFields = ['username', 'nama', 'email', 'nama_usaha', 'foto', 'alamat', 'level', 'foto', 'status'];
+    protected $allowedFields = ['username', 'nama', 'email', 'nama_usaha', 'foto', 'alamat', 'level', 'foto', 'status', 'gender', 'nomor_hp'];
     protected $builder;
     public function __construct()
     {
