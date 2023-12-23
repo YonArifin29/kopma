@@ -13,41 +13,41 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="input-group mb-3  mt-3">
-                                <input type="text" class="form-control" placeholder="Nama" name="nama" required>
+                                <input type="text" class="form-control" placeholder="Nama" name="nama">
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Nama Usaha" name="nama_usaha" required>
+                                <input type="text" class="form-control" placeholder="Nama Usaha" name="nama_usaha">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Nomor HP" name="no_hp" required>
+                                <input type="text" class="form-control" placeholder="Nomor HP" name="nomor_hp">
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="input-group mb-3">
-                                <input type="email" class="form-control" placeholder="Email" name="email" required>
+                                <input type="email" class="form-control" placeholder="Email" name="email">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Jenis Kelamin" name="gender" required>
+                                <input type="text" class="form-control" placeholder="Jenis Kelamin" name="gender">
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Alamat" name="alamat" required>
+                                <input type="text" class="form-control" placeholder="Alamat" name="alamat">
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <!-- <div class="col-sm-6">
                             <div class="input-group mb-3">
                                 <div class="d-flex justify-content-evenly align-items-center">
                                     <div>
@@ -61,7 +61,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="row">
                         <div class="col-sm-8">
@@ -76,4 +76,5 @@
         </div>
     </div>
 </div>
+
 <?php $this->endSection(); ?>

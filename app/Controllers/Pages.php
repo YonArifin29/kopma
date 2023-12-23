@@ -34,22 +34,22 @@ class Pages extends BaseController
         }
         foreach ($user as $result) :
             $passdb = $result["password"];
+            if ($password == $passdb) {
+                foreach ($user as $result) :
+                    $data = [
+                        'id'  => $result["id_pengguna"],
+                        'jenisLog' => $result["level"],
+                        'username' => $result["username"],
+                        'nama' => $result["nama"],
+                        'logged_in' => true
+                    ];
+                    $this->session->set($data);
+                    return redirect()->to('/Home');
+                endforeach;
+            } else {
+                return redirect()->to('/Home/homePage');
+            }
         endforeach;
-        if ($password == $passdb) {
-            foreach ($user as $result) :
-                $data = [
-                    'id'  => $result["id_pengguna"],
-                    'jenisLog' => $result["level"],
-                    'username' => $result["username"],
-                    'nama' => $result["nama"],
-                    'logged_in' => true
-                ];
-                $this->session->set($data);
-                return redirect()->to('/Home');
-            endforeach;
-        } else {
-            return redirect()->to('/Home/homePage');
-        }
     }
 
     public function forgetPass()

@@ -35,6 +35,7 @@
   <!-- animasi -->
   <link rel="stylesheet" type="text/css" href=" ">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -185,6 +186,7 @@
       <!-- Main content -->
       <section class="content">
         <div class="container-fluid">
+          <div class="swal" data-swal="<?= session()->getFlashdata('message'); ?>"></div>
           <?= $this->renderSection('content') ?>
         </div>
         <!-- /.container-fluid -->
@@ -206,7 +208,6 @@
     <!-- /.control-sidebar -->
   </div>
   <!-- ./wrapper -->
-
   <!-- jQuery -->
   <script src="<?= base_url() ?>plugins/jquery/jquery.min.js"></script>
   <!-- jQuery UI 1.11.4 -->
@@ -243,6 +244,37 @@
   <script src="<?= base_url(); ?>js/pages/dashboard.js"></script>
   <script src="<?= base_url(); ?>js/cropper.js"></script>
   <script src="<?= base_url(); ?>js/script1.js"></script>
+  <script>
+    // tambah, edit, hapus
+    const swal = $('.swal').data('swal');
+    if (swal) {
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Data berhasil ' + swal,
+        showConfirmButton: false,
+        timer: 1500
+      })
+    }
+    // hapus
+    $(document).on('click', '.btn-hapus', function(e) {
+      e.preventDefault();
+      const href = $(this).attr('href');
+      Swal.fire({
+        title: 'Apakah anda yakin?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Ya, hapus!',
+        cancelButtonText: 'Batal'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          document.location.href = href;
+        }
+      })
+    });
+  </script>
 </body>
 
 </html>

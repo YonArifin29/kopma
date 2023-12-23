@@ -9,7 +9,7 @@ class UserModel extends Model
 
     protected $table = 'pengguna';
     protected $primaryKey = 'id_pengguna';
-    protected $allowedFields = ['username', 'nama', 'email', 'nama_usaha', 'foto', 'alamat', 'level', 'foto', 'status', 'gender', 'nomor_hp'];
+    protected $allowedFields = ['username', 'nama', 'password', 'email', 'nama_usaha', 'alamat', 'level', 'foto', 'status', 'gender', 'nomor_hp'];
     protected $builder;
     public function __construct()
     {
@@ -32,5 +32,10 @@ class UserModel extends Model
     public function updateOTP($otp, $username)
     {
         $this->builder->set('otp', $otp)->where('username', $username)->update();
+    }
+
+    public function deleteData($id)
+    {
+        $this->builder->delete(['id_pengguna' => $id]);
     }
 }
