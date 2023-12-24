@@ -39,7 +39,7 @@
                                 <td><?= $user['level']; ?></td>
                                 <td><?= $user['status']; ?></td>
                                 <td>
-                                    <a href="" class="badge btn btn-primary ">Reset</a>
+                                    <a href="<?= base_url('users/editUser'); ?>/<?= $user['id_pengguna']; ?>" class="badge btn btn-primary ">Edit</a>
                                     <a href="<?= base_url('users/delete'); ?>/<?= $user['id_pengguna']; ?>" class="badge btn btn-danger btn-hapus">Hapus</a>
                                 </td>
                             </tr>

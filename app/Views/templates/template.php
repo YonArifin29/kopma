@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title><?= $title ?? "" ?></title>
+  <title><?= $title ?></title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -245,13 +245,23 @@
   <script src="<?= base_url(); ?>js/cropper.js"></script>
   <script src="<?= base_url(); ?>js/script1.js"></script>
   <script>
+    // sweeta alert
     // tambah, edit, hapus
     const swal = $('.swal').data('swal');
-    if (swal) {
+    let strArray = swal.split("-");
+    if (strArray[0] == 'berhasil') {
       Swal.fire({
         position: 'top-end',
         icon: 'success',
-        title: 'Data berhasil ' + swal,
+        title: 'Data berhasil ' + strArray[1],
+        showConfirmButton: false,
+        timer: 1500
+      })
+    } else if (strArray[0] == 'gagal') {
+      Swal.fire({
+        position: 'top-end',
+        icon: 'error',
+        title: 'Data gagal ' + strArray[1],
         showConfirmButton: false,
         timer: 1500
       })
@@ -274,6 +284,7 @@
         }
       })
     });
+    // end sweet alert 
   </script>
 </body>
 
