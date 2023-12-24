@@ -24,7 +24,8 @@ class Users extends BaseController
             'title2' => 'Daftar Pengguna',
             'jenisLogin' => $this->session->get('jenisLog'),
             'activeHalUsers' => 'active',
-            'dataUsers' => $this->userModel->getDataUsers()
+            'dataUsers' => $this->userModel->getDataUsers(),
+            'userLogin' => $this->userModel->getDataUsersById($this->session->get('id'))
         ];
         return view('Users/dataUsers', $data);
     }

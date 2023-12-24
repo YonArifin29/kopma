@@ -11,10 +11,10 @@
     <!-- Sidebar user panel (optional) -->
     <div class="user-panel mt-3 pb-3 mb-3 d-flex">
       <div class="image">
-        <img src="<?= base_url() ?>img/user.jpg" class="img-circle elevation-2" alt="User Image">
+        <img src="<?= base_url() ?>img/<?= $userLogin[0]['foto']; ?>" class="img-circle elevation-2" alt="User Image">
       </div>
       <div class="info">
-        <a href="#" class="d-block">Yon Arifin</a>
+        <a href="#" class="d-block"><?= $userLogin[0]['nama']; ?></a>
       </div>
     </div>
 

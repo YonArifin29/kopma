@@ -2,12 +2,16 @@
 
 namespace App\Controllers;
 
+use App\Models\UserModel;
+
 class Home extends BaseController
 {
     protected $session;
+    protected $userModel;
     public function __construct()
     {
         $this->session = \Config\Services::session();
+        $this->userModel = new UserModel();
     }
 
     public function index()
@@ -19,7 +23,8 @@ class Home extends BaseController
                 'title' => 'Beranda',
                 'title2' => 'Halaman Beranda',
                 'jenisLogin' => $this->session->get('jenisLog'),
-                'activeHome' => 'active'
+                'activeHome' => 'active',
+                'userLogin' => $this->userModel->getDataUsersById($this->session->get('id'))
             ];
             return view('home/index', $data);
         }

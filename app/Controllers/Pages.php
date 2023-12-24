@@ -30,7 +30,8 @@ class Pages extends BaseController
 
         $user = $this->userModel->getDataUsers($username);
         if (!$user) {
-            return redirect()->to(base_url('Pages'));
+            session()->setFlashdata('message', 'infoMessage');
+            return redirect()->to('pages');
         }
         foreach ($user as $result) :
             $passdb = $result["password"];
@@ -47,7 +48,8 @@ class Pages extends BaseController
                     return redirect()->to('/Home');
                 endforeach;
             } else {
-                return redirect()->to('/Home/homePage');
+                session()->setFlashdata('message', 'infoMessage');
+                return redirect()->to('pages');
             }
         endforeach;
     }
@@ -66,6 +68,10 @@ class Pages extends BaseController
         $noHp = $this->request->getVar('noHp');
 
         $data = $this->userModel->getDataUsers($username);
+        if (!$data) {
+            session()->setFlashdata('message', 'infoMessageForgetPass');
+            return redirect()->to('Pages/forgetPass');
+        }
         $random = rand(10000, 99999);
         foreach ($data as $user) {
             if ($user["username"] == $username && $user["nomor_hp"] == $noHp) {
@@ -96,21 +102,17 @@ class Pages extends BaseController
                     $error_msg = curl_error($curl);
                 }
                 curl_close($curl);
-
-                // if (isset($error_msg)) {
-                //  echo $error_msg;
-                // }
-                // echo $response;
+                $data = [
+                    'title' => 'Lupa pass',
+                ];
+                return view('pages/updatePassword', $data);
             } else {
-                echo "nohp or username salah";
+                session()->setFlashdata('message', 'infoMessageForgetPass');
+                return redirect()->to('Pages/forgetPass');
             }
         }
-
-        $data = [
-            'title' => 'Lupa pass',
-        ];
-        return view('pages/updatePassword', $data);
     }
+
     public function updatePassword()
     {
         $username = $this->request->getVar('username');
@@ -121,15 +123,19 @@ class Pages extends BaseController
         if ($data) {
             foreach ($data as $user) {
                 if ($otp == $user['otp']) {
-                    $this->userModel->updatePassUser($newPassword, $username);
-                    return redirect()->to('/Pages');
+                    if ($this->userModel->updatePassUser($newPassword, $username)) {
+                        // $this->userModel->deleteOtp($username);
+                        session()->setFlashdata('message', 'infoMessageForgetPass3');
+                        return redirect()->to('Pages');
+                    }
+                } else {
+                    session()->setFlashdata('message', 'infoMessageForgetPass2');
+                    return redirect()->to('Pages/forgetPassPost');
                 }
             }
         } else {
-            $data = [
-                'title' => 'Lupa pass',
-                'message' => 'user tidak ditemukan'
-            ];
+            session()->setFlashdata('message', 'infoMessageForgetPass2');
+            return redirect()->to('Pages/forgetPassPost');
         }
     }
 
@@ -145,7 +151,8 @@ class Pages extends BaseController
             'title' => 'About',
             'title2' => 'Halaman About',
             'jenisLogin' => $this->session->get('jenisLog'),
-            'activeAbout' => 'active'
+            'activeAbout' => 'active',
+            'userLogin' => $this->userModel->getDataUsersById($this->session->get('id'))
         ];
         return view('pages/about', $data);
     }

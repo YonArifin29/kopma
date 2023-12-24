@@ -38,7 +38,7 @@ class UserModel extends Model
 
     public function updatePassUser($password, $username)
     {
-        $this->builder->set('password', $password)->where('username', $username)->update();
+        return $this->builder->set('password', $password)->where('username', $username)->update();
     }
 
     public function updateOTP($otp, $username)
