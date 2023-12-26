@@ -32,11 +32,14 @@ class Users extends BaseController
 
     public function addUser()
     {
+        session();
         $data = [
             'title' => 'Tambah Pengguna',
             'title2' => 'Tambah Pengguna',
             'jenisLogin' => $this->session->get('jenisLog'),
             'activeHalUsers' => 'active',
+            'validation' => $this->validation,
+            'userLogin' => $this->userModel->getDataUsersById($this->session->get('id'))
 
         ];
         return view('Users/addUsers', $data);
@@ -53,14 +56,38 @@ class Users extends BaseController
         // $extension = explode("/", $_FILES['foto']['type'])[1];
 
         $rules = [
-            'username' => 'required',
-            'nama' => 'required',
-            'nomor_hp' => 'required',
-            'nama_usaha' => 'required',
-            'password' => 'required',
-            'gender' => 'required',
-            'alamat' => 'required',
-            'email'    => 'required|max_length[254]|valid_email',
+            [
+                'username' => 'required',
+                'nama' => 'required',
+                'nomor_hp' => 'required',
+                'nama_usaha' => 'required',
+                'password' => 'required',
+                'gender' => 'required',
+                'alamat' => 'required',
+                'email'    => 'required|max_length[150]|valid_email',
+            ],
+            [
+                'username' => [
+                    'required' => '{field} harus diisi',
+                ],
+                'nama' => [
+                    'required' => '{field} harus diisi',
+                ],
+                'nama_usaha' => [
+                    'required' => '{field} harus diisi',
+                ],
+                'nomor_hp' => [
+                    'required' => 'nomor Hp harus diisi',
+                ],
+                'alamat' => [
+                    'required' => '{field} harus diisi',
+                ],
+                'email' => [
+                    'required' => '{field} harus diisi',
+                    'valid_email' => '{field} tidak valid',
+                    'max_length' => '{field} terlalu panjang',
+                ],
+            ]
         ];
 
         $data = [
@@ -73,8 +100,7 @@ class Users extends BaseController
             'gender' => $this->request->getVar('gender'),
             'alamat' => $this->request->getVar('alamat'),
         ];
-
-        $this->validation->setRules($rules);
+        $this->validation->setRules($rules[0], $rules[1]);
         if ($this->validation->run($data)) {
             $validatedData = $this->validation->getValidated();
             if ($this->userModel->saveData($validatedData)) {
@@ -109,15 +135,7 @@ class Users extends BaseController
                 return redirect()->to('Users');
             }
         } else {
-            $dataWithError = [
-                'title' => 'Tambah Pengguna',
-                'title2' => 'Tambah Pengguna',
-                'jenisLogin' => $this->session->get('jenisLog'),
-                'activeHalUsers' => 'active',
-                'errors' => $this->validation->getErrors()
-
-            ];
-            return view('Users/addUsers', $dataWithError);
+            return redirect()->to('Users/addUser')->withInput()->with('validation', $this->validation);
         }
     }
 
@@ -129,7 +147,8 @@ class Users extends BaseController
             'title2' => 'Edit Pengguna',
             'jenisLogin' => $this->session->get('jenisLog'),
             'activeHalUsers' => 'active',
-            'dataUsers' => $this->userModel->getDataUsersById($idUser)
+            'dataUsers' => $this->userModel->getDataUsersById($idUser),
+            'userLogin' => $this->userModel->getDataUsersById($this->session->get('id'))
 
         ];
         return view('Users/editUsers', $data);
@@ -170,15 +189,7 @@ class Users extends BaseController
                 return redirect()->to('Users');
             }
         } else {
-            $dataWithError = [
-                'title' => 'Tambah Pengguna',
-                'title2' => 'Tambah Pengguna',
-                'jenisLogin' => $this->session->get('jenisLog'),
-                'activeHalUsers' => 'active',
-                'errors' => $this->validation->getErrors()
-
-            ];
-            return view('Users/addUsers', $dataWithError);
+            return redirect()->to('Users/edit')->withInput()->with('validation', $this->validation->getErrors());
         }
     }
 

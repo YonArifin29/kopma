@@ -56,7 +56,7 @@ class RedirectResponse extends Response
 
         $route = Services::routes()->reverseRoute($route, ...$params);
 
-        if (! $route) {
+        if (!$route) {
             throw HTTPException::forInvalidRedirectRoute($namedRoute);
         }
 

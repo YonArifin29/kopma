@@ -129,11 +129,13 @@ class Pages extends BaseController
                         return redirect()->to('Pages');
                     }
                 } else {
+                    // masih error
                     session()->setFlashdata('message', 'infoMessageForgetPass2');
                     return redirect()->to('Pages/forgetPassPost');
                 }
             }
         } else {
+            // masih error
             session()->setFlashdata('message', 'infoMessageForgetPass2');
             return redirect()->to('Pages/forgetPassPost');
         }
