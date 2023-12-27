@@ -156,7 +156,9 @@ class Users extends BaseController
 
     public function edit()
     {
+        // dd('cek');
         //validasi input
+        $id_pengguna = $this->request->getVar('id_pengguna');
         $rules = [
             'username' => 'required',
             'nama' => 'required',
@@ -164,11 +166,11 @@ class Users extends BaseController
             'nama_usaha' => 'required',
             'gender' => 'required',
             'alamat' => 'required',
-            'level' => 'required',
-            'status' => 'required',
+            'level' => 'required|regex_match[/1|2/]',
+            'status' => 'required|regex_match[/1|2/]',
             'email'    => 'required|max_length[254]|valid_email',
         ];
-
+        // dd($this->request->getVar('level'));
         $data = [
             'username' => $this->request->getVar('username'),
             'nama' => $this->request->getVar('nama'),
@@ -184,12 +186,12 @@ class Users extends BaseController
         $this->validation->setRules($rules);
         if ($this->validation->run($data)) {
             $validatedData = $this->validation->getValidated();
-            if ($this->userModel->editData($validatedData, $this->request->getVar('id_pengguna'))) {
+            if ($this->userModel->editData($validatedData, $id_pengguna)) {
                 session()->setFlashdata('message', 'berhasil-diedit');
                 return redirect()->to('Users');
             }
         } else {
-            return redirect()->to('Users/edit')->withInput()->with('validation', $this->validation->getErrors());
+            return redirect()->to('Users/editUser/' . $id_pengguna)->withInput()->with('validation', $this->validation);
         }
     }
 

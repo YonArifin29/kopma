@@ -1,0 +1,168 @@
+INFO - 2023-12-27 04:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 04:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 04:07:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 04:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 04:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 04:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 04:08:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 04:08:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 04:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 04:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 04:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 04:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 04:08:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 04:41:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 04:41:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 04:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-27 04:41:22 --> mysqli_sql_exception: Table 'db_kopma.prokuk' doesn't exist in D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\2023\koprasi-mahasiswa\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\2023\koprasi-mahasiswa\app\Models\ProductModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\2023\koprasi-mahasiswa\app\Controllers\Product.php(27): App\Models\ProductModel->getDataProduct()
+#6 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(919): App\Controllers\Product->index()
+#7 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\koprasi-mahasiswa\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-27 04:41:22 --> Table 'db_kopma.prokuk' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `prokuk`', [], false)
+ 2 APPPATH\Models\ProductModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Product.php(27): App\Models\ProductModel->getDataProduct()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-27 04:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 04:41:51 --> method_exists(): Argument #1 ($object_or_class) must be of type object|string, null given
+in SYSTEMPATH\Model.php on line 866.
+ 1 SYSTEMPATH\Model.php(866): method_exists(null, 'getDataproductById')
+ 2 APPPATH\Controllers\Product.php(28): CodeIgniter\Model->__call('getDataproductById', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-27 04:42:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 04:42:28 --> method_exists(): Argument #1 ($object_or_class) must be of type object|string, null given
+in SYSTEMPATH\Model.php on line 866.
+ 1 SYSTEMPATH\Model.php(866): method_exists(null, 'getDataproductById')
+ 2 APPPATH\Controllers\Product.php(28): CodeIgniter\Model->__call('getDataproductById', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-27 04:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 04:55:39 --> method_exists(): Argument #1 ($object_or_class) must be of type object|string, null given
+in SYSTEMPATH\Model.php on line 866.
+ 1 SYSTEMPATH\Model.php(866): method_exists(null, 'getDataproductById')
+ 2 APPPATH\Controllers\Product.php(28): CodeIgniter\Model->__call('getDataproductById', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-27 04:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 04:55:59 --> method_exists(): Argument #1 ($object_or_class) must be of type object|string, null given
+in SYSTEMPATH\Model.php on line 866.
+ 1 SYSTEMPATH\Model.php(866): method_exists(null, 'getDataproductById')
+ 2 APPPATH\Controllers\Product.php(28): CodeIgniter\Model->__call('getDataproductById', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-27 04:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 04:56:30 --> method_exists(): Argument #1 ($object_or_class) must be of type object|string, null given
+in SYSTEMPATH\Model.php on line 866.
+ 1 SYSTEMPATH\Model.php(866): method_exists(null, 'getDataproductById')
+ 2 APPPATH\Controllers\Product.php(28): CodeIgniter\Model->__call('getDataproductById', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-27 04:56:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 04:56:57 --> method_exists(): Argument #1 ($object_or_class) must be of type object|string, null given
+in SYSTEMPATH\Model.php on line 866.
+ 1 SYSTEMPATH\Model.php(866): method_exists(null, 'getDataproductById')
+ 2 APPPATH\Controllers\Product.php(28): CodeIgniter\Model->__call('getDataproductById', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-27 04:58:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 04:58:12 --> method_exists(): Argument #1 ($object_or_class) must be of type object|string, null given
+in SYSTEMPATH\Model.php on line 866.
+ 1 SYSTEMPATH\Model.php(866): method_exists(null, 'getDataproductById')
+ 2 APPPATH\Controllers\Product.php(28): CodeIgniter\Model->__call('getDataproductById', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-27 04:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 04:58:27 --> method_exists(): Argument #1 ($object_or_class) must be of type object|string, null given
+in SYSTEMPATH\Model.php on line 866.
+ 1 SYSTEMPATH\Model.php(866): method_exists(null, 'getDataproductById')
+ 2 APPPATH\Controllers\Product.php(28): CodeIgniter\Model->__call('getDataproductById', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-27 04:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 04:59:42 --> method_exists(): Argument #1 ($object_or_class) must be of type object|string, null given
+in SYSTEMPATH\Model.php on line 866.
+ 1 SYSTEMPATH\Model.php(866): method_exists(null, 'getDataproductById')
+ 2 APPPATH\Controllers\Product.php(28): CodeIgniter\Model->__call('getDataproductById', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-27 05:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 05:00:11 --> Undefined variable $dataProducts
+in APPPATH\Views\product\dataProduct.php on line 25.
+ 1 APPPATH\Views\product\dataProduct.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataProducts', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\product\\dataProduct.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\product\\dataProduct.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('product/dataProduct', [], true)
+ 5 APPPATH\Controllers\Product.php(30): view('product/dataProduct', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-27 05:00:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:02:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 05:03:05 --> method_exists(): Argument #1 ($object_or_class) must be of type object|string, null given
+in SYSTEMPATH\Model.php on line 866.
+ 1 SYSTEMPATH\Model.php(866): method_exists(null, 'getDataproductById')
+ 2 APPPATH\Controllers\Product.php(29): CodeIgniter\Model->__call('getDataproductById', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-27 05:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-27 05:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 05:03:56 --> method_exists(): Argument #1 ($object_or_class) must be of type object|string, null given
+in SYSTEMPATH\Model.php on line 866.
+ 1 SYSTEMPATH\Model.php(866): method_exists(null, 'getDataproductById')
+ 2 APPPATH\Controllers\Product.php(22): CodeIgniter\Model->__call('getDataproductById', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-27 05:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-27 05:04:27 --> Undefined variable $user
+in APPPATH\Views\product\dataProduct.php on line 31.
+ 1 APPPATH\Views\product\dataProduct.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\product\\dataProduct.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\product\\dataProduct.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('product/dataProduct', [], true)
+ 5 APPPATH\Controllers\Product.php(30): view('product/dataProduct', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -42,7 +42,7 @@
         </div>
       </form>
       <p class="mb-1">
-        <a href="<?= base_url() ?>">Kembali</a>
+        <a href="<?= base_url('pages') ?>">Kembali</a>
       </p>
     </div>
     <!-- /.card-body -->
