@@ -1,5 +1,5 @@
 <li class='nav-item'>
-    <a href='<?= base_url('product') ?>' class='nav-link <?= $activeHalProduct  ?? "" ?>'>
+    <a href='<?= base_url('product') ?>' class='nav-link <?= $activeHalproduct  ?? "" ?>'>
         <i class='nav-icon  fa-solid fa-book'></i>
         <p>
             KELOLA PRODUK

@@ -4,7 +4,7 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
-                <a href="<?= base_url('Users/addProduct') ?>" class="btn btn-primary">Tambah Produk</a>
+                <a href="<?= base_url('product/addProduct') ?>" class="btn btn-primary">Tambah Produk</a>
             </div>
             <!-- /.card-header -->
             <div class="card-body">
@@ -28,10 +28,10 @@
 
                             <tr>
                                 <td><?= $no ?></td>
-                                <td><?= $user['kode_produk']; ?></td>
-                                <td><?= $user['nama_produk']; ?></td>
-                                <td><?= $user['harga_jual']; ?></td>
-                                <td><?= $user['kategori']; ?></td>
+                                <td><?= $product['kode_produk']; ?></td>
+                                <td><?= $product['nama_produk']; ?></td>
+                                <td><?= $product['harga_jual']; ?></td>
+                                <td><?= $product['kategori']; ?></td>
                                 <td>
                                     <a href="<?= base_url('product/editProduct'); ?>/<?= $product['id_produk']; ?>" class="badge btn btn-primary ">Edit</a>
                                     <a href="<?= base_url('product/delete'); ?>/<?= $product['id_produk']; ?>" class="badge btn btn-danger btn-hapus">Hapus</a>

@@ -117,8 +117,7 @@ class Users extends BaseController
                     CURLOPT_CUSTOMREQUEST => 'POST',
                     CURLOPT_POSTFIELDS => array(
                         'target' => $nomor_hp,
-                        'message' => "
-                    Ini Username: " . $username . " dan Password " . $password . " kamu untuk login ke website KOPMA!",
+                        'message' => "Ini Username: " . $username . " dan Password " . $password . " kamu untuk login ke website KOPMA!",
                     ),
                     CURLOPT_HTTPHEADER => array(
                         'Authorization: eoEbr!dL6xtp4P06kuK9'
@@ -160,17 +159,47 @@ class Users extends BaseController
         //validasi input
         $id_pengguna = $this->request->getVar('id_pengguna');
         $rules = [
-            'username' => 'required',
-            'nama' => 'required',
-            'nomor_hp' => 'required',
-            'nama_usaha' => 'required',
-            'gender' => 'required',
-            'alamat' => 'required',
-            'level' => 'required|regex_match[/1|2/]',
-            'status' => 'required|regex_match[/1|2/]',
-            'email'    => 'required|max_length[254]|valid_email',
+            [
+                'username' => 'required',
+                'nama' => 'required',
+                'nomor_hp' => 'required',
+                'nama_usaha' => 'required',
+                'gender' => 'required',
+                'alamat' => 'required',
+                'level' => 'required|regex_match[/1|2/]',
+                'status' => 'required|regex_match[/1|2/]',
+                'email'    => 'required|max_length[254]|valid_email',
+            ],
+            [
+                'username' => [
+                    'required' => '{field} harus diisi',
+                ],
+                'nama' => [
+                    'required' => '{field} harus diisi',
+                ],
+                'nama_usaha' => [
+                    'required' => '{field} harus diisi',
+                ],
+                'nomor_hp' => [
+                    'required' => 'nomor Hp harus diisi',
+                ],
+                'alamat' => [
+                    'required' => '{field} harus diisi',
+                ],
+                'email' => [
+                    'required' => '{field} harus diisi',
+                    'valid_email' => '{field} tidak valid',
+                    'max_length' => '{field} terlalu panjang',
+                ], 'level' => [
+                    'required' => '{field} harus diisi',
+                    'regex_match' => '{field} harus diisi'
+                ],
+                'status' => [
+                    'required' => '{field} harus diisi',
+                    'regex_match' => '{field} harus diisi'
+                ],
+            ]
         ];
-        // dd($this->request->getVar('level'));
         $data = [
             'username' => $this->request->getVar('username'),
             'nama' => $this->request->getVar('nama'),
@@ -183,7 +212,7 @@ class Users extends BaseController
             'status' => $this->request->getVar('status'),
         ];
 
-        $this->validation->setRules($rules);
+        $this->validation->setRules($rules[0], $rules[1]);
         if ($this->validation->run($data)) {
             $validatedData = $this->validation->getValidated();
             if ($this->userModel->editData($validatedData, $id_pengguna)) {

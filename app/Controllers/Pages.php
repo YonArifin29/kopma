@@ -35,7 +35,7 @@ class Pages extends BaseController
         }
         foreach ($user as $result) :
             $passdb = $result["password"];
-            if ($password == $passdb) {
+            if (password_verify($password, $passdb)) {
                 foreach ($user as $result) :
                     $data = [
                         'id'  => $result["id_pengguna"],
@@ -117,7 +117,8 @@ class Pages extends BaseController
     {
         $username = $this->request->getVar('username');
         $otp = $this->request->getVar('otp');
-        $newPassword = $this->request->getVar('newPassword');
+
+        $newPassword = password_hash($this->request->getVar('newPassword'), PASSWORD_DEFAULT);
 
         $data = $this->userModel->getDataUsers($username);
         if ($data) {

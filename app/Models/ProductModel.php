@@ -19,21 +19,25 @@ class ProductModel extends Model
         $db = \Config\Database::connect();
         $this->builder = $db->table($this->table);
     }
-    public function getDataProduct($name_roduct = false)
+    public function getDataProduct($id_product = false)
     {
-        if ($name_roduct === false) {
+        if ($id_product === false) {
             return $this->builder()->get()->getResultArray();
         }
-        return $this->builder->where('nama_produk', $name_roduct)->get()->getResultArray();
+        return $this->builder->where('id_produk', $id_product)->get()->getResultArray();
+    }
+    public function saveData($data)
+    {
+        return $this->builder->insert($data);
     }
 
     // public function editData($data, $id)
     // {
     //     return $this->builder->where('id_pengguna', $id)->update($data);
     // }
-    // public function getDataUsersById($id)
+    // public function getDataProductById($id)
     // {
-    //     return $this->builder->where('id_pengguna', $id)->get()->getResultArray();
+    //     return $this->builder->where('id_produk', $id)->get()->getResultArray();
     // }
 
     // public function updatePassUser($password, $username)
@@ -46,10 +50,10 @@ class ProductModel extends Model
     //     $this->builder->set('otp', $otp)->where('username', $username)->update();
     // }
 
-    // public function deleteData($id)
-    // {
-    //     return $this->builder->delete(['id_pengguna' => $id]);
-    // }
+    public function deleteData($id)
+    {
+        return $this->builder->delete(['id_produk' => $id]);
+    }
 
     // public function saveData($data)
     // {

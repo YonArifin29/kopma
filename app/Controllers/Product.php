@@ -3,18 +3,21 @@
 namespace App\Controllers;
 
 use App\Models\ProductModel;
+use App\Models\UserModel;
 
 class Product extends BaseController
 {
 
     protected $productModel;
+    protected $userModel;
     protected $session;
-    // protected $validation;
+    protected $validation;
     public function __construct()
     {
         $this->productModel = new ProductModel();
+        $this->userModel = new UserModel();
         $this->session = \Config\Services::session();
-        // $this->validation = \Config\Services::validation();
+        $this->validation = \Config\Services::validation();
     }
 
     public function index()
@@ -25,135 +28,91 @@ class Product extends BaseController
             'jenisLogin' => $this->session->get('jenisLog'),
             'activeHalproduct' => 'active',
             'dataProducts' => $this->productModel->getDataproduct(),
-            // 'userLogin' => $this->productModel->getDataproductById($this->session->get('id'))
+            'userLogin' => $this->userModel->getDataUsersById($this->session->get('id'))
         ];
         return view('product/dataProduct', $data);
-        echo "hello";
     }
 
-    // public function addUser()
-    // {
-    //     session();
-    //     $data = [
-    //         'title' => 'Tambah Pengguna',
-    //         'title2' => 'Tambah Pengguna',
-    //         'jenisLogin' => $this->session->get('jenisLog'),
-    //         'activeHalproduct' => 'active',
-    //         'validation' => $this->validation,
-    //         'userLogin' => $this->productModel->getDataproductById($this->session->get('id'))
+    public function addProduct()
+    {
+        $data = [
+            'title' => 'Tambah Produk',
+            'title2' => 'Tambah Produk',
+            'jenisLogin' => $this->session->get('jenisLog'),
+            'activeHalproduct' => 'active',
+            'validation' => $this->validation,
+            'userLogin' => $this->userModel->getDataUsersById($this->session->get('id'))
 
-    //     ];
-    //     return view('product/addproduct', $data);
-    // }
+        ];
+        return view('product/addProduct', $data);
+    }
 
-    // public function save()
-    // {
-    //     $password = rand(100000, 999999);
-    //     $username = $this->request->getVar('username');
-    //     $nomor_hp = $this->request->getVar('nomor_hp');
-    //     // $nama_foto = $_FILES['foto']['name'];
-    //     // $file = $_FILES['foto']['tmp_name'];
-    //     // $size = $_FILES['foto']['size'];
-    //     // $extension = explode("/", $_FILES['foto']['type'])[1];
+    public function save()
+    {
 
-    //     $rules = [
-    //         [
-    //             'username' => 'required',
-    //             'nama' => 'required',
-    //             'nomor_hp' => 'required',
-    //             'nama_usaha' => 'required',
-    //             'password' => 'required',
-    //             'gender' => 'required',
-    //             'alamat' => 'required',
-    //             'email'    => 'required|max_length[150]|valid_email',
-    //         ],
-    //         [
-    //             'username' => [
-    //                 'required' => '{field} harus diisi',
-    //             ],
-    //             'nama' => [
-    //                 'required' => '{field} harus diisi',
-    //             ],
-    //             'nama_usaha' => [
-    //                 'required' => '{field} harus diisi',
-    //             ],
-    //             'nomor_hp' => [
-    //                 'required' => 'nomor Hp harus diisi',
-    //             ],
-    //             'alamat' => [
-    //                 'required' => '{field} harus diisi',
-    //             ],
-    //             'email' => [
-    //                 'required' => '{field} harus diisi',
-    //                 'valid_email' => '{field} tidak valid',
-    //                 'max_length' => '{field} terlalu panjang',
-    //             ],
-    //         ]
-    //     ];
 
-    //     $data = [
-    //         'username' => $username,
-    //         'nama' => $this->request->getVar('nama'),
-    //         'password' => password_hash($password, PASSWORD_DEFAULT),
-    //         'nama_usaha' => $this->request->getVar('nama_usaha'),
-    //         'email' => $this->request->getVar('email'),
-    //         'nomor_hp' => $nomor_hp,
-    //         'gender' => $this->request->getVar('gender'),
-    //         'alamat' => $this->request->getVar('alamat'),
-    //     ];
-    //     $this->validation->setRules($rules[0], $rules[1]);
-    //     if ($this->validation->run($data)) {
-    //         $validatedData = $this->validation->getValidated();
-    //         if ($this->productModel->saveData($validatedData)) {
-    //             $curl = curl_init();
+        // $nama_foto = $_FILES['foto']['name'];
+        // $file = $_FILES['foto']['tmp_name'];
+        // $size = $_FILES['foto']['size'];
+        // $extension = explode("/", $_FILES['foto']['type'])[1];
 
-    //             curl_setopt_array($curl, array(
-    //                 CURLOPT_URL => 'https://api.fonnte.com/send',
-    //                 CURLOPT_RETURNTRANSFER => true,
-    //                 CURLOPT_ENCODING => '',
-    //                 CURLOPT_MAXREDIRS => 10,
-    //                 CURLOPT_TIMEOUT => 0,
-    //                 CURLOPT_FOLLOWLOCATION => true,
-    //                 CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-    //                 CURLOPT_CUSTOMREQUEST => 'POST',
-    //                 CURLOPT_POSTFIELDS => array(
-    //                     'target' => $nomor_hp,
-    //                     'message' => "
-    //                 Ini Username: " . $username . " dan Password " . $password . " kamu untuk login ke website KOPMA!",
-    //                 ),
-    //                 CURLOPT_HTTPHEADER => array(
-    //                     'Authorization: eoEbr!dL6xtp4P06kuK9'
-    //                 ),
-    //             ));
-    //             $response = curl_exec($curl);
-    //             if (curl_errno($curl)) {
-    //                 session()->setFlashdata('message', 'gagal-disimpan');
-    //                 return redirect()->to('product');
-    //                 $error_msg = curl_error($curl);
-    //             }
-    //             curl_close($curl);
-    //             session()->setFlashdata('message', 'berhasil-disimpan');
-    //             return redirect()->to('product');
-    //         }
-    //     } else {
-    //         return redirect()->to('product/addUser')->withInput()->with('validation', $this->validation);
-    //     }
-    // }
+        $rules = [
+            [
+                'kode_produk' => 'required',
+                'nama_produk' => 'required',
+                'harga_jual' => 'required',
+                'kategori' => 'required',
+                // 'gambar' => 'required',
+            ],
+            [
+                'kode_prduk' => [
+                    'required' => '{field} harus diisi',
+                ],
+                'nama_produk' => [
+                    'required' => '{field} harus diisi',
+                ],
+                'harga_jual' => [
+                    'required' => '{field} harus diisi',
+                ],
+                // 'gambar' => [
+                //     'required' => 'nomor Hp harus diisi',
+                // ],
+            ]
+        ];
 
-    // public function editUser()
-    // {
-    //     $idUser = $this->request->getUri()->getSegment(3);
-    //     $data = [
-    //         'title' => 'Edit Pengguna',
-    //         'title2' => 'Edit Pengguna',
-    //         'jenisLogin' => $this->session->get('jenisLog'),
-    //         'activeHalproduct' => 'active',
-    //         'dataproduct' => $this->productModel->getDataproductById($idUser),
-    //         'userLogin' => $this->productModel->getDataproductById($this->session->get('id'))
+        $data = [
+            'kode_produk' => $this->request->getVar('kode_produk'),
+            'nama_produk' => $this->request->getVar('nama_produk'),
+            'harga_jual' => $this->request->getVar('harga_jual'),
+            'kategori' => $this->request->getVar('kategori'),
+        ];
+        $this->validation->setRules($rules[0], $rules[1]);
+        if ($this->validation->run($data)) {
+            $validatedData = $this->validation->getValidated();
+            if ($this->productModel->saveData($validatedData)) {
 
-    //     ];
-    //     return view('product/editproduct', $data);
-    // }
+                session()->setFlashdata('message', 'berhasil-disimpan');
+                return redirect()->to('product');
+            }
+        } else {
+            return redirect()->to('product/addProduct')->withInput()->with('validation', $this->validation);
+        }
+    }
+
+    public function editProduct()
+    {
+        $idProduct = $this->request->getUri()->getSegment(3);
+        $data = [
+            'title' => 'Edit Produk',
+            'title2' => 'Edit Produk',
+            'jenisLogin' => $this->session->get('jenisLog'),
+            'activeHalproduct' => 'active',
+            'dataProduct' => $this->productModel->getDataproduct($idProduct),
+            'userLogin' => $this->userModel->getDataUsersById($this->session->get('id'))
+
+        ];
+        return view('product/editProduct', $data);
+    }
 
     // public function edit()
     // {
@@ -196,15 +155,15 @@ class Product extends BaseController
     //     }
     // }
 
-    // public function delete()
-    // {
-    //     $idUser = $this->request->getUri()->getSegment(3);
-    //     if ($this->productModel->deleteData($idUser)) {
-    //         session()->setFlashdata('message', 'berhasil-dihapus');
-    //         return redirect()->to('product');
-    //     } else {
-    //         session()->setFlashdata('message', 'gagal-dihapus');
-    //         return redirect()->to('product');
-    //     }
-    // }
+    public function delete()
+    {
+        $idUser = $this->request->getUri()->getSegment(3);
+        if ($this->productModel->deleteData($idUser)) {
+            session()->setFlashdata('message', 'berhasil-dihapus');
+            return redirect()->to('product');
+        } else {
+            session()->setFlashdata('message', 'gagal-dihapus');
+            return redirect()->to('product');
+        }
+    }
 }
