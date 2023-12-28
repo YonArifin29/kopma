@@ -245,6 +245,22 @@
   <script src="<?= base_url(); ?>js/cropper.js"></script>
   <script src="<?= base_url(); ?>js/script1.js"></script>
   <script>
+    // script menampilkan foto hal add users
+    function displaySelectedImage(event, elementId) {
+      const selectedImage = document.getElementById(elementId);
+      const fileInput = event.target;
+
+      if (fileInput.files && fileInput.files[0]) {
+        const reader = new FileReader();
+
+        reader.onload = function(e) {
+          selectedImage.src = e.target.result;
+        };
+
+        reader.readAsDataURL(fileInput.files[0]);
+      }
+    }
+    // end script menampilkan foto hal add users
     // sweeta alert
     // tambah, edit, hapus
     const swal = $('.swal').data('swal');

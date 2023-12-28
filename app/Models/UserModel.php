@@ -22,7 +22,7 @@ class UserModel extends Model
     public function getDataUsers($username = false)
     {
         if ($username === false) {
-            return $this->builder()->get()->getResultArray();
+            return $this->builder->orderBy('id_pengguna', 'DESC')->get()->getResultArray();
         }
         return $this->builder->where('username', $username)->get()->getResultArray();
     }

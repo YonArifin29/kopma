@@ -6,13 +6,15 @@
         $err_kode_produk = (session('validation')->hasError('kode_produk')) ? session('validation')->getError('kode_produk') : "";
         $err_nama_produk = (session('validation')->hasError('nama_produk')) ? session('validation')->getError('nama_produk') : "";
         $err_harga_jual = (session('validation')->hasError('harga_jual')) ? session('validation')->getError('harga_jual') : "";
-        $err_kategori = (session('validation')->hasError('kategori')) ? session('validation')->getError('kategori') : "";;
+        $err_kategori = (session('validation')->hasError('kategori')) ? session('validation')->getError('kategori') : "";
+        $err_kategori = (session('validation')->hasError('foto')) ? session('validation')->getError('foto') : "";
     } else {
         $err_kode_produk = "";
         $err_nama_produk = "";
         $err_harga_jual = "";
         $err_nomor_hp = "";
         $err_kategori = "";
+        $err_foto = "";
     }
     ?>
     <div class="row">
@@ -79,6 +81,26 @@
                             </div>
                         </div>
 
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="input-group mb-3">
+                                <div class="d-flex justify-content-evenly align-items-center">
+                                    <div>
+                                        <img id="selectedAvatar" src="<?= base_url("img/img.png") ?>" class="" style="width: 50px; height: 50px; object-fit: cover;" alt="example placeholder" />
+                                    </div>
+                                    <div class="ml-2">
+                                        <div class=" badge bg-secondary btn-rounded">
+                                            <label class="form-label text-white m-1" for="customFile2">Choose file</label>
+                                            <input type="file" name="gambar" class="form-control d-none is-invalid" id="customFile2" onchange="displaySelectedImage(event, 'selectedAvatar')" style="width: 50px; height: 50px;" />
+                                            <div id="validationServer03Feedback" class="invalid-feedback">
+                                                <?= (session('validation') ? (session('validation')->hasError('foto') ? $err_foto : "") : ""); ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-8">
