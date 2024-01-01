@@ -57,11 +57,12 @@ class Product extends BaseController
         // $extension = explode("/", $_FILES['foto']['type'])[1];
         $rules = [
             [
+                'id_pengguna' => 'required',
                 'kode_produk' => 'required',
                 'nama_produk' => 'required',
                 'harga_jual' => 'required',
                 'kategori' => 'required',
-                'id_pengguna' => 'required',
+                'deskripsi' => 'required',
                 'gambar' => 'required|is_image[gambar]|mime_in[gambar,image/jpg,image/jpeg,imageJPEG,image/png]',
             ],
             [
@@ -79,6 +80,9 @@ class Product extends BaseController
                     'is_image' => 'yang diupload harus gambar',
                     'max_size' => 'gambar telalu besar',
                 ],
+                'deskripsi' => [
+                    'required' => '{field} harus diisi',
+                ],
             ]
         ];
         $file = $this->request->getFile('gambar');
@@ -90,6 +94,7 @@ class Product extends BaseController
             'nama_produk' => $this->request->getVar('nama_produk'),
             'harga_jual' => $this->request->getVar('harga_jual'),
             'kategori' => $this->request->getVar('kategori'),
+            'deskripsi' => $this->request->getVar('deskripsi'),
             'gambar' =>  $newName,
         ];
         $this->validation->setRules($rules[0], $rules[1]);
@@ -128,6 +133,7 @@ class Product extends BaseController
                 'nama_produk' => 'required',
                 'harga_jual' => 'required',
                 'kategori' => 'required',
+                'deskripsi' => 'required',
                 'gambar' => 'required|is_image[gambar]|mime_in[gambar,image/jpg,image/jpeg,imageJPEG,image/png]',
             ],
             [
@@ -138,6 +144,9 @@ class Product extends BaseController
                     'required' => '{field} harus diisi',
                 ],
                 'harga_jual' => [
+                    'required' => '{field} harus diisi',
+                ],
+                'deskripsi' => [
                     'required' => '{field} harus diisi',
                 ],
                 'gambar' => [
@@ -158,7 +167,8 @@ class Product extends BaseController
                 'nama_produk' => $this->request->getVar('nama_produk'),
                 'harga_jual' => $this->request->getVar('harga_jual'),
                 'kategori' => $this->request->getVar('kategori'),
-                'gambar' => $this->request->getVar('old_img')
+                'gambar' => $this->request->getVar('old_img'),
+                'deskripsi' => $this->request->getVar('deskripsi'),
             ];
         } else {
             $name = $newName;
@@ -167,7 +177,8 @@ class Product extends BaseController
                 'nama_produk' => $this->request->getVar('nama_produk'),
                 'harga_jual' => $this->request->getVar('harga_jual'),
                 'kategori' => $this->request->getVar('kategori'),
-                'gambar' => $newName
+                'gambar' => $newName,
+                'deskripsi' => $this->request->getVar('deskripsi'),
             ];
             unlink('../public/img/' . $this->request->getVar('old_img'));
         }

@@ -8,6 +8,7 @@
         $err_harga_jual = (session('validation')->hasError('harga_jual')) ? session('validation')->getError('harga_jual') : "";
         $err_kategori = (session('validation')->hasError('kategori')) ? session('validation')->getError('kategori') : "";
         $err_gambar = (session('validation')->hasError('gambar')) ? session('validation')->getError('gambar') : "";
+        $err_deskripsi = (session('validation')->hasError('deskripsi')) ? session('validation')->getError('deskripsi') : "";
     } else {
         $err_kode_produk = "";
         $err_nama_produk = "";
@@ -15,6 +16,7 @@
         $err_nomor_hp = "";
         $err_kategori = "";
         $err_gambar = "";
+        $err_deskripsi = "";
     }
     ?>
     <div class="row">
@@ -85,6 +87,14 @@
 
                     </div>
                     <div class="row">
+                        <div class=" col-sm-6">
+                            <div class="input-group mb-3  mt-3">
+                                <input type="text" class="form-control <?= $err_deskripsi ? 'is-invalid' : '' ?>" placeholder="Deskripsi Produk" name="deskripsi" value="<?= (session('validation') ? old('deskripsi') : $dataProduct[0]['deskripsi']) ?>">
+                                <div id="validationServer03Feedback" class="invalid-feedback">
+                                    <?= (session('validation') ? (session('validation')->hasError('deskripsi') ? $err_deskripsi : "") : ""); ?>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-sm-6">
                             <div class="input-group mb-3">
                                 <div class="d-flex justify-content-evenly align-items-center">

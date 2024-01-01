@@ -34,13 +34,6 @@ class ProductModel extends Model
         return $this->builder->where('id_pengguna', $id_user)->get()->getResultArray();
     }
 
-    // public function getDataProductById($id_product = false)
-    // {
-    //     if ($id_product === false) {
-    //         return $this->builder->orderBy('id_produk', 'DESC')->get()->getResultArray();
-    //     }
-    //     return $this->builder->where('id_produk', $id_product)->get()->getResultArray();
-    // }
     public function saveData($data)
     {
         return $this->builder->insert($data);
@@ -55,23 +48,13 @@ class ProductModel extends Model
         return $this->builder->where('id_produk', $id)->get()->getResultArray();
     }
 
-    // public function updatePassUser($password, $username)
-    // {
-    //     return $this->builder->set('password', $password)->where('username', $username)->update();
-    // }
-
-    // public function updateOTP($otp, $username)
-    // {
-    //     $this->builder->set('otp', $otp)->where('username', $username)->update();
-    // }
+    public function getDataProductByKode_product($kodeProduct)
+    {
+        return $this->builder->where('kode_produk', $kodeProduct)->get()->getResultArray();
+    }
 
     public function deleteData($id)
     {
         return $this->builder->delete(['id_produk' => $id]);
     }
-
-    // public function saveData($data)
-    // {
-    //     return $this->builder->insert($data);
-    // }
 }

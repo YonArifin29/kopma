@@ -50,11 +50,6 @@ class Users extends BaseController
         $password = rand(100000, 999999);
         $username = $this->request->getVar('username');
         $nomor_hp = $this->request->getVar('nomor_hp');
-        // $nama_foto = $_FILES['foto']['name'];
-        // $file = $_FILES['foto']['tmp_name'];
-        // $size = $_FILES['foto']['size'];
-        // $extension = explode("/", $_FILES['foto']['type'])[1];
-
         $rules = [
             [
                 'username' => 'required',
@@ -233,6 +228,31 @@ class Users extends BaseController
         } else {
             session()->setFlashdata('message', 'gagal-dihapus');
             return redirect()->to('Users');
+        }
+    }
+
+    public function ubahPassword()
+    {
+        $passwordLama = $this->request->getVar('passwordLama');
+        $data["pengguna"] = $this->userModel->getDataUsersById($this->session->get('id'));
+        foreach ($data["pengguna"] as $result) :
+            $passdb = $result["password"];
+        endforeach;
+        if (password_verify($passwordLama, $passdb)) {
+            $newPass = password_hash($this->request->getVar('passwordBaru'), PASSWORD_DEFAULT);
+            if ($this->userModel->updatePassUserByID($newPass, $this->session->get('id'))) {
+                session()->setFlashdata('message', 'berhasil-diedit');
+                return redirect()->to('Home');
+                exit;
+            } else {
+                session()->setFlashdata('message', 'gagal-diedit');
+                return redirect()->to('Home');
+                exit;
+            }
+        } else {
+            session()->setFlashdata('message', 'gagal-diedit');
+            return redirect()->to('Home');
+            exit;
         }
     }
 }

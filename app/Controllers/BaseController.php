@@ -35,7 +35,11 @@ abstract class BaseController extends Controller
      *
      * @var array
      */
-    protected $helpers = ['auth'];
+    protected $helpers = [
+        'auth',
+        'rupiah_helper',
+        'indo_time_format_helper',
+    ];
 
     /**
      * Be sure to declare properties for any property fetch you initialized.
@@ -54,5 +58,7 @@ abstract class BaseController extends Controller
         // Preload any models, libraries, etc, here.
 
         // E.g.: $this->session = \Config\Services::session();
+        // set indonesia timezone
+        date_default_timezone_set('Asia/Jakarta');
     }
 }

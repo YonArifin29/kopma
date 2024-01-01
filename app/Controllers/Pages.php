@@ -45,6 +45,7 @@ class Pages extends BaseController
                         'logged_in' => true
                     ];
                     $this->session->set($data);
+                    $this->userModel->setStatusOnline(1, $result["id_pengguna"]);
                     return redirect()->to('/Home');
                 endforeach;
             } else {
@@ -144,8 +145,10 @@ class Pages extends BaseController
 
     public function logout()
     {
-        session()->destroy();
-        return redirect()->to('/Pages');
+        if ($this->userModel->setStatusOnline('0', $this->session->get('id'))) {
+            session()->destroy();
+            return redirect()->to('/Pages');
+        }
     }
 
     public function about()

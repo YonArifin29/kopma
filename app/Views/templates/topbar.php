@@ -8,9 +8,8 @@
     <li class="nav-item d-none d-sm-inline-block">
       <a href="<?= base_url('Home'); ?>" class="nav-link <?= $activeHome ?? "" ?>">Home</a>
     </li>
-    <li class="nav-item d-none d-sm-inline-block">
-      <a href="<?= base_url('Pages/about'); ?>" class="nav-link <?= $activeAbout ?? "" ?>">About</a>
-    </li>
+    <!-- <li class="nav-item d-none d-sm-inline-block">
+      <a href="" </li> -->
   </ul>
 
   <!-- Right navbar links -->

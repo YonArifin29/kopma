@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?= $title ?></title>
-
+  <link href="<?= base_url() ?>library/bootstrap-5/bootstrap.min.css" rel="stylesheet" />
+  <script src="<?= base_url() ?>library/bootstrap-5/bootstrap.bundle.min.js"></script>
+  <script src="<?= base_url() ?>library/dselect.js"></script>
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -36,6 +38,10 @@
   <link rel="stylesheet" type="text/css" href=" ">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- select with search -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -243,27 +249,13 @@
   <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
   <script src="<?= base_url(); ?>js/pages/dashboard.js"></script>
   <script src="<?= base_url(); ?>js/cropper.js"></script>
-  <script src="<?= base_url(); ?>js/script1.js"></script>
+  <script src="<?= base_url(); ?>js/script2.js"></script>
   <script>
-    // script menampilkan foto hal add users
-    function displaySelectedImage(event, elementId) {
-      const selectedImage = document.getElementById(elementId);
-      const fileInput = event.target;
-
-      if (fileInput.files && fileInput.files[0]) {
-        const reader = new FileReader();
-
-        reader.onload = function(e) {
-          selectedImage.src = e.target.result;
-        };
-
-        reader.readAsDataURL(fileInput.files[0]);
-      }
-    }
-    // end script menampilkan foto hal add users
     // sweeta alert
     // tambah, edit, hapus
     const swal = $('.swal').data('swal');
+    let nama = "yon";
+    console.log(nama);
     let strArray = swal.split("-");
     if (strArray[0] == 'berhasil') {
       Swal.fire({
@@ -301,6 +293,27 @@
       })
     });
     // end sweet alert 
+    var select_box_element = document.querySelector('#select_box');
+
+    dselect(select_box_element, {
+      search: true
+    });
+    // script menampilkan foto hal add users
+    function displaySelectedImage(event, elementId) {
+      const selectedImage = document.getElementById(elementId);
+      const fileInput = event.target;
+
+      if (fileInput.files && fileInput.files[0]) {
+        const reader = new FileReader();
+
+        reader.onload = function(e) {
+          selectedImage.src = e.target.result;
+        };
+
+        reader.readAsDataURL(fileInput.files[0]);
+      }
+    }
+    // end script menampilkan foto hal add users
   </script>
 </body>
 

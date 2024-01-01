@@ -12,7 +12,7 @@ class UserModel extends Model
     protected $useAutoIncrement = true;
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
-    protected $allowedFields = ['username', 'nama', 'password', 'email', 'nama_usaha', 'alamat', 'level', 'foto', 'status', 'gender', 'nomor_hp'];
+    protected $allowedFields = ['di_pengguna', 'username', 'nama', 'password', 'email', 'nama_usaha', 'alamat', 'level', 'foto', 'status', 'gender', 'nomor_hp'];
     protected $builder;
     public function __construct()
     {
@@ -39,6 +39,21 @@ class UserModel extends Model
     public function updatePassUser($password, $username)
     {
         return $this->builder->set('password', $password)->where('username', $username)->update();
+    }
+
+    public function setStatusOnline($status, $id)
+    {
+        return $this->builder->set('online_status', $status)->where('id_pengguna', $id)->update();
+    }
+
+    public function getDataUsersByOnStatus()
+    {
+        return $this->builder->where('online_status', 1)->get()->getResultArray();
+    }
+
+    public function updatePassUserByID($password, $id)
+    {
+        return $this->builder->set('password', $password)->where('id_pengguna', $id)->update();
     }
 
     public function updateOTP($otp, $username)

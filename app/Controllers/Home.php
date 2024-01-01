@@ -24,7 +24,8 @@ class Home extends BaseController
                 'title2' => 'Halaman Beranda',
                 'jenisLogin' => $this->session->get('jenisLog'),
                 'activeHome' => 'active',
-                'userLogin' => $this->userModel->getDataUsersById($this->session->get('id'))
+                'userLogin' => $this->userModel->getDataUsersById($this->session->get('id')),
+                'getDataUserByOnlineStatus' => $this->userModel->getDataUsersByOnStatus()
             ];
             return view('home/index', $data);
         }

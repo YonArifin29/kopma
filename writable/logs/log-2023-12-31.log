@@ -1,0 +1,34 @@
+INFO - 2023-12-31 01:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-31 01:21:25 --> Undefined array key 0
+in APPPATH\Views\templates\sidebar.php on line 14.
+ 1 APPPATH\Views\templates\sidebar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('templates/sidebar', null, true)
+ 5 APPPATH\Views\templates\template.php(56): CodeIgniter\View\View->include('templates/sidebar')
+ 6 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('templates/template', [], true)
+ 9 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sale/dataSale', [], true)
+10 APPPATH\Controllers\Sale.php(37): view('sale/dataSale', [...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Sale->index()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sale))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-31 01:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-31 01:21:29 --> Undefined array key 0
+in APPPATH\Views\templates\sidebar.php on line 14.
+ 1 APPPATH\Views\templates\sidebar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('templates/sidebar', null, true)
+ 5 APPPATH\Views\templates\template.php(56): CodeIgniter\View\View->include('templates/sidebar')
+ 6 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('templates/template', [], true)
+ 9 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sale/dataSale', [], true)
+10 APPPATH\Controllers\Sale.php(37): view('sale/dataSale', [...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Sale->index()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sale))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
