@@ -92,25 +92,28 @@
             </div>
 
             <form action="" enctype='multipart/form-data' method="post">
-              <div class="modal-body">
+              <div class="modal-body" id="modal-body">
                 <div class="card">
-                  <label for="upload_image" class="d-flex justify-content-center mt-2">
-                    <img class="img-thumbnail rounded-circle image" src="<?= base_url() ?>" alt="Card image cap" width="30%" id="img" data-namaImg="">
-                    <input type="file" name="image" class="image" id="upload_image" style="display:none" />
-                  </label>
-                  <div class="card-body">
-                    <ul class="list-group text-center">
-                      <li class="list-group-item">yonarifin203</li>
-                      <li class="list-group-item">Yon Arifin</li>
-                      <li class="list-group-item">080973794</li>
-                    </ul>
-                  </div>
+                  <?php foreach ($userLogin as $data) : ?>
+                    <label for="upload_image" class="d-flex justify-content-center mt-2">
+                      <img class="img-thumbnail rounded-circle image" src="<?= base_url('img') ?>/<?= $data['foto'] ?>" alt="Card image cap" width="30%" id="img" data-namaImg="">
+                      <input type="file" name="image" class="image" id="upload_image" style="display:none" />
+                    </label>
+                    <div class="card-body">
+                      <ul class="list-group text-center">
+                        <li class="list-group-item"><?= $data['username'] ?></li>
+                        <li class="list-group-item"><?= $data['nama'] ?></li>
+                        <li class="list-group-item"><?= $data['nomor_hp'] ?></li>
+                        <li class="list-group-item"><?= $data['nama_usaha'] ?></li>
+                      </ul>
+                    </div>
                 </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <div type="submit" class="btn btn-primary tEdit" data-id="#">Edit</div>
+                <div type="submit" class="btn btn-primary tEdit" data-id="<?= $data['id_pengguna'] ?>">Edit</div>
               </div>
+            <?php endforeach; ?>
             </form>
           </div>
         </div>
@@ -249,13 +252,11 @@
   <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
   <script src="<?= base_url(); ?>js/pages/dashboard.js"></script>
   <script src="<?= base_url(); ?>js/cropper.js"></script>
-  <script src="<?= base_url(); ?>js/script2.js"></script>
+  <script src="<?= base_url(); ?>js/script4.js"></script>
   <script>
     // sweeta alert
     // tambah, edit, hapus
     const swal = $('.swal').data('swal');
-    let nama = "yon";
-    console.log(nama);
     let strArray = swal.split("-");
     if (strArray[0] == 'berhasil') {
       Swal.fire({

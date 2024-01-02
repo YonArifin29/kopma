@@ -1,10 +1,10 @@
-<?php namespace Config;
+<?
+// php namespace Config;
 
-use CodeIgniter\Config\BaseConfig;
-use Myth\Auth\Config\Auth as AuthConfig;
+// use CodeIgniter\Config\BaseConfig;
 
-class Auth extends AuthConfig
-{
-    public $requireActivation = null;
+// class Auth extends AuthConfig
+// {
+//     public $requireActivation = null;
    
-}
+// }

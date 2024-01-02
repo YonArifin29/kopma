@@ -6,7 +6,7 @@ use CodeIgniter\Config\BaseConfig;
 
 class App extends BaseConfig
 {
-    
+
     /**
      * --------------------------------------------------------------------------
      * Base Site URL
@@ -177,6 +177,4 @@ class App extends BaseConfig
      * @see http://www.w3.org/TR/CSP/
      */
     public bool $CSPEnabled = false;
-
-  
 }

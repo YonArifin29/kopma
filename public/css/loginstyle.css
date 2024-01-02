@@ -4,7 +4,7 @@
 
 .navbar-brand {
     font-size: 2rem;
-    font-family: "Poppins-SemiBold", Helvetica;
+    
 }
 
 .navbar-nav .nav-link {
@@ -23,16 +23,58 @@
 .form-control {
     border-radius: 0.3rem;
 }
+
+.top-nav-collapse {
+    background-color: #ffffff !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+    background: #ffffff !important;
+}
 body {
-    background-image: url('bglogin.jpg'); /* Ganti dengan URL gambar latar belakang */
+    background-image: url('/images/bglogin.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .login-container {
     background-color: rgba(255, 255, 255, 0.5);
     padding: 30px;
     border-radius: 10px;
     margin-top: 200px;
+    translate: (-50%, -50%);
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+#password {
+    padding-right: 40px;
+}
+
+.show-password-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.button-submit button {
+    width: 100%;
+    background-image: linear-gradient(to left,#65b0ff,#3295ff, #007bff);
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.button-submit button:hover {
+    color: #cacaca;
+    box-shadow: 0 0 10px rgba(0, 80, 165, 0.5);
 }

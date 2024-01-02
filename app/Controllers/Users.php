@@ -150,7 +150,6 @@ class Users extends BaseController
 
     public function edit()
     {
-        // dd('cek');
         //validasi input
         $id_pengguna = $this->request->getVar('id_pengguna');
         $rules = [
@@ -253,6 +252,49 @@ class Users extends BaseController
             session()->setFlashdata('message', 'gagal-diedit');
             return redirect()->to('Home');
             exit;
+        }
+    }
+
+    public function getProfileUser()
+    {
+        echo json_encode($this->userModel->getDataUsersById($_POST["id"]));
+    }
+    public function editProfileUser()
+    {
+        $id_pengguna = $this->request->getVar('id');
+        $file = $this->request->getFile('foto');
+        $tempfile = $file->getTempName();
+        $name_img = $file->getName();
+        $newName = $file->getRandomName();
+        if ($name_img == "") {
+            $name =  $this->request->getVar('fotoLama');
+            $data = [
+                'username' => $this->request->getVar('username'),
+                'nama' => $this->request->getVar('nama'),
+                'nama_usaha' => $this->request->getVar('nama_usaha'),
+                'nomor_hp' => $this->request->getVar('nomor_hp'),
+                'foto' => $this->request->getVar('fotoLama'),
+            ];
+        } else {
+            $name = $newName;
+            $data = [
+                'username' => $this->request->getVar('username'),
+                'nama' => $this->request->getVar('nama'),
+                'nama_usaha' => $this->request->getVar('nama_usaha'),
+                'nomor_hp' => $this->request->getVar('nomor_hp'),
+                'foto' => $newName,
+            ];
+            if (!$this->request->getVar('fotoLama') == "user.jpg") {
+                unlink('../public/img/' . $this->request->getVar('fotoLama'));
+            }
+        }
+
+        if ($this->userModel->editData($data, $id_pengguna)) {
+            move_uploaded_file($tempfile, '../public/' . 'img/' . $name);
+            session()->setFlashdata('message', 'berhasil-diedit');
+            return redirect()->to('Users');
+        } else {
+            return redirect()->to('Users/editUser/' . $id_pengguna)->withInput()->with('validation', $this->validation);
         }
     }
 }

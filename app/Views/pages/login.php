@@ -1,68 +1,30 @@
-<?php $this->extend('templates/template2'); ?>
+<?php $this->extend('templates/templateLogin'); ?>
 <?php $this->section('content'); ?>
-<div class="container d-flex justify-content-center align-items-center min-vh-100">
-  <div class=" login-box">
-    <!-- /.login-logo -->
-    <div class="card bg-primary">
-      <div class="card-header text-center">
-        <a href="../../index2.html" class="h1">LOGIN</a>
-      </div>
-      <div class="card-body">
+<!-- Login Form -->
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-3">
+      <div class="login-container">
+        <h2 class="text-center">LOGIN</h2>
+        <br>
         <form action="<?= base_url() ?>Pages/loginPost" method="post">
           <?= csrf_field(); ?>
-          <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Username" name="username">
-            <div class="input-group-append">
-              <div class="input-group-text">
-                <span class="fas fa-user"></span>
-              </div>
-            </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="username" placeholder="Username" name="username" required>
           </div>
-          <div class="input-group mb-3">
-            <input name="password" type="password" value="" class="input form-control" id="password" placeholder="password" required="true" aria-label="password" aria-describedby="basic-addon1" />
-            <div class="input-group-append">
-              <span class="input-group-text" onclick="password_show_hide();">
-                <i class="fas fa-eye" id="show_eye"></i>
-                <i class="fas fa-eye-slash d-none" id="hide_eye"></i>
-              </span>
-            </div>
+          <div class="mb-3 password-container">
+            <input type="password" class="form-control" id="password" placeholder="Password" name="password" required>
+            <i class="fa fa-eye-slash show-password-btn" aria-hidden="true" onclick="togglePassword()"></i>
           </div>
-          <div class="row d-flex">
-            <!-- <div class="col-8">
-              <div class="icheck-primary">
-                <input type="checkbox" id="remember" name="remember">
-                <label for="remember">
-                  Remember Me
-                </label>
-              </div>
-            </div> -->
-            <p class="mb-1 ">
-              <a href="<?= base_url('Pages/forgetPass') ?>" class="text-white">Forget Pasword?</a>
-            </p>
+          <div class="button-submit mb-3">
+            <button type="submit">LOGIN</button>
           </div>
-          <div class="d-flex justify-content-center">
-            <div class="col-4 d-block">
-              <button type="submit" class="btn btn-primary btn-block" name="tombol-login">Sign In</button>
-            </div>
+          <div class="text-center">
+            <a class="text-dark text-decoration-underline" href="<?= base_url('Pages/forgetPass') ?>">Lupa Password?</a>
           </div>
         </form>
-
-        <!-- <div class="social-auth-links text-center mt-2 mb-3">
-        <a href="#" class="btn btn-block btn-primary">
-          <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
-        </a>
-        <a href="#" class="btn btn-block btn-danger">
-          <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
-        </a>
-      </div> -->
-        <!-- /.social-auth-links -->
-        <!-- <p class="mb-0">
-        <a href="register.html" class="text-center" data-toggle="modal" data-target="#exampleModal">Register</a>
-      </p> -->
       </div>
-      <!-- /.card-body -->
     </div>
-    <!-- /.card -->
   </div>
 </div>
 <?php $this->endSection('content'); ?>

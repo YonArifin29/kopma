@@ -1,181 +1,221 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KOPMA</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="<?= base_url() ?>css/adminlte.css">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="<?= base_url() ?>css/style2.css">
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!--Nautigal Font-->
-  <link href='https://fonts.googleapis.com/css?family=The Nautigal' rel='stylesheet'>
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="<?= base_url() ?>css/style2.css">
-</head>
-
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">KOPMA</a>
-      <button class="navbar-toggler" type="button" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav collapse navbar-collapse justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Beranda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Mitra</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav ms-2 mb-lg-0">
-          <li class="nav-but">
-            <a class="btn btn-dark" href="<?= base_url('pages') ?>"><i class="fa-solid fa-user"></i> Login</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- Beranda -->
-  <div class="wrapper">
-    <div class="image">
-      <img class="background" src="<?= base_url() ?>img/bgberanda.jpg">
-      <div class="content">
-        <h1>Welcome To</h1>
-        <p>KOPMA</p>
-      </div>
+<?php $this->extend('templates/template2'); ?>
+<?php $this->section('content'); ?>
+<!-- Beranda -->
+<div class="wrapper" id="beranda">
+  <div class="image">
+    <img class="background" src="<?= base_url('img') ?>/bgberanda.jpg">
+    <div class="content">
+      <h1>Welcome To</h1>
+      <p>KOPMA</p>
     </div>
   </div>
-  </header>
-  <!--Best Seller-->
-  <div class="container py-3">
-    <h1 class="text-center">Best Seller</h1>
+</div>
+</header>
+<!--Best Seller-->
+<div class="container py-3">
+  <h1 class="text-center">Best Seller</h1>
+  <div class="row row-cols-1 row-cols-md-4 g-4 py-3">
+
+    <div class="col">
+      <div class="card">
+        <img src="<?= base_url('img') ?>/card10.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Paha Atas Ayam Krispy</h5>
+        </div>
+        <div class="mb-5 d-flex justify-content-around">
+          <h4>Rp. 11.000</h4>
+          <a href="#" class="btn btn-dark">Beli Sekarang</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="<?= base_url('img') ?>/card2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Nasi Goreng</h5>
+        </div>
+        <div class="mb-5 d-flex justify-content-around">
+          <h4>Rp. 16.000</h4>
+          <a href="#" class="btn btn-dark">Beli Sekarang</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="<?= base_url('img') ?>/card3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Es Teh Original</h5>
+        </div>
+        <div class="mb-5 d-flex justify-content-around">
+          <h4>Rp. 4.000</h4>
+          <a href="#" class="btn btn-dark">Beli Sekarang</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="<?= base_url('img') ?>/card4.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Es Teh Kampoel</h5>
+        </div>
+        <div class="mb-5 d-flex justify-content-around">
+          <h4>Rp. 8.000</h4>
+          <a href="#" class="btn btn-dark">Beli Sekarang</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--Menu-->
+<section class="menu">
+  <h1 class="kategori-menu text-center" id="menu">Menu</h1>
+  <div class="container py-1">
     <div class="row row-cols-1 row-cols-md-4 g-4 py-3">
+
       <div class="col">
         <div class="card">
-          <img src="<?= base_url() ?>img/card1.png" class="card-img-top" alt="...">
+          <img src="<?= base_url('img') ?>/card5.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Ayam Krispy</h5>
+            <h5 class="card-title">Es Teh Susu</h5>
           </div>
           <div class="mb-5 d-flex justify-content-around">
-            <h4>Rp. 11.000</h4>
-            <button class="btn btn-dark">Beli Sekarang</button>
+            <h4>Rp. 8.000</h4>
+            <a href="#" class="btn btn-dark">Beli Sekarang</a>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card">
-          <img src="<?= base_url() ?>img/card2.png" class="card-img-top" alt="...">
+          <img src="<?= base_url('img') ?>/card6.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Nasi Goreng</h5>
+            <h5 class="card-title">Es Teh Tarik</h5>
           </div>
           <div class="mb-5 d-flex justify-content-around">
-            <h4>Rp. 11.000</h4>
-            <button class="btn btn-dark">Beli Sekarang</button>
+            <h4>Rp. 8.000</h4>
+            <a href="#" class="btn btn-dark">Beli Sekarang</a>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card">
-          <img src="<?= base_url() ?>img/card3.png" class="card-img-top" alt="...">
+          <img src="<?= base_url('img') ?>/card12.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Ayam Krispy</h5>
+            <h5 class="card-title">Keripik Kentang</h5>
           </div>
           <div class="mb-5 d-flex justify-content-around">
-            <h4>Rp. 11.000</h4>
-            <button class="btn btn-dark">Beli Sekarang</button>
+            <h4>Rp. 8.000</h4>
+            <a href="#" class="btn btn-dark">Beli Sekarang</a>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card">
-          <img src="<?= base_url() ?>img/card4.png" class="card-img-top" alt="...">
+          <img src="<?= base_url('img') ?>/card7.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Ayam Krispy</h5>
+            <h5 class="card-title">Dada Ayam Krispy</h5>
           </div>
           <div class="mb-5 d-flex justify-content-around">
             <h4>Rp. 11.000</h4>
-            <button class="btn btn-dark">Beli Sekarang</button>
+            <a href="#" class="btn btn-dark">Beli Sekarang</a>
           </div>
         </div>
       </div>
 
     </div>
   </div>
-  <!--Menu-->
-  <section class="menu">
-    <h1 class="kategori-menu text-center">Menu</h1>
-    <button class="pre-btn"><i class="fa-solid fa-arrow-left"></i></button>
-    <button class="nex-btn"><i class="fa-solid fa-arrow-right"></i></button>
-    <div class="container py-1">
-      <div class="row row-cols-1 row-cols-md-4 g-4 py-3">
-
-        <div class="col">
-          <div class="card">
-            <img src="<?= base_url() ?>img/card1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Ayam Krispy</h5>
-            </div>
-            <div class="mb-5 d-flex justify-content-around">
-              <h4>Rp. 11.000</h4>
-              <button class="btn btn-dark">Beli Sekarang</button>
-            </div>
+  <div class="text-center">
+    <a href="menu.html" class="btn btn-outline-dark">View more</a>
+  </div>
+</section>
+<!-- Mitra -->
+<section class="mitra">
+  <div class="row py-4">
+    <div class="class col-md-5">
+      <img src="<?= base_url('img') ?>/mitra.jpg" alt="">
+    </div>
+    <div class="col-md-7 py-5">
+      <h1 class="h1-mitra" id="mitra">KOPERASI MAHASISWA</h1>
+      <br>
+      <p class="display-6 p-mitra">KOPMA merupakan Koperasi Mahasiswa yang
+        salah satu fasilitas kampus Universitas Subang,
+        tempat dimana mahasiswa dapat menikmati makanan atau minuman,
+        bersosialisasi, dan belajar dalam suasana informal.
+      </p>
+      <div class="py-3">
+        <button type="button" class="btn btn-secondary button-join-us rounded-pill">Join Us</button>
+      </div>
+      <div class="py-5">
+        <div class="garis-vertikal"></div>
+      </div>
+      <div class="py-1">
+        <p class="display-6 p-mitra">Punya pertanyaan? <br>
+          Hubungi kontak di bawah!</p>
+        <p class="display-6 nomer-hp"><strong>+62 896 6801 7778</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- About Us -->
+<section class="about-us" id="about">
+  <div class="background">
+    <h1 class="h1-about">OUR BUSINESS OUR HERITAGE</h1>
+  </div>
+  <div class="container text-about">
+    <h1 class="about-header">About Us</h1>
+    <p class="display-6 p-mitra">Kopma memainkan peran penting dalam kehidupan sehari-hari mahasiswa, yang dapat menawarkan berbagai
+      pilihan makanan untuk memenuhi selera dan kebutuhan yang berbeda serta berfungsi sebagai titik pertemuan
+      di mana mahasiswa dapat bertukar ide, bersosialisasi, dan memperdalam hubungan yang ada.
+      <br><br>
+      Kopma juga menyediakan pilihan tempat makan yang nyaman, sehingga memudahkan mahasiswa untuk mengakses makananselama jadwal sibuk mereka dan bisasnya
+      menawarkan harga yang lebih ramah bagi mahasiswa dengan pilihan pembayaran yang mudah, seperti uang tunai.
+    </p>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="warna-bg text-light pt-5 pb-4">
+  <div class="container text-md-left">
+    <div class="row text-md-left">
+      <div class="col-lg-3">
+        <h3 class="text-uppercase mb-4 font-weight-bold text-light text-center">Kopma Unsub</h3>
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-4">
+            <img src="<?= base_url('img') ?>/unsub.png" class="image-footer">
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="<?= base_url() ?>img/card2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Nasi Goreng</h5>
-            </div>
-            <div class="mb-5 d-flex justify-content-around">
-              <h4>Rp. 11.000</h4>
-              <button class="btn btn-dark">Beli Sekarang</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="<?= base_url() ?>img/card3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Ayam Krispy</h5>
-            </div>
-            <div class="mb-5 d-flex justify-content-around">
-              <h4>Rp. 11.000</h4>
-              <button class="btn btn-dark">Beli Sekarang</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="<?= base_url() ?>img/card4.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Ayam Krispy</h5>
-            </div>
-            <div class="mb-5 d-flex justify-content-around">
-              <h4>Rp. 11.000</h4>
-              <button class="btn btn-dark">Beli Sekarang</button>
-            </div>
+          <div class="col-lg-4">
+            <img src="<?= base_url('img') ?>/fasilkom.png" class="image-footer">
           </div>
         </div>
       </div>
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 py-4 text-center">
+        <h5 class="mb-4 font-weight-bold text-light">Location</h5>
+        <p>
+          <a class="text-light" style="text-decoration: none;">Universitas Subang</a><br>
+          <a class="text-light" style="text-decoration: none;">Jl. R.A. Kartini Km. 3</a>
+        </p>
+      </div>
+      <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3 py-4 text-center">
+        <h5 class="mb-4 font-weight-bold text-light">Contact us</h5>
+        <p>
+          <a href="mailto:KopmaUnsub@gmail.com" class="text-light" style="text-decoration: none;"><i class="bi bi-envelope-fill"> KopmaUnsub@gmail.com</i></a><br>
+          <a href="https://wa.link/vav2qc" class="text-light" style="text-decoration: none;"><i class="bi bi-whatsapp"> +62 896 6801 7778</i></a>
+        </p>
+      </div>
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 py-4 text-center">
+        <h5 class="mb-4 font-weight-bold text-light">Created by</h5>
+        <p>
+          <a class="text-light" style="text-decoration: none;">Kelompok 4 (3RA)</a>
+        </p>
+      </div>
     </div>
-  </section>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.minjs" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
-
-</html>
+    <div class="py-2">
+      <div class="garis-footer"></div>
+    </div>
+    <div class="text-center">
+      <p>Copyright &copy; 2023. All Right Reserved</p>
+    </div>
+  </div>
+  </div>
+</footer>
+<?php $this->endSection('content'); ?>

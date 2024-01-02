@@ -1,52 +1,33 @@
-<?php $this->extend('templates/template2'); ?>
+<?php $this->extend('templates/templateLogin'); ?>
 <?php $this->section('content'); ?>
-<div class="login-box">
-  <!-- /.login-logo -->
-  <div class="card card-outline card-dark">
-    <div class="card-header text-center">
-      <a href="../../index2.html" class="h1">Kopma</a>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-3">
+      <div class="login-container">
+        <h2 class="text-center">LUPA PASSWORD</h2>
+        <br>
+        <form action="<?= base_url('Pages/updatePassword') ?>" method="post">
+          <?= csrf_field(); ?>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="username" placeholder="Username" name="username">
+          </div>
+          <div class="mb-3 kodeotp-containter">
+            <input type="text" class="form-control" id="kodeotp" placeholder="Kode OTP" name="otp">
+          </div>
+          <div class="mb-3 password-container">
+            <input type="password" name="newPassword" class="form-control" id="password" placeholder="Password Baru">
+            <i class="fa fa-eye-slash show-password-btn" aria-hidden="true" onclick="togglePassword()"></i>
+          </div>
+
+          <div class="button-submit mb-3">
+            <button type="submit">SUBMIT</button>
+          </div>
+          <div class="btnback">
+            <a class="text-dark text-decoration-underline" href="<?= base_url('pages') ?>">Kembali</a>
+          </div>
+        </form>
+      </div>
     </div>
-    <div class="card-body">
-      <h5 class="login-box-msg">Lupa Password</h5>
-      <form action="<?= base_url('Pages/updatePassword') ?>" method="post">
-        <?= csrf_field(); ?>
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Username" name="username">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-user"></span>
-            </div>
-          </div>
-        </div>
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="OTP" name="otp">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fa fa-key"></span>
-            </div>
-          </div>
-        </div>
-        <div class="input-group mb-3">
-          <input name="newPassword" type="password" value="" class="input form-control" id="password" placeholder="New Password" required="true" aria-label="password" aria-describedby="basic-addon1" />
-          <div class="input-group-append">
-            <span class="input-group-text" onclick="password_show_hide();">
-              <i class="fas fa-eye" id="show_eye"></i>
-              <i class="fas fa-eye-slash d-none" id="hide_eye"></i>
-            </span>
-          </div>
-        </div>
-        <div class="d-flex justify-content-center">
-          <div class="col-4 d-block">
-            <button type="submit" class="btn btn-primary btn-block" name="tombol-login">Kirim</button>
-          </div>
-        </div>
-      </form>
-      <p class="mb-1">
-        <a href="<?= base_url('pages') ?>">Kembali</a>
-      </p>
-    </div>
-    <!-- /.card-body -->
   </div>
-  <!-- /.card -->
 </div>
 <?php $this->endSection('content'); ?>
