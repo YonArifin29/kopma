@@ -1,3 +1,4 @@
+const base_url = "http://localhost:8080/koprasi-mahasiswa/public";
 function password_show_hide() {
     var x = document.getElementById("password");
     var show_eye = document.getElementById("show_eye");
@@ -39,39 +40,65 @@ $(document).ready(function(){
         const id = $(this).data("id");
         $.ajax({
             type: "post",
-            url: "http://localhost:8080/EngStudy/public/Users/getUbah",
+            url: ""+base_url+"/Users/getProfileUser",
             data: {id : id},
             dataType: 'json',
             success: function (data) {
-                $('.modal-body').html(`
-                <input type='hidden' name='gambarLama' value='${data.foto}'>
-                <input type="hidden" class="form-control" name="id" value="${data.id_pengguna}">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Nama" name="nama" value="${data.nama}">
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                            <span class="fas fa-user"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="input-group mb-3 d-none">
-                        <input type="file" class="form-control" placeholder="Foto" name="foto">
-                        <div class="input-group-append">
-                            <div class="input-group-text"> 
-                            <span><img src='../public/img/${data.foto}' width='25' height='25'></span>
-                            </div>
-                        </div>
-                    </div>
-                `);
+                    data.forEach((item, index)=> {
+                        $('#modal-body').html(`
+                            <input type='hidden' name='fotoLama' value='${item.foto}'>
+                            <input type="hidden" class="form-control" name="id" value="${item.id_pengguna}">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Username" name="username" value="${item.username}">
+                                    <div class="input-group-append">
+                                        <div class="input-group-text">
+                                        <span class="fas fa-user"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Nama" name="nama" value="${item.nama}">
+                                    <div class="input-group-append">
+                                        <div class="input-group-text">
+                                        <span class="fas fa-user"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Nomor Hp" name="nomor_hp" value="${item.nomor_hp}">
+                                    <div class="input-group-append">
+                                        <div class="input-group-text">
+                                        <span class="fas fa-user"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Nama Usaha" name="nama_usaha" value="${item.nama_usaha}">
+                                    <div class="input-group-append">
+                                        <div class="input-group-text">
+                                        <span class="fas fa-user"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="file" class="form-control" placeholder="Foto" name="foto">
+                                    <div class="input-group-append">
+                                        <div class="input-group-text"> 
+                                        <span><img src='../public/img/${item.foto}' width='25' height='25'></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            `);
+                   });
+               
             }
         });
         $('.tEdit').removeClass('tEdit');
         
     });
 
-    
     $('.modal-footer').on('click', '.tSimpan', function () {
-        $("form").attr("action", "http://localhost:8080/EngStudy/public/Users/ubah");
+        $("form").attr("action", ""+base_url+"/Users/editProfileUser");
         $('.modal-footer').html(`
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button type="submit" class="btn btn-primary">Simpan</button>
@@ -87,8 +114,6 @@ $(document).ready(function(){
     var bs_modal = $('#modal-img');
     var image = document.getElementById('image');
     var cropper,reader,file;
-   
-    let namaFoto = 'b';
     
     $(".modal-body").on("change", ".image", function(e) {
         var files = e.target.files;
@@ -112,7 +137,6 @@ $(document).ready(function(){
             }
         }
     });
-    console.log(namaFoto);
     bs_modal.on('shown.bs.modal', function() {
         cropper = new Cropper(image, {
             aspectRatio: 1,
