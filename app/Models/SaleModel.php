@@ -33,8 +33,6 @@ class SaleModel extends Model
 
     public function getDataSaleByDate($date, $id_user)
     {
-        // $array = array('id_pengguna =' => $id_user, 'waktu =' => $date);
-        // return $this->builder->where($array)->get()->getResultArray();
 
         return $this->db->query("SELECT id_penjualan, kode, waktu, sum(total) as Total FROM penjualan_list WHERE DATE(waktu) = '$date' && id_pengguna = '$id_user' GROUP BY kode")->getResultArray();
     }
@@ -42,6 +40,22 @@ class SaleModel extends Model
     public function getDataSales($date)
     {
         return $this->db->query("SELECT nama, kode, waktu, sum(total) as Total FROM penjualan_list WHERE DATE(waktu) = '$date' GROUP BY kode")->getResultArray();
+    }
+
+    public function getPenjualanHariIni($date, $id)
+    {
+        return $this->db->query("SELECT sum(total) as Total FROM penjualan_list WHERE DATE(waktu) = '$date' && id_pengguna = '$id '")->getResultArray();
+    }
+
+    public function getSaleStatistic($id)
+    {
+        // nanti rubah menjadi DESC
+        return $this->db->query("SELECT SUM(total) AS Total FROM penjualan_list WHERE id_pengguna = '$id'GROUP BY DATE(waktu) ORDER BY DATE(waktu) ASC limit 7")->getResultArray();
+    }
+
+    public function getTotalSaleProduct($id)
+    {
+        return $this->db->query("SELECT sum(jumlah) as Total FROM struk_jual WHERE id_pengguna = '$id '")->getResultArray();
     }
 
     public function getNewDataSaleByKode($kode_transaksi)
@@ -54,6 +68,24 @@ class SaleModel extends Model
         return $this->db->query("SELECT id_penjualan, kode_penjualan, id_produk, kode_produk, harga, nama_produk, SUM(jumlah) AS Qty, SUM(jumlah * harga) AS Total FROM struk_jual WHERE kode_penjualan = '$kode_transaksi' GROUP BY id_produk;
         ")->getResultArray();
         // return $this->db->query("SELECT * FROM struk_jual WHERE kode_penjualan = '$kode_transaksi'")->getResultArray();
+    }
+
+    public function getPendapatanAdmin($waktu)
+    {
+        return $this->db->query("SELECT SUM(pendapatan_admin) AS pendapatan FROM struk_jual WHERE Date(waktu) = '$waktu';
+        ")->getResultArray();
+    }
+
+    public function getPendapatanPenjual($waktu, $id)
+    {
+        return $this->db->query("SELECT SUM(pendapatan_penjual) AS pendapatan FROM struk_jual WHERE Date(waktu) = '$waktu' && id_pengguna = '$id';
+        ")->getResultArray();
+    }
+
+    public function getPendapatanPenjualOneMonth($id)
+    {
+        return $this->db->query("SELECT SUM(pendapatan_penjual) as Total FROM struk_jual WHERE id_pengguna = '$id' GROUP BY DATE(waktu) ORDER BY DATE(waktu) DESC LIMIT 30
+        ")->getResultArray();
     }
 
     // public function getDataProductById($id_product = false)

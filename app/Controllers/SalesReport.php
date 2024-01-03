@@ -30,6 +30,7 @@ class SalesReport extends BaseController
             'activeLapPenjualan' => 'active',
             'userLogin' => $this->userModel->getDataUsersById($this->session->get('id')),
             'dataSales' => $this->saleModel->getDataSales($waktu),
+            'dataSales' => $this->saleModel->getDataSales($waktu),
             // 'rupiahHelper' => "",
             'road' => [
                 "<li class='breadcrumb-item'><a class='text-dark' href='" .  base_url('salesReport') . "'>Laporan Penjualan</a></li>",
@@ -37,5 +38,10 @@ class SalesReport extends BaseController
 
         ];
         return view('salesReport/index', $data);
+    }
+
+    public function getSaleStatistic()
+    {
+        echo json_encode($this->saleModel->getSaleStatistic($this->session->get('id')));
     }
 }

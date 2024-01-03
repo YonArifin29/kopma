@@ -5,6 +5,21 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
+                <div class="row">
+                    <div class="col-8"></div>
+                    <div class="col-4">
+                        <form action="#">
+                            <div class="input-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Y-M-D" name="tanggal">
+                                    <input type="text" class="form-control" placeholder="Y-M-D">
+                                    <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
             <!-- /.card-header -->
             <div class="card-body">

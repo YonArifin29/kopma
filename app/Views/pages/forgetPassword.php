@@ -18,7 +18,7 @@
             <button type="submit">SUBMIT</button>
           </div>
           <div class="backbutton">
-            <a class="text-dark text-decoration-underline" href="v<?= base_url('pages') ?>">Kembali</a>
+            <a class="text-dark text-decoration-underline" href="<?= base_url('pages') ?>">Kembali</a>
           </div>
         </form>
       </div>

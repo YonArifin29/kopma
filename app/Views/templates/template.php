@@ -45,6 +45,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+  <link rel='shortcut icon' href='<?= base_url('img') ?>/unsub.png'>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -261,6 +263,99 @@
   <script src="<?= base_url(); ?>/jsCalender/popper.js"></script>
   <script src="<?= base_url(); ?>/jsCalender/bootstrap.min.js"></script>
   <script src="<?= base_url(); ?>/jsCalender/main.js"></script>
+  <script>
+    $(document).ready(function() {
+      const base_url = "http://localhost:8080/koprasi-mahasiswa/public";
+      $.ajax({
+        type: "get",
+        url: "" + base_url + "/SalesReport/getSaleStatistic",
+        dataType: 'json',
+        success: function(data) {
+
+          google.charts.load('current', {
+            packages: ['corechart']
+          });
+          google.charts.setOnLoadCallback(drawChart);
+
+          function drawChart() {
+            // Create an array for chart data
+            const chartData = [
+              ['Day', 'Sale']
+            ];
+
+            // Populate chartData array
+            if (data.length == 0) {
+              chartData.push(['Day 0', 0]);
+            } else {
+              data.forEach((item, index) => {
+                chartData.push(['Day ' + (index + 1), parseInt(item.Total)]);
+              });
+            }
+
+            // Convert chartData to DataTable
+            const dataTable = google.visualization.arrayToDataTable(chartData);
+
+            // Set Options
+            const options = {
+              title: 'Penjualan dalam 7 hari terakhir',
+              hAxis: {
+                title: 'Hari'
+              },
+              vAxis: {
+                title: 'Penjualan'
+              },
+              legend: 'none'
+            };
+
+            // Draw
+            const chart = new google.visualization.LineChart(document.getElementById('myChart'));
+            chart.draw(dataTable, options);
+          }
+        }
+      });
+
+
+      // $.ajax({
+      //   type: "get", // Change type to "get"
+      //   url: "" + base_url + "/SalesReport/getSaleStatistic",
+      //   dataType: 'json',
+      //   success: function(data) {
+      //     google.charts.load('current', {
+      //       packages: ['corechart']
+      //     });
+      //     google.charts.setOnLoadCallback(drawChart);
+
+      //     function drawChart() {
+      //       // Set Data
+
+
+      //       const data = google.visualization.arrayToDataTable([
+      //         ['Day', 'Sale'],
+      //         data.forEach((item, index) => {
+      //           ['Day', parseInt(item.Total)],
+      //         })
+      //       ]);
+      //       // Set Options
+      //       const options = {
+      //         title: 'Penjulanan dalam 7 hari terakhir',
+      //         hAxis: {
+      //           title: 'Hari'
+      //         },
+      //         vAxis: {
+      //           title: 'Penjualan'
+      //         },
+      //         legend: 'none'
+      //       };
+      //       // Draw
+      //       const chart = new google.visualization.LineChart(document.getElementById('myChart'));
+      //       chart.draw(data, options);
+      //     }
+      //   }
+      // });
+
+      // Rest of your code...
+    });
+  </script>
   <!-- jsCalender -->
   <script>
     // sweeta alert

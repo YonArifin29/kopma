@@ -1,0 +1,88 @@
+ERROR - 2024-01-04 02:52:25 --> mysqli_sql_exception: Unknown column 'id_pengguna' in 'where clause' in D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT SUM(pend...', 0)
+#1 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(pend...')
+#2 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(pend...')
+#3 D:\2023\koprasi-mahasiswa\app\Models\SaleModel.php(70): CodeIgniter\Database\BaseConnection->query('SELECT SUM(pend...')
+#4 D:\2023\koprasi-mahasiswa\app\Controllers\Home.php(38): App\Models\SaleModel->getPendapatanPenjual('2024-01-04', '56')
+#5 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#6 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\2023\koprasi-mahasiswa\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-04 02:52:25 --> Unknown column 'id_pengguna' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SaleModel.php(70): CodeIgniter\Database\BaseConnection->query('SELECT SUM(pendapatan_penjual) AS pendapatan FROM struk_jual WHERE Date(waktu) = \'2024-01-04\' && id_pengguna = \'56\';
+        ')
+ 2 APPPATH\Controllers\Home.php(38): App\Models\SaleModel->getPendapatanPenjual('2024-01-04', '56')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-04 02:52:43 --> mysqli_sql_exception: Unknown column 'id_pengguna' in 'where clause' in D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT SUM(pend...', 0)
+#1 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(pend...')
+#2 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(pend...')
+#3 D:\2023\koprasi-mahasiswa\app\Models\SaleModel.php(70): CodeIgniter\Database\BaseConnection->query('SELECT SUM(pend...')
+#4 D:\2023\koprasi-mahasiswa\app\Controllers\Home.php(38): App\Models\SaleModel->getPendapatanPenjual('2024-01-04', '56')
+#5 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#6 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\2023\koprasi-mahasiswa\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-04 02:52:43 --> Unknown column 'id_pengguna' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SaleModel.php(70): CodeIgniter\Database\BaseConnection->query('SELECT SUM(pendapatan_penjual) AS pendapatan FROM struk_jual WHERE Date(waktu) = \'2024-01-04\' && id_pengguna = \'56\';
+        ')
+ 2 APPPATH\Controllers\Home.php(38): App\Models\SaleModel->getPendapatanPenjual('2024-01-04', '56')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 04:35:25 --> Unsupported operand types: int + array
+in APPPATH\Helpers\my_function_helper.php on line 16.
+ 1 APPPATH\Views\home\index.php(77): sum([...])
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/index', [], true)
+ 5 APPPATH\Controllers\Home.php(45): view('home/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 04:38:05 --> Unsupported operand types: int + array
+in APPPATH\Views\home\index.php on line 77.
+ 1 APPPATH\Views\home\index.php(77): array_sum([...])
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/index', [], true)
+ 5 APPPATH\Controllers\Home.php(45): view('home/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 04:44:05 --> Undefined variable $sum
+in APPPATH\Helpers\my_function_helper.php on line 18.
+ 1 APPPATH\Helpers\my_function_helper.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sum', 'D:\\2023\\koprasi-mahasiswa\\app\\Helpers\\my_function_helper.php', 18)
+ 2 APPPATH\Views\home\index.php(77): sum([...])
+ 3 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\home\\index.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/index', [], true)
+ 6 APPPATH\Controllers\Home.php(45): view('home/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 04:45:33 --> Array to string conversion
+in APPPATH\Helpers\my_function_helper.php on line 16.
+ 1 APPPATH\Helpers\my_function_helper.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\2023\\koprasi-mahasiswa\\app\\Helpers\\my_function_helper.php', 16)
+ 2 APPPATH\Views\home\index.php(77): sum([...])
+ 3 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\home\\index.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/index', [], true)
+ 6 APPPATH\Controllers\Home.php(45): view('home/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

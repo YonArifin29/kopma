@@ -16,6 +16,7 @@
     <!-- CDN Icon Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel='shortcut icon' href='<?= base_url('img') ?>/unsub.png'>
 </head>
 
 <body>

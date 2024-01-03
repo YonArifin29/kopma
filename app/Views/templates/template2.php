@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="<?= base_url() ?>css/style3.css">
     <link rel="stylesheet" href="<?= base_url() ?>css/bootstrap1.css">
+    <link rel='shortcut icon' href='<?= base_url('img') ?>/unsub.png'>
 </head>
 
 <body>
