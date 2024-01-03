@@ -13,7 +13,6 @@
                         <tr>
                             <th style="width: 10px">#</th>
                             <th>Nama</th>
-                            <th>Email</th>
                             <th>Nomor Hp</th>
                             <th>alamat</th>
                             <th>Nama Usaha</th>
@@ -32,12 +31,11 @@
                             <tr>
                                 <td><?= $no ?></td>
                                 <td><?= $user['nama']; ?></td>
-                                <td><?= $user['email']; ?></td>
                                 <td><?= $user['nomor_hp']; ?></td>
                                 <td><?= $user['alamat']; ?></td>
                                 <td><?= $user['nama_usaha']; ?></td>
-                                <td><?= $user['level']; ?></td>
-                                <td><?= $user['status']; ?></td>
+                                <td><?= level($user['level']); ?></td>
+                                <td><?= status($user['status']); ?></td>
                                 <td>
                                     <a href="<?= base_url('users/editUser'); ?>/<?= $user['id_pengguna']; ?>" class="badge btn btn-primary ">Edit</a>
                                     <a href="<?= base_url('users/delete'); ?>/<?= $user['id_pengguna']; ?>" class="badge btn btn-danger btn-hapus">Hapus</a>

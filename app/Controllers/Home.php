@@ -3,16 +3,18 @@
 namespace App\Controllers;
 
 use App\Models\UserModel;
-use App\libraries\jquery;
+use App\Models\ProductModel;
 
 class Home extends BaseController
 {
     protected $session;
     protected $userModel;
+    protected $productModel;
     public function __construct()
     {
         $this->session = \Config\Services::session();
         $this->userModel = new UserModel();
+        $this->productModel = new ProductModel();
     }
 
     public function index()
@@ -26,7 +28,10 @@ class Home extends BaseController
                 'jenisLogin' => $this->session->get('jenisLog'),
                 'activeHome' => 'active',
                 'userLogin' => $this->userModel->getDataUsersById($this->session->get('id')),
-                'getDataUserByOnlineStatus' => $this->userModel->getDataUsersByOnStatus()
+                'getDataUserByOnlineStatus' => $this->userModel->getDataUsersByOnStatus(),
+                'road' => [
+                    "<li class='breadcrumb-item'><a class='text-dark' href='" . base_url('home') . "'>Home</a></li>",
+                ]
             ];
             return view('home/index', $data);
         }
@@ -35,8 +40,11 @@ class Home extends BaseController
     public function homePage()
     {
         $data = [
-            'title' => 'Home Page'
+            'title' => 'Home Page',
+            'dataSomeProduct' => $this->productModel->dataSomeProduct(),
+            'dataProductBestSeller' => $this->productModel->dataProductBestSeller(),
         ];
+        // dd($this->productModel->dataProductBestSeller());
         return view('home/homePage', $data);
     }
 }

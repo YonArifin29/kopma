@@ -28,6 +28,16 @@ class ProductModel extends Model
         return $this->builder->where('id_produk', $id_product)->get()->getResultArray();
     }
 
+    public function dataSomeProduct()
+    {
+        return $this->builder->orderBy('id_produk', 'DESC')->limit(4)->get()->getResultArray();
+    }
+
+    public function dataProductBestSeller()
+    {
+        return $this->db->query("SELECT id_penjualan, kode_penjualan, id_produk, gambar, SUM(jumlah) AS total, harga, kode_produk, nama_produk FROM struk_jual GROUP BY id_produk ORDER BY total DESC LIMIT 4")->getResultArray();
+    }
+
     public function getDataProductByUser($id_user)
     {
 

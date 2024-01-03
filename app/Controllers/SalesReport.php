@@ -30,7 +30,10 @@ class SalesReport extends BaseController
             'activeLapPenjualan' => 'active',
             'userLogin' => $this->userModel->getDataUsersById($this->session->get('id')),
             'dataSales' => $this->saleModel->getDataSales($waktu),
-            'rupiahHelper' => ""
+            // 'rupiahHelper' => "",
+            'road' => [
+                "<li class='breadcrumb-item'><a class='text-dark' href='" .  base_url('salesReport') . "'>Laporan Penjualan</a></li>",
+            ]
 
         ];
         return view('salesReport/index', $data);

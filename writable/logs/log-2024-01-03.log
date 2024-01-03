@@ -1,0 +1,1095 @@
+INFO - 2024-01-03 02:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 02:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 02:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 02:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 02:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 02:33:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 02:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 02:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 02:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 02:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 02:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 02:34:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 02:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 02:36:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 02:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 02:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 02:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 02:36:58 --> file_get_contents(D:\2023\koprasi-mahasiswa\writable\debugbar/debugbar_1704191347.253020.json): Failed to open stream: No such file or directory
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 84.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(D:\\2023\\koprasi-mahasiswa\\writable\\debugbar/debugbar_1704191347.253020.json): Failed to open stream: No such file or directory', 'D:\\2023\\koprasi-mahasiswa\\system\\Debug\\Toolbar\\Collectors\\History.php', 84)
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(84): file_get_contents('D:\\2023\\koprasi-mahasiswa\\writable\\debugbar/debugbar_1704191347.253020.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1704249384.499971', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(476): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(152): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(434): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 02:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 02:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 02:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 02:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 02:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 02:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 02:55:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:20:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:20:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:29:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:41:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:41:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:42:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:52:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:52:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:53:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:53:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:55:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:56:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:56:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:57:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 06:59:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:00:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:06:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:11:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:23:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:24:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:45:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:47:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:47:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:47:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:48:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:50:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:51:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:51:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:51:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:52:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:52:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:57:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:59:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 14:59:03 --> Undefined array key 0
+in APPPATH\Controllers\Sale.php on line 117.
+ 1 APPPATH\Controllers\Sale.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\2023\\koprasi-mahasiswa\\app\\Controllers\\Sale.php', 117)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Sale->save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sale))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 07:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:59:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:59:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:59:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:59:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:59:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 07:59:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:00:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:02:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:16:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:23:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:26:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:27:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:27:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:27:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:28:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:28:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:28:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:28:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:30:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:30:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:31:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:33:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:36:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:36:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:38:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:38:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:39:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:39:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:40:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-03 15:40:21 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_kopma`.`penjualan`, CONSTRAINT `penjualan_ibfk_1` FOREIGN KEY (`id_pengguna`) REFERENCES `pengguna` (`id_pengguna`)) in D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pe...', 0)
+#1 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pe...')
+#2 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pe...')
+#3 D:\2023\koprasi-mahasiswa\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pe...', Array, false)
+#4 D:\2023\koprasi-mahasiswa\app\Models\UserModel.php(66): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 D:\2023\koprasi-mahasiswa\app\Controllers\Users.php(236): App\Models\UserModel->deleteData('58')
+#6 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(919): App\Controllers\Users->delete('58')
+#7 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\koprasi-mahasiswa\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 15:40:21 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_kopma`.`penjualan`, CONSTRAINT `penjualan_ibfk_1` FOREIGN KEY (`id_pengguna`) REFERENCES `pengguna` (`id_pengguna`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pengguna`
+WHERE `id_pengguna` = :id_pengguna:', [...], false)
+ 2 APPPATH\Models\UserModel.php(66): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Users.php(236): App\Models\UserModel->deleteData('58')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->delete('58')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 08:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:40:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:40:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:41:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:41:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:41:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:41:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-03 15:41:44 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_kopma`.`penjualan`, CONSTRAINT `penjualan_ibfk_1` FOREIGN KEY (`id_pengguna`) REFERENCES `pengguna` (`id_pengguna`)) in D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pe...', 0)
+#1 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pe...')
+#2 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pe...')
+#3 D:\2023\koprasi-mahasiswa\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pe...', Array, false)
+#4 D:\2023\koprasi-mahasiswa\app\Models\UserModel.php(66): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 D:\2023\koprasi-mahasiswa\app\Controllers\Users.php(236): App\Models\UserModel->deleteData('58')
+#6 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(919): App\Controllers\Users->delete('58')
+#7 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\koprasi-mahasiswa\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 15:41:44 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_kopma`.`penjualan`, CONSTRAINT `penjualan_ibfk_1` FOREIGN KEY (`id_pengguna`) REFERENCES `pengguna` (`id_pengguna`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pengguna`
+WHERE `id_pengguna` = :id_pengguna:', [...], false)
+ 2 APPPATH\Models\UserModel.php(66): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Users.php(236): App\Models\UserModel->deleteData('58')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->delete('58')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 08:41:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:43:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-03 15:43:32 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_kopma`.`penjualan`, CONSTRAINT `penjualan_ibfk_1` FOREIGN KEY (`id_pengguna`) REFERENCES `pengguna` (`id_pengguna`)) in D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pe...', 0)
+#1 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pe...')
+#2 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pe...')
+#3 D:\2023\koprasi-mahasiswa\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pe...', Array, false)
+#4 D:\2023\koprasi-mahasiswa\app\Models\UserModel.php(66): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 D:\2023\koprasi-mahasiswa\app\Controllers\Users.php(236): App\Models\UserModel->deleteData('58')
+#6 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(919): App\Controllers\Users->delete('58')
+#7 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\koprasi-mahasiswa\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 15:43:32 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_kopma`.`penjualan`, CONSTRAINT `penjualan_ibfk_1` FOREIGN KEY (`id_pengguna`) REFERENCES `pengguna` (`id_pengguna`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pengguna`
+WHERE `id_pengguna` = :id_pengguna:', [...], false)
+ 2 APPPATH\Models\UserModel.php(66): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Users.php(236): App\Models\UserModel->deleteData('58')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->delete('58')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 08:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:45:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-03 15:45:30 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_kopma`.`penjualan`, CONSTRAINT `penjualan_ibfk_1` FOREIGN KEY (`id_pengguna`) REFERENCES `pengguna` (`id_pengguna`)) in D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pe...', 0)
+#1 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pe...')
+#2 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pe...')
+#3 D:\2023\koprasi-mahasiswa\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pe...', Array, false)
+#4 D:\2023\koprasi-mahasiswa\app\Models\UserModel.php(66): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 D:\2023\koprasi-mahasiswa\app\Controllers\Users.php(236): App\Models\UserModel->deleteData('58')
+#6 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(919): App\Controllers\Users->delete('58')
+#7 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\koprasi-mahasiswa\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 15:45:31 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_kopma`.`penjualan`, CONSTRAINT `penjualan_ibfk_1` FOREIGN KEY (`id_pengguna`) REFERENCES `pengguna` (`id_pengguna`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pengguna`
+WHERE `id_pengguna` = :id_pengguna:', [...], false)
+ 2 APPPATH\Models\UserModel.php(66): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Users.php(236): App\Models\UserModel->deleteData('58')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->delete('58')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 08:46:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-03 15:48:06 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_kopma`.`penjualan`, CONSTRAINT `penjualan_ibfk_1` FOREIGN KEY (`id_pengguna`) REFERENCES `pengguna` (`id_pengguna`)) in D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pe...', 0)
+#1 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pe...')
+#2 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pe...')
+#3 D:\2023\koprasi-mahasiswa\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pe...', Array, false)
+#4 D:\2023\koprasi-mahasiswa\app\Models\UserModel.php(66): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 D:\2023\koprasi-mahasiswa\app\Controllers\Users.php(236): App\Models\UserModel->deleteData('58')
+#6 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(919): App\Controllers\Users->delete('58')
+#7 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\koprasi-mahasiswa\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 15:48:06 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_kopma`.`penjualan`, CONSTRAINT `penjualan_ibfk_1` FOREIGN KEY (`id_pengguna`) REFERENCES `pengguna` (`id_pengguna`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pengguna`
+WHERE `id_pengguna` = :id_pengguna:', [...], false)
+ 2 APPPATH\Models\UserModel.php(66): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Users.php(236): App\Models\UserModel->deleteData('58')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->delete('58')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 08:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-03 15:49:02 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_kopma`.`penjualan`, CONSTRAINT `penjualan_ibfk_1` FOREIGN KEY (`id_pengguna`) REFERENCES `pengguna` (`id_pengguna`)) in D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pe...', 0)
+#1 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pe...')
+#2 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pe...')
+#3 D:\2023\koprasi-mahasiswa\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pe...', Array, false)
+#4 D:\2023\koprasi-mahasiswa\app\Models\UserModel.php(66): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 D:\2023\koprasi-mahasiswa\app\Controllers\Users.php(236): App\Models\UserModel->deleteData('58')
+#6 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(919): App\Controllers\Users->delete('58')
+#7 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\koprasi-mahasiswa\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 15:49:02 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_kopma`.`penjualan`, CONSTRAINT `penjualan_ibfk_1` FOREIGN KEY (`id_pengguna`) REFERENCES `pengguna` (`id_pengguna`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pengguna`
+WHERE `id_pengguna` = :id_pengguna:', [...], false)
+ 2 APPPATH\Models\UserModel.php(66): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Users.php(236): App\Models\UserModel->deleteData('58')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->delete('58')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 08:49:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-03 15:49:10 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_kopma`.`penjualan`, CONSTRAINT `penjualan_ibfk_1` FOREIGN KEY (`id_pengguna`) REFERENCES `pengguna` (`id_pengguna`)) in D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pe...', 0)
+#1 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pe...')
+#2 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pe...')
+#3 D:\2023\koprasi-mahasiswa\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pe...', Array, false)
+#4 D:\2023\koprasi-mahasiswa\app\Models\UserModel.php(66): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 D:\2023\koprasi-mahasiswa\app\Controllers\Users.php(236): App\Models\UserModel->deleteData('58')
+#6 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(919): App\Controllers\Users->delete('58')
+#7 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\koprasi-mahasiswa\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 15:49:10 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_kopma`.`penjualan`, CONSTRAINT `penjualan_ibfk_1` FOREIGN KEY (`id_pengguna`) REFERENCES `pengguna` (`id_pengguna`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pengguna`
+WHERE `id_pengguna` = :id_pengguna:', [...], false)
+ 2 APPPATH\Models\UserModel.php(66): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Users.php(236): App\Models\UserModel->deleteData('58')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->delete('58')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 08:51:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-03 15:51:36 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_kopma`.`penjualan`, CONSTRAINT `penjualan_ibfk_1` FOREIGN KEY (`id_pengguna`) REFERENCES `pengguna` (`id_pengguna`)) in D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pe...', 0)
+#1 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pe...')
+#2 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pe...')
+#3 D:\2023\koprasi-mahasiswa\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pe...', Array, false)
+#4 D:\2023\koprasi-mahasiswa\app\Models\UserModel.php(66): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 D:\2023\koprasi-mahasiswa\app\Controllers\Users.php(236): App\Models\UserModel->deleteData('58')
+#6 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(919): App\Controllers\Users->delete('58')
+#7 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\koprasi-mahasiswa\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 15:51:36 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_kopma`.`penjualan`, CONSTRAINT `penjualan_ibfk_1` FOREIGN KEY (`id_pengguna`) REFERENCES `pengguna` (`id_pengguna`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pengguna`
+WHERE `id_pengguna` = :id_pengguna:', [...], false)
+ 2 APPPATH\Models\UserModel.php(66): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Users.php(236): App\Models\UserModel->deleteData('58')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Users->delete('58')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 08:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:51:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:52:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:52:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:52:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:52:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:52:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 15:58:13 --> unlink(../public/img/1704104011_b162d9a0f0af6e8bc077): No such file or directory
+in APPPATH\Controllers\Product.php on line 194.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/img/1704104011_b162d9a0f0af6e8bc077): No such file or directory', 'D:\\2023\\koprasi-mahasiswa\\app\\Controllers\\Product.php', 194)
+ 2 APPPATH\Controllers\Product.php(194): unlink('../public/img/1704104011_b162d9a0f0af6e8bc077')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 08:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 15:58:13 --> unlink(../public/img/1704104011_b162d9a0f0af6e8bc077): No such file or directory
+in APPPATH\Controllers\Product.php on line 194.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/img/1704104011_b162d9a0f0af6e8bc077): No such file or directory', 'D:\\2023\\koprasi-mahasiswa\\app\\Controllers\\Product.php', 194)
+ 2 APPPATH\Controllers\Product.php(194): unlink('../public/img/1704104011_b162d9a0f0af6e8bc077')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->edit()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 08:59:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:59:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:02:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:03:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:05:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:05:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:10:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:14:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:16:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:16:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:17:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:17:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:19:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:19:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:19:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:20:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:21:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 16:22:01 --> Undefined array key 0
+in APPPATH\Views\templates\sidebar.php on line 14.
+ 1 APPPATH\Views\templates\sidebar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('templates/sidebar', null, true)
+ 5 APPPATH\Views\templates\template.php(59): CodeIgniter\View\View->include('templates/sidebar')
+ 6 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('templates/template', [], true)
+ 9 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('product/addProduct', [], true)
+10 APPPATH\Controllers\Product.php(54): view('product/addProduct', [...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->addProduct()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 09:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 16:22:06 --> Undefined array key 0
+in APPPATH\Views\templates\sidebar.php on line 14.
+ 1 APPPATH\Views\templates\sidebar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('templates/sidebar', null, true)
+ 5 APPPATH\Views\templates\template.php(59): CodeIgniter\View\View->include('templates/sidebar')
+ 6 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('templates/template', [], true)
+ 9 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('product/addProduct', [], true)
+10 APPPATH\Controllers\Product.php(54): view('product/addProduct', [...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->addProduct()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 09:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 16:22:09 --> Undefined array key 0
+in APPPATH\Views\templates\sidebar.php on line 14.
+ 1 APPPATH\Views\templates\sidebar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('templates/sidebar', null, true)
+ 5 APPPATH\Views\templates\template.php(59): CodeIgniter\View\View->include('templates/sidebar')
+ 6 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('templates/template', [], true)
+ 9 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('product/dataProduct', [], true)
+10 APPPATH\Controllers\Product.php(37): view('product/dataProduct', [...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 09:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 16:22:11 --> Undefined array key 0
+in APPPATH\Views\templates\sidebar.php on line 14.
+ 1 APPPATH\Views\templates\sidebar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('templates/sidebar', null, true)
+ 5 APPPATH\Views\templates\template.php(59): CodeIgniter\View\View->include('templates/sidebar')
+ 6 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('templates/template', [], true)
+ 9 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sale/dataSale', [], true)
+10 APPPATH\Controllers\Sale.php(41): view('sale/dataSale', [...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Sale->index()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sale))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 09:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 16:22:13 --> Undefined array key 0
+in APPPATH\Views\templates\sidebar.php on line 14.
+ 1 APPPATH\Views\templates\sidebar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('templates/sidebar', null, true)
+ 5 APPPATH\Views\templates\template.php(59): CodeIgniter\View\View->include('templates/sidebar')
+ 6 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('templates/template', [], true)
+ 9 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sale/editSale', [], true)
+10 APPPATH\Controllers\Sale.php(150): view('sale/editSale', [...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Sale->editSale('20240103145829')
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sale))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 09:22:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 16:22:22 --> Undefined array key 0
+in APPPATH\Views\templates\sidebar.php on line 14.
+ 1 APPPATH\Views\templates\sidebar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('templates/sidebar', null, true)
+ 5 APPPATH\Views\templates\template.php(59): CodeIgniter\View\View->include('templates/sidebar')
+ 6 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('templates/template', [], true)
+ 9 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sale/editSale', [], true)
+10 APPPATH\Controllers\Sale.php(150): view('sale/editSale', [...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Sale->editSale('20240103145829')
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sale))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 09:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 16:22:25 --> Undefined array key 0
+in APPPATH\Views\templates\sidebar.php on line 14.
+ 1 APPPATH\Views\templates\sidebar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('templates/sidebar', null, true)
+ 5 APPPATH\Views\templates\template.php(59): CodeIgniter\View\View->include('templates/sidebar')
+ 6 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('templates/template', [], true)
+ 9 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sale/dataSale', [], true)
+10 APPPATH\Controllers\Sale.php(41): view('sale/dataSale', [...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Sale->index()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sale))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 09:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 16:22:25 --> Undefined array key 0
+in APPPATH\Views\templates\sidebar.php on line 14.
+ 1 APPPATH\Views\templates\sidebar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('templates/sidebar', null, true)
+ 5 APPPATH\Views\templates\template.php(59): CodeIgniter\View\View->include('templates/sidebar')
+ 6 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('templates/template', [], true)
+ 9 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('product/addProduct', [], true)
+10 APPPATH\Controllers\Product.php(54): view('product/addProduct', [...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->addProduct()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 09:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 16:22:26 --> Undefined array key 0
+in APPPATH\Views\templates\sidebar.php on line 14.
+ 1 APPPATH\Views\templates\sidebar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('templates/sidebar', null, true)
+ 5 APPPATH\Views\templates\template.php(59): CodeIgniter\View\View->include('templates/sidebar')
+ 6 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('templates/template', [], true)
+ 9 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('product/dataProduct', [], true)
+10 APPPATH\Controllers\Product.php(37): view('product/dataProduct', [...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 09:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 16:22:26 --> Undefined array key 0
+in APPPATH\Views\templates\sidebar.php on line 14.
+ 1 APPPATH\Views\templates\sidebar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('templates/sidebar', null, true)
+ 5 APPPATH\Views\templates\template.php(59): CodeIgniter\View\View->include('templates/sidebar')
+ 6 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('templates/template', [], true)
+ 9 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sale/dataSale', [], true)
+10 APPPATH\Controllers\Sale.php(41): view('sale/dataSale', [...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Sale->index()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sale))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 09:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 16:22:27 --> Undefined array key 0
+in APPPATH\Views\templates\sidebar.php on line 14.
+ 1 APPPATH\Views\templates\sidebar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('templates/sidebar', null, true)
+ 5 APPPATH\Views\templates\template.php(59): CodeIgniter\View\View->include('templates/sidebar')
+ 6 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('templates/template', [], true)
+ 9 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('product/dataProduct', [], true)
+10 APPPATH\Controllers\Product.php(37): view('product/dataProduct', [...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 09:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 16:22:29 --> Undefined array key 0
+in APPPATH\Views\templates\sidebar.php on line 14.
+ 1 APPPATH\Views\templates\sidebar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('templates/sidebar', null, true)
+ 5 APPPATH\Views\templates\template.php(59): CodeIgniter\View\View->include('templates/sidebar')
+ 6 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('templates/template', [], true)
+ 9 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('product/editProduct', [], true)
+10 APPPATH\Controllers\Product.php(136): view('product/editProduct', [...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->editProduct('87')
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 09:22:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 16:22:30 --> Undefined array key 0
+in APPPATH\Views\templates\sidebar.php on line 14.
+ 1 APPPATH\Views\templates\sidebar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('templates/sidebar', null, true)
+ 5 APPPATH\Views\templates\template.php(59): CodeIgniter\View\View->include('templates/sidebar')
+ 6 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('templates/template', [], true)
+ 9 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('product/dataProduct', [], true)
+10 APPPATH\Controllers\Product.php(37): view('product/dataProduct', [...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 09:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 16:22:31 --> Undefined array key 0
+in APPPATH\Views\templates\sidebar.php on line 14.
+ 1 APPPATH\Views\templates\sidebar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('templates/sidebar', null, true)
+ 5 APPPATH\Views\templates\template.php(59): CodeIgniter\View\View->include('templates/sidebar')
+ 6 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('templates/template', [], true)
+ 9 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('product/addProduct', [], true)
+10 APPPATH\Controllers\Product.php(54): view('product/addProduct', [...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->addProduct()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 09:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 16:22:32 --> Undefined array key 0
+in APPPATH\Views\templates\sidebar.php on line 14.
+ 1 APPPATH\Views\templates\sidebar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('templates/sidebar', null, true)
+ 5 APPPATH\Views\templates\template.php(59): CodeIgniter\View\View->include('templates/sidebar')
+ 6 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('templates/template', [], true)
+ 9 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('product/dataProduct', [], true)
+10 APPPATH\Controllers\Product.php(37): view('product/dataProduct', [...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 09:22:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 16:22:43 --> Undefined array key 0
+in APPPATH\Views\templates\sidebar.php on line 14.
+ 1 APPPATH\Views\templates\sidebar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('templates/sidebar', null, true)
+ 5 APPPATH\Views\templates\template.php(59): CodeIgniter\View\View->include('templates/sidebar')
+ 6 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\templates\\template.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('templates/template', [], true)
+ 9 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('product/dataProduct', [], true)
+10 APPPATH\Controllers\Product.php(37): view('product/dataProduct', [...])
+11 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+12 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+13 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 09:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:23:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:23:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:23:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:23:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:23:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:25:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:25:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:25:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:27:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:27:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:27:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 09:27:36 --> unlink(D:\2023\koprasi-mahasiswa\writable\debugbar/debugbar_1704273863.992311.json): No such file or directory
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 78.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(D:\\2023\\koprasi-mahasiswa\\writable\\debugbar/debugbar_1704273863.992311.json): No such file or directory', 'D:\\2023\\koprasi-mahasiswa\\system\\Debug\\Toolbar\\Collectors\\History.php', 78)
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(78): unlink('D:\\2023\\koprasi-mahasiswa\\writable\\debugbar/debugbar_1704273863.992311.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(499): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1704274055.820527', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(476): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(152): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(434): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 09:27:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:28:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:28:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:30:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:38:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:41:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:45:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:49:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:49:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:49:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:49:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:51:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:54:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:13:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:25:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 17:54:12 --> Undefined array key "gambar"
+in APPPATH\Views\home\homePage.php on line 21.
+ 1 APPPATH\Views\home\homePage.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gambar"', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\home\\homePage.php', 21)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\home\\homePage.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/homePage', [], true)
+ 5 APPPATH\Controllers\Home.php(47): view('home/homePage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->homePage()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 10:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 17:57:11 --> Undefined array key "gambar"
+in APPPATH\Views\home\homePage.php on line 21.
+ 1 APPPATH\Views\home\homePage.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gambar"', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\home\\homePage.php', 21)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\home\\homePage.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/homePage', [], true)
+ 5 APPPATH\Controllers\Home.php(47): view('home/homePage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->homePage()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 10:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 17:57:23 --> Undefined array key "gambar"
+in APPPATH\Views\home\homePage.php on line 21.
+ 1 APPPATH\Views\home\homePage.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gambar"', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\home\\homePage.php', 21)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\home\\homePage.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/homePage', [], true)
+ 5 APPPATH\Controllers\Home.php(47): view('home/homePage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->homePage()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 10:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 17:57:26 --> Undefined array key "gambar"
+in APPPATH\Views\home\homePage.php on line 21.
+ 1 APPPATH\Views\home\homePage.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gambar"', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\home\\homePage.php', 21)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\home\\homePage.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/homePage', [], true)
+ 5 APPPATH\Controllers\Home.php(47): view('home/homePage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->homePage()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 10:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 17:57:50 --> Undefined array key "gambar"
+in APPPATH\Views\home\homePage.php on line 21.
+ 1 APPPATH\Views\home\homePage.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gambar"', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\home\\homePage.php', 21)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\home\\homePage.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/homePage', [], true)
+ 5 APPPATH\Controllers\Home.php(47): view('home/homePage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->homePage()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 10:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:59:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 17:59:54 --> Undefined array key "harga_jual"
+in APPPATH\Views\home\homePage.php on line 26.
+ 1 APPPATH\Views\home\homePage.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "harga_jual"', 'D:\\2023\\koprasi-mahasiswa\\app\\Views\\home\\homePage.php', 26)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\2023\\koprasi-mahasiswa\\app\\Views\\home\\homePage.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/homePage', [], true)
+ 5 APPPATH\Controllers\Home.php(47): view('home/homePage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->homePage()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 11:00:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:01:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:02:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:06:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-03 18:06:37 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_kopma`.`penjualan`, CONSTRAINT `penjualan_ibfk_2` FOREIGN KEY (`id_produk`) REFERENCES `produk` (`id_produk`)) in D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pr...', 0)
+#1 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 D:\2023\koprasi-mahasiswa\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 D:\2023\koprasi-mahasiswa\app\Models\ProductModel.php(68): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 D:\2023\koprasi-mahasiswa\app\Controllers\Product.php(213): App\Models\ProductModel->deleteData('76')
+#6 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(919): App\Controllers\Product->delete('76')
+#7 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\koprasi-mahasiswa\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 18:06:37 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_kopma`.`penjualan`, CONSTRAINT `penjualan_ibfk_2` FOREIGN KEY (`id_produk`) REFERENCES `produk` (`id_produk`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `produk`
+WHERE `id_produk` = :id_produk:', [...], false)
+ 2 APPPATH\Models\ProductModel.php(68): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Product.php(213): App\Models\ProductModel->deleteData('76')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->delete('76')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 11:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-03 18:06:59 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_kopma`.`penjualan`, CONSTRAINT `penjualan_ibfk_2` FOREIGN KEY (`id_produk`) REFERENCES `produk` (`id_produk`)) in D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\2023\koprasi-mahasiswa\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pr...', 0)
+#1 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 D:\2023\koprasi-mahasiswa\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 D:\2023\koprasi-mahasiswa\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 D:\2023\koprasi-mahasiswa\app\Models\ProductModel.php(68): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 D:\2023\koprasi-mahasiswa\app\Controllers\Product.php(213): App\Models\ProductModel->deleteData('76')
+#6 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(919): App\Controllers\Product->delete('76')
+#7 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 D:\2023\koprasi-mahasiswa\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\2023\koprasi-mahasiswa\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 18:06:59 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_kopma`.`penjualan`, CONSTRAINT `penjualan_ibfk_2` FOREIGN KEY (`id_produk`) REFERENCES `produk` (`id_produk`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `produk`
+WHERE `id_produk` = :id_produk:', [...], false)
+ 2 APPPATH\Models\ProductModel.php(68): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Product.php(213): App\Models\ProductModel->deleteData('76')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->delete('76')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 11:07:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:07:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:07:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:07:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:07:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:08:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:09:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 11:12:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

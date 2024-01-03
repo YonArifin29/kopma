@@ -125,7 +125,7 @@
 
                     <tr>
                         <td class="text-center" colspan='5'><b>Total</b></td>
-                        <td><b><?= $total ?? ""; ?></b></td>
+                        <td><b><?= rupiah($total) ?? ""; ?></b></td>
                     </tr>
                     </tbody>
                 </table>

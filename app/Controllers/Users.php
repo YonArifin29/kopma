@@ -25,7 +25,11 @@ class Users extends BaseController
             'jenisLogin' => $this->session->get('jenisLog'),
             'activeHalUsers' => 'active',
             'dataUsers' => $this->userModel->getDataUsers(),
-            'userLogin' => $this->userModel->getDataUsersById($this->session->get('id'))
+            'userLogin' => $this->userModel->getDataUsersById($this->session->get('id')),
+            'road' => [
+                "<li class='breadcrumb-item'><a class='text-dark' href='" . base_url('users') . "'>Kelola Pengguna</a></li>",
+                "<li class='breadcrumb-item'><a class='text-dark' href='" .  base_url('') . "/Users'>Daftr Pengguna</a></li>",
+            ]
         ];
         return view('Users/dataUsers', $data);
     }
@@ -39,7 +43,11 @@ class Users extends BaseController
             'jenisLogin' => $this->session->get('jenisLog'),
             'activeHalUsers' => 'active',
             'validation' => $this->validation,
-            'userLogin' => $this->userModel->getDataUsersById($this->session->get('id'))
+            'userLogin' => $this->userModel->getDataUsersById($this->session->get('id')),
+            'road' => [
+                "<li class='breadcrumb-item'><a class='text-dark' href='" . base_url('users') . "'>Kelola Pengguna</a></li>",
+                "<li class='breadcrumb-item'><a class='text-dark' href='" .  base_url('') . "/Users'>Tambah Pengguna</a></li>",
+            ]
 
         ];
         return view('Users/addUsers', $data);
@@ -142,7 +150,11 @@ class Users extends BaseController
             'jenisLogin' => $this->session->get('jenisLog'),
             'activeHalUsers' => 'active',
             'dataUsers' => $this->userModel->getDataUsersById($idUser),
-            'userLogin' => $this->userModel->getDataUsersById($this->session->get('id'))
+            'userLogin' => $this->userModel->getDataUsersById($this->session->get('id')),
+            'road' => [
+                "<li class='breadcrumb-item'><a class='text-dark' href='" . base_url('users') . "'>Kelola Pengguna</a></li>",
+                "<li class='breadcrumb-item'><a class='text-dark' href='" .  base_url('') . "/Users'>Edit Pengguna</a></li>",
+            ]
 
         ];
         return view('Users/editUsers', $data);
@@ -292,7 +304,7 @@ class Users extends BaseController
         if ($this->userModel->editData($data, $id_pengguna)) {
             move_uploaded_file($tempfile, '../public/' . 'img/' . $name);
             session()->setFlashdata('message', 'berhasil-diedit');
-            return redirect()->to('Users');
+            return redirect()->to('Home');
         } else {
             return redirect()->to('Users/editUser/' . $id_pengguna)->withInput()->with('validation', $this->validation);
         }

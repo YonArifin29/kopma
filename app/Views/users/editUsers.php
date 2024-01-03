@@ -103,7 +103,7 @@
                                     }
                                 }
                                 ?>
-                                <select class="form-control <?= $err_level ? 'is-invalid' : '' ?>" aria-label="Default select example" name="level">
+                                <select class="form-select form-control <?= $err_level ? 'is-invalid' : '' ?>" aria-label="Default select example" name="level">
                                     <option>Level</option>
                                     <option value="1" <?= $checkedAdmin ?? "" ?>>Admin</option>
                                     <option value="2" <?= $checkedUser  ?? "" ?>>Penjual</option>
@@ -135,7 +135,7 @@
                                 }
 
                                 ?>
-                                <select class="form-control <?= $err_status ? 'is-invalid' : '' ?>" aria-label="Default select example" name="status">
+                                <select class="form-control <?= $err_status ? 'is-invalid' : '' ?> form-select" aria-label="Default select example" name="status">
                                     <option>Status</option>
                                     <option value="1" <?= $active ?? "" ?>>Active</option>
                                     <option value="2" <?= $nonActive  ?? "" ?>>Non Active</option>

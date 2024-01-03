@@ -32,7 +32,11 @@ class Sale extends BaseController
             'activeHalSale' => 'active',
             'dataSales' => $this->saleModel->getDataSaleByDate($date, $this->session->get('id')),
             // 'dataSales' => $this->saleModel->getDataSaleByUser($this->session->get('id')),
-            'userLogin' => $this->userModel->getDataUsersById($this->session->get('id'))
+            'userLogin' => $this->userModel->getDataUsersById($this->session->get('id')),
+            'road' => [
+                "<li class='breadcrumb-item'><a class='text-dark' href='" . base_url('sale') . "'>Kelola Penjualan</a></li>",
+                "<li class='breadcrumb-item'><a class='text-dark' href='" .  base_url('sale') . "/Users'>Daftar Penjualan</a></li>",
+            ]
         ];
         return view('sale/dataSale', $data);
     }
@@ -51,6 +55,10 @@ class Sale extends BaseController
             'actionForm' => 'newTransaction',
             'userLogin' => $this->userModel->getDataUsersById($this->session->get('id')),
             'getDataPenjualanByKode' => "",
+            'road' => [
+                "<li class='breadcrumb-item'><a class='text-dark' href='" .  base_url('sale') . "'>Kelola Penjualan</a></li>",
+                "<li class='breadcrumb-item'><a class='text-dark' href='#'>Tambah Penjualan</a></li>",
+            ]
 
         ];
         return view('sale/addSale', $data);
@@ -91,7 +99,11 @@ class Sale extends BaseController
             'page' => 'newTransaction',
             'button' => ['Tabmbah', 'Selesai', 'Batal'],
             'actionForm' => 'save',
-            'getDataPenjualanByKode' => $this->saleModel->getDataSaleByKode($this->session->get('kode'))
+            'getDataPenjualanByKode' => $this->saleModel->getDataSaleByKode($this->session->get('kode')),
+            'road' => [
+                "<li class='breadcrumb-item'><a class='text-dark' href='" .  base_url('sale') . "'>Kelola Penjualan</a></li>",
+                "<li class='breadcrumb-item'><a class='text-dark' href='#'>Tambah Penjualan</a></li>",
+            ]
         ];
         return view('sale/addSale', $data);
     }
@@ -129,6 +141,10 @@ class Sale extends BaseController
             'getDataPenjualanByKode' => "",
             'getDataTimeAndCode' => $this->saleModel->getNewDataSaleByKode($kode),
             'getDataSale' => $this->saleModel->getDataSaleByKode($kode),
+            'road' => [
+                "<li class='breadcrumb-item'><a class='text-dark' href='" .  base_url('sale') . "'>Kelola Penjualan</a></li>",
+                "<li class='breadcrumb-item'><a class='text-dark' href='#'>Edit Penjualan</a></li>",
+            ]
 
         ];
         return view('sale/editSale', $data);

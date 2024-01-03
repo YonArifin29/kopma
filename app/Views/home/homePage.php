@@ -15,113 +15,42 @@
 <div class="container py-3">
   <h1 class="text-center">Best Seller</h1>
   <div class="row row-cols-1 row-cols-md-4 g-4 py-3">
-
-    <div class="col">
-      <div class="card">
-        <img src="<?= base_url('img') ?>/card10.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Paha Atas Ayam Krispy</h5>
-        </div>
-        <div class="mb-5 d-flex justify-content-around">
-          <h4>Rp. 11.000</h4>
-          <a href="#" class="btn btn-dark">Beli Sekarang</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="<?= base_url('img') ?>/card2.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Nasi Goreng</h5>
-        </div>
-        <div class="mb-5 d-flex justify-content-around">
-          <h4>Rp. 16.000</h4>
-          <a href="#" class="btn btn-dark">Beli Sekarang</a>
+    <?php foreach ($dataProductBestSeller as $data) : ?>
+      <div class="col">
+        <div class="card">
+          <img src="<?= base_url('img') ?>/<?= $data['gambar'] ?>" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><?= $data['nama_produk'] ?></h5>
+          </div>
+          <div class="mb-5 d-flex justify-content-around">
+            <h4><?= rupiah($data['harga']) ?></h4>
+            <a href="#" class="btn btn-dark">Beli Sekarang</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="<?= base_url('img') ?>/card3.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Es Teh Original</h5>
-        </div>
-        <div class="mb-5 d-flex justify-content-around">
-          <h4>Rp. 4.000</h4>
-          <a href="#" class="btn btn-dark">Beli Sekarang</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="<?= base_url('img') ?>/card4.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Es Teh Kampoel</h5>
-        </div>
-        <div class="mb-5 d-flex justify-content-around">
-          <h4>Rp. 8.000</h4>
-          <a href="#" class="btn btn-dark">Beli Sekarang</a>
-        </div>
-      </div>
-    </div>
-
+    <?php endforeach; ?>
   </div>
+</div>
 </div>
 <!--Menu-->
 <section class="menu">
   <h1 class="kategori-menu text-center" id="menu">Menu</h1>
   <div class="container py-1">
     <div class="row row-cols-1 row-cols-md-4 g-4 py-3">
-
-      <div class="col">
-        <div class="card">
-          <img src="<?= base_url('img') ?>/card5.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Es Teh Susu</h5>
-          </div>
-          <div class="mb-5 d-flex justify-content-around">
-            <h4>Rp. 8.000</h4>
-            <a href="#" class="btn btn-dark">Beli Sekarang</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="<?= base_url('img') ?>/card6.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Es Teh Tarik</h5>
-          </div>
-          <div class="mb-5 d-flex justify-content-around">
-            <h4>Rp. 8.000</h4>
-            <a href="#" class="btn btn-dark">Beli Sekarang</a>
+      <?php foreach ($dataSomeProduct as $data) : ?>
+        <div class="col">
+          <div class="card">
+            <img src="<?= base_url('img') ?>/<?= $data['gambar'] ?>" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><?= $data['nama_produk'] ?></h5>
+            </div>
+            <div class="mb-5 d-flex justify-content-around">
+              <h4><?= rupiah($data['harga_jual']) ?></h4>
+              <a href="#" class="btn btn-dark">Beli Sekarang</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="<?= base_url('img') ?>/card12.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Keripik Kentang</h5>
-          </div>
-          <div class="mb-5 d-flex justify-content-around">
-            <h4>Rp. 8.000</h4>
-            <a href="#" class="btn btn-dark">Beli Sekarang</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="<?= base_url('img') ?>/card7.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Dada Ayam Krispy</h5>
-          </div>
-          <div class="mb-5 d-flex justify-content-around">
-            <h4>Rp. 11.000</h4>
-            <a href="#" class="btn btn-dark">Beli Sekarang</a>
-          </div>
-        </div>
-      </div>
-
+      <?php endforeach; ?>
     </div>
   </div>
   <div class="text-center">

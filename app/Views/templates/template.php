@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?= $title ?></title>
+  <!-- caledner -->
+  <link rel="stylesheet" href="<?= base_url(); ?>cssCaleder/style.css">
+  <!-- caledner -->
   <link href="<?= base_url() ?>library/bootstrap-5/bootstrap.min.css" rel="stylesheet" />
   <script src="<?= base_url() ?>library/bootstrap-5/bootstrap.bundle.min.js"></script>
   <script src="<?= base_url() ?>library/dselect.js"></script>
@@ -67,7 +70,9 @@
             </div><!-- /.col -->
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
-                jalur
+                <?php foreach ($road as $result) : ?>
+                  <?php echo $result; ?>
+                <?php endforeach; ?>
               </ol>
             </div><!-- /.col -->
           </div><!-- /.row -->
@@ -130,7 +135,6 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-
             <form action="<?= base_url() ?>/Users/ubahPassword" method="post">
               <div class="modal-body">
                 <input type="hidden" class="form-control" name="id" value="">
@@ -253,6 +257,11 @@
   <script src="<?= base_url(); ?>js/pages/dashboard.js"></script>
   <script src="<?= base_url(); ?>js/cropper.js"></script>
   <script src="<?= base_url(); ?>js/script4.js"></script>
+  <!-- jsCalender -->
+  <script src="<?= base_url(); ?>/jsCalender/popper.js"></script>
+  <script src="<?= base_url(); ?>/jsCalender/bootstrap.min.js"></script>
+  <script src="<?= base_url(); ?>/jsCalender/main.js"></script>
+  <!-- jsCalender -->
   <script>
     // sweeta alert
     // tambah, edit, hapus

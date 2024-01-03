@@ -39,6 +39,7 @@ abstract class BaseController extends Controller
         'auth',
         'rupiah_helper',
         'indo_time_format_helper',
+        'my_function_helper'
     ];
 
     protected $libraries = [

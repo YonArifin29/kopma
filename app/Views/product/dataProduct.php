@@ -12,12 +12,12 @@
                     <thead>
                         <tr>
                             <th style="width: 10px">#</th>
+                            <th>Foto</th>
                             <th>Kode Produk</th>
                             <th>Nama Produk</th>
                             <th>Harga</th>
                             <th>Deskripsi</th>
                             <th>Kategori</th>
-                            <th>Foto</th>
                             <th style="width: 113px; text-align: center;">Aksi</th>
                         </tr>
                     </thead>
@@ -30,12 +30,12 @@
 
                             <tr>
                                 <td><?= $no ?></td>
+                                <td class="text-center"><img src="<?= base_url() ?>img/<?= $product['gambar'] ?>" alt="" width="50px"></td>
                                 <td><?= $product['kode_produk']; ?></td>
                                 <td><?= $product['nama_produk']; ?></td>
                                 <td><?= rupiah($product['harga_jual']); ?></td>
                                 <td><?= $product['deskripsi']; ?></td>
                                 <td><?= $product['kategori']; ?></td>
-                                <td class="text-center"><img src="<?= base_url() ?>img/<?= $product['gambar'] ?>" alt="" width="50px"></td>
                                 <td>
                                     <a href="<?= base_url('product/editProduct'); ?>/<?= $product['id_produk']; ?>" class="badge btn btn-primary ">Edit</a>
                                     <a href="<?= base_url('product/delete'); ?>/<?= $product['id_produk']; ?>" class="badge btn btn-danger btn-hapus">Hapus</a>

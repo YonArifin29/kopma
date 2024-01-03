@@ -28,7 +28,11 @@ class Product extends BaseController
             'jenisLogin' => $this->session->get('jenisLog'),
             'activeHalproduct' => 'active',
             'dataProducts' => $this->productModel->getDataProductByUser($this->session->get('id')),
-            'userLogin' => $this->userModel->getDataUsersById($this->session->get('id'))
+            'userLogin' => $this->userModel->getDataUsersById($this->session->get('id')),
+            'road' => [
+                "<li class='breadcrumb-item'><a class='text-dark' href='" . base_url('product') . "'>Kelola Produk</a></li>",
+                "<li class='breadcrumb-item'><a class='text-dark' href='" .  base_url('product') . "/Users'>Daftar Produk</a></li>",
+            ]
         ];
         return view('product/dataProduct', $data);
     }
@@ -41,8 +45,11 @@ class Product extends BaseController
             'jenisLogin' => $this->session->get('jenisLog'),
             'activeHalproduct' => 'active',
             'validation' => $this->validation,
-            'userLogin' => $this->userModel->getDataUsersById($this->session->get('id'))
-
+            'userLogin' => $this->userModel->getDataUsersById($this->session->get('id')),
+            'road' => [
+                "<li class='breadcrumb-item'><a class='text-dark' href='" . base_url('product') . "'>Kelola Produk</a></li>",
+                "<li class='breadcrumb-item'><a class='text-dark' href=''>Tambah Produk</a></li>",
+            ]
         ];
         return view('product/addProduct', $data);
     }
@@ -119,7 +126,11 @@ class Product extends BaseController
             'jenisLogin' => $this->session->get('jenisLog'),
             'activeHalproduct' => 'active',
             'dataProduct' => $this->productModel->getDataproduct($idProduct),
-            'userLogin' => $this->userModel->getDataUsersById($this->session->get('id'))
+            'userLogin' => $this->userModel->getDataUsersById($this->session->get('id')),
+            'road' => [
+                "<li class='breadcrumb-item'><a class='text-dark' href='" .  base_url('product') . "'>Kelola Produk</a></li>",
+                "<li class='breadcrumb-item'><a class='text-dark' href='#'>Edit Produk</a></li>",
+            ]
 
         ];
         return view('product/editProduct', $data);
@@ -180,7 +191,7 @@ class Product extends BaseController
                 'gambar' => $newName,
                 'deskripsi' => $this->request->getVar('deskripsi'),
             ];
-            unlink('../public/img/' . $this->request->getVar('old_img'));
+            // unlink('../public/img/' . $this->request->getVar('old_img'));
         }
 
         $this->validation->setRules($rules[0], $rules[1]);

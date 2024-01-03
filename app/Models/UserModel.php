@@ -63,7 +63,7 @@ class UserModel extends Model
 
     public function deleteData($id)
     {
-        return $this->builder->delete(['id_pengguna' => $id]);
+        return ($this->builder->delete(['id_pengguna' => $id])) ? 1 : 0;
     }
 
     public function saveData($data)

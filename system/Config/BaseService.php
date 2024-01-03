@@ -192,7 +192,7 @@ class BaseService
             return static::$mocks[$key];
         }
 
-        if (! isset(static::$instances[$key])) {
+        if (!isset(static::$instances[$key])) {
             // Make sure $getShared is false
             $params[] = false;
 
@@ -329,7 +329,7 @@ class BaseService
      */
     protected static function discoverServices(string $name, array $arguments)
     {
-        if (! static::$discovered) {
+        if (!static::$discovered) {
             $config = config(Modules::class);
 
             if ($config->shouldDiscover('services')) {
@@ -345,7 +345,7 @@ class BaseService
                 foreach ($files as $file) {
                     $classname = $locator->getClassname($file);
 
-                    if (! in_array($classname, [Services::class], true)) {
+                    if (!in_array($classname, [Services::class], true)) {
                         static::$services[] = new $classname();
                     }
                 }
@@ -354,7 +354,7 @@ class BaseService
             static::$discovered = true;
         }
 
-        if (! static::$services) {
+        if (!static::$services) {
             // we found stuff, but no services - this would be really bad
             return null;
         }
@@ -371,7 +371,7 @@ class BaseService
 
     protected static function buildServicesCache(): void
     {
-        if (! static::$discovered) {
+        if (!static::$discovered) {
             $config = config(Modules::class);
 
             if ($config->shouldDiscover('services')) {

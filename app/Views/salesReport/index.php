@@ -5,7 +5,6 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
-                <a href="<?= base_url('sale/addSale') ?>" class="btn btn-primary">Tambah Penjualan</a>
             </div>
             <!-- /.card-header -->
             <div class="card-body">
