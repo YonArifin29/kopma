@@ -72,7 +72,7 @@
                                 }
 
                                 ?>
-                                <select class="form-control" aria-label="Default select example" name="kategori">
+                                <select class="form-control form-select" aria-label="Default select example" name="kategori">
                                     <option selected>Kategori</option>
                                     <option value="makanan" <?= $makanan ?? "" ?>>Makanan</option>
                                     <option value="minuman" <?= $minuman  ?? "" ?>>Minuman</option>

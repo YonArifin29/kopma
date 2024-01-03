@@ -47,4 +47,12 @@ class Home extends BaseController
         // dd($this->productModel->dataProductBestSeller());
         return view('home/homePage', $data);
     }
+    public function menuPage()
+    {
+        $data = [
+            'title' => 'Menu',
+            'dataProducts' => $this->productModel->getDataProduct(),
+        ];
+        return view('home/menuPage', $data);
+    }
 }

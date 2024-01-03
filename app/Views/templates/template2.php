@@ -26,7 +26,7 @@
                         <a class="nav-link" href="<?= base_url('home/homePage') ?>">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Menu</a>
+                        <a class="nav-link" href="<?= base_url('Home/menuPage') ?>">Menu</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Mitra</a>

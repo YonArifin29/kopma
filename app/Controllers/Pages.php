@@ -35,7 +35,7 @@ class Pages extends BaseController
         }
         foreach ($user as $result) :
             $passdb = $result["password"];
-            if (password_verify($password, $passdb)) {
+            if (password_verify($password, $passdb) &&  $result["status"] == 1) {
                 foreach ($user as $result) :
                     $data = [
                         'id'  => $result["id_pengguna"],

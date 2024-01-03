@@ -89,21 +89,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="col-sm-6">
-                            <div class="input-group mb-3">
-                                <div class="d-flex justify-content-evenly align-items-center">
-                                    <div>
-                                        <img id="selectedAvatar" src="<?= base_url("img/user.jpg") ?>" class="rounded-circle" style="width: 50px; height: 50px; object-fit: cover;" alt="example placeholder" />
-                                    </div>
-                                    <div class="ml-2">
-                                        <div class=" badge bg-secondary btn-rounded">
-                                            <label class="form-label text-white m-1" for="customFile2">Choose file</label>
-                                            <input type="file" name="foto" class="form-control d-none " id="customFile2" onchange="displaySelectedImage(event, 'selectedAvatar')" style="width: 50px; height: 50px;" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                     <div class="row">
                         <div class="col-sm-8">

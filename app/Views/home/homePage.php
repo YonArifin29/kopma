@@ -2,13 +2,14 @@
 <?php $this->section('content'); ?>
 <!-- Beranda -->
 <div class="wrapper" id="beranda">
-  <div class="image">
-    <img class="background" src="<?= base_url('img') ?>/bgberanda.jpg">
-    <div class="content">
-      <h1>Welcome To</h1>
-      <p>KOPMA</p>
+  <header>
+    <div class="image">
+      <img class="background" src="<?= base_url('img') ?>/bgberanda.jpg">
+      <div class="content">
+        <h1>Welcome To</h1>
+        <p>KOPMA</p>
+      </div>
     </div>
-  </div>
 </div>
 </header>
 <!--Best Seller-->
@@ -54,7 +55,7 @@
     </div>
   </div>
   <div class="text-center">
-    <a href="menu.html" class="btn btn-outline-dark">View more</a>
+    <a href="<?= base_url('Home/menuPage') ?>" class="btn btn-outline-dark">View more</a>
   </div>
 </section>
 <!-- Mitra -->

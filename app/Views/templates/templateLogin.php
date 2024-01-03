@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="<?= base_url('css') ?>/bootstrap.css">
+    <link rel="stylesheet" href="<?= base_url('css') ?>/bootstrap1.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="<?= base_url('css') ?>/loginstyle.css">
     <!-- font awesome -->
@@ -32,7 +32,7 @@
                         <a href="<?= base_url('home/homePage'); ?>" class="nav-link">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#menu">Menu</a>
+                        <a class="nav-link" href="<?= base_url('Home/menuPage') ?>">Menu</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#mitra">Mitra</a>
@@ -43,7 +43,7 @@
                 </ul>
                 <ul class="navbar-nav ms-2 mb-lg-0">
                     <li class="nav-but">
-                        <a href="login.html" class="btn btn-dark"><i class="fa-solid fa-user"></i> Login</a>
+                        <a href="<?= base_url('pages') ?>" class="btn btn-dark"><i class="fa-solid fa-user"></i> Login</a>
                     </li>
                 </ul>
             </div>
