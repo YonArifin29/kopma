@@ -24,7 +24,7 @@
     </div>
 </section>
 <!-- Footer -->
-<footer class="warna-bg text-light pt-5 pb-4">
+<footer class=" text-light pt-5 pb-4" style="background-color: #1F0F0F;">
     <div class="container text-md-left">
         <div class="row text-md-left">
             <div class="col-lg-3">

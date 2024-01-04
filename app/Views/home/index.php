@@ -118,26 +118,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="card">
-                                    <div class="card-header text-center">
-                                        <h5>Produk terjual hari ini</h5>
-                                    </div>
-                                    <ul class="list-group list-group-flush">
-                                        <?php foreach ($getDataUserByOnlineStatus as $data) : ?>
-                                            <li class="list-group-item">
-                                                <div>
-                                                    <img src="<?= base_url("img") ?>/<?= $data['foto'] ?>" alt="" width="40" class="d-inline img-circle">
-                                                    <div class="d-inline">
-                                                        <p class="d-inline"><?= $data['nama'] ?></p>
-                                                        <p class="d-inline text-muted"><?= $data['nama'] ?></p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        <?php endforeach; ?>
-                                    </ul>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

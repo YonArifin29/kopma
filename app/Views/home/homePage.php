@@ -91,7 +91,7 @@
   <div class="background">
     <h1 class="h1-about">OUR BUSINESS OUR HERITAGE</h1>
   </div>
-  <div class="container text-about">
+  <div class="text-about">
     <h1 class="about-header">About Us</h1>
     <p class="display-6 p-mitra">Kopma memainkan peran penting dalam kehidupan sehari-hari mahasiswa, yang dapat menawarkan berbagai
       pilihan makanan untuk memenuhi selera dan kebutuhan yang berbeda serta berfungsi sebagai titik pertemuan
@@ -103,7 +103,7 @@
   </div>
 </section>
 <!-- Footer -->
-<footer class="warna-bg text-light pt-5 pb-4">
+<footer class="text-light pt-5 pb-4" style="background-color: #1F0F0F;">
   <div class="container text-md-left">
     <div class="row text-md-left">
       <div class="col-lg-3">
