@@ -197,6 +197,9 @@
         </div>
       </div>
       <!-- end modal crop img -->
+      <!-- modal pembelian -->
+
+      <!-- end modal pembelian -->
       <!-- Main content -->
       <section class="content">
         <div class="container-fluid">
@@ -257,7 +260,7 @@
   <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
   <script src="<?= base_url(); ?>js/pages/dashboard.js"></script>
   <script src="<?= base_url(); ?>js/cropper.js"></script>
-  <script src="<?= base_url(); ?>js/script4.js"></script>
+  <script src="<?= base_url(); ?>js/script2.js"></script>
   <!-- jsCalender -->
   <script src="<?= base_url(); ?>/jsCalender/popper.js"></script>
   <script src="<?= base_url(); ?>/jsCalender/bootstrap.min.js"></script>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="<?= base_url('css') ?>/bootstrap1.css">
+    <link rel="stylesheet" href="<?= base_url('css') ?>/bootstrap.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="<?= base_url('css') ?>/loginstyle.css">
     <!-- font awesome -->
@@ -137,7 +137,6 @@
         });
         // end sweet alert 
     </script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.minjs" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

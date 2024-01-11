@@ -8,7 +8,7 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="<?= base_url() ?>css/style2.css">
+    <link rel="stylesheet" href="<?= base_url() ?>css/style3.css">
     <link rel="stylesheet" href="<?= base_url() ?>css/style5.css">
     <link rel="stylesheet" href="<?= base_url() ?>css/bootstrap.css">
     <link rel='shortcut icon' href='<?= base_url('img') ?>/unsub.png'>
@@ -49,55 +49,13 @@
     <div class="swal" data-swal="<?= session()->getFlashdata('message'); ?>"></div>
     <?= $this->renderSection('content') ?>
     <!-- end content -->
-    <!-- Modal -->
-    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header ">
-                    <h5 class="modal-title" id="exampleModalLabel">Registrasi</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <form method="post" action="<?= base_url() ?>Registrasi">
-                    <div class="modal-body">
-                        <div class="mb-3">
-                            <label for="Username" class="form-label">Username</label>
-                            <input type="text" class="form-control" id="Username" name="Username" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="Nama" class="form-label">Nama</label>
-                            <input type="text" class="form-control" id="Nama" name="Nama" required>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="NomorHP" class="form-label">Nomor HP</label>
-                            <input type="text" class="form-control" id="NomorHP" name="NomorHP" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="Password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="Password" name="Password" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="ValPassword" class="form-label">Ulangi Password</label>
-                            <input type="password" class="form-control" id="ValPassword" name="ValPassword" required>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Simpan</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div> -->
     <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="<?= base_url() ?>plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
     <script src="<?= base_url() ?>plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
     <script src="<?= base_url() ?>dist/js/adminlte.min.js"></script>
-    <script src="<?= base_url() ?>js/script2.js"></script>
     <script>
         // sweeta alert
         // tambah, edit, hapus
@@ -158,6 +116,53 @@
             })
         });
         // end sweet alert 
+    </script>
+    <script src="<?= base_url() ?>js/script5.js"></script>
+    <script>
+        const plus = document.querySelector(".plus")
+        num = document.querySelector(".num")
+        minus = document.querySelector(".minus")
+
+        let a = 1;
+
+        plus.addEventListener("click", () => {
+            event.preventDefault();
+            a++;
+            a = (a < 10) ? "0" + a : a;
+            num.innerText = a;
+        });
+
+        minus.addEventListener("click", () => {
+            event.preventDefault();
+            if (a > 1) {
+                a--;
+                a = (a < 10) ? "0" + a : a;
+                num.innerText = a;
+            }
+        });
+    </script>
+    <script>
+        const tambah = document.querySelector(".plus-fjs")
+        jumlah = document.querySelector(".num-fjs")
+        kurang = document.querySelector(".minus-fjs")
+
+        let num = 1;
+        $('.card-body').click('.plus-fjs', function(e) {
+            e.preventDefault();
+            num++;
+            num = (num < 10) ? "0" + num : num;
+            jumlah.innerText = num;
+            alert('ok');
+        });
+
+        minus.addEventListener("click", () => {
+            event.preventDefault();
+            if (jumlah > 1) {
+                jumlah--;
+                jumlah = (jumlah < 10) ? "0" + jumlah : jumlah;
+                jumlah.innerText = jumlah;
+            }
+        });
     </script>
 </body>
 

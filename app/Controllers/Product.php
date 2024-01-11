@@ -57,11 +57,6 @@ class Product extends BaseController
     public function save()
     {
 
-
-        // $nama_foto = $_FILES['foto']['name'];
-        // $file = $_FILES['foto']['tmp_name'];
-        // $size = $_FILES['foto']['size'];
-        // $extension = explode("/", $_FILES['foto']['type'])[1];
         $rules = [
             [
                 'id_pengguna' => 'required',
@@ -217,5 +212,10 @@ class Product extends BaseController
             session()->setFlashdata('message', 'gagal-dihapus');
             return redirect()->to('product');
         }
+    }
+
+    public function getProduct()
+    {
+        echo json_encode($this->productModel->getDataProduct($this->request->getVar('id')));
     }
 }

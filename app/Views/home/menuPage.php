@@ -15,7 +15,7 @@
                         </div>
                         <div class="mb-5 d-flex justify-content-around">
                             <h4><?= rupiah($product['harga_jual']) ?></h4>
-                            <a href="#" class="btn btn-dark">Beli Sekarang</a>
+                            <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalPenjualan" data-id="<?= $product['id_produk']; ?>">Beli Sekarang</a>
                         </div>
                     </div>
                 </div>

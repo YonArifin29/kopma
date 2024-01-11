@@ -53,7 +53,6 @@ class Home extends BaseController
             'dataSomeProduct' => $this->productModel->dataSomeProduct(),
             'dataProductBestSeller' => $this->productModel->dataProductBestSeller(),
         ];
-        // dd($this->productModel->dataProductBestSeller());
         return view('home/homePage', $data);
     }
     public function menuPage()
@@ -63,5 +62,30 @@ class Home extends BaseController
             'dataProducts' => $this->productModel->getDataProduct(),
         ];
         return view('home/menuPage', $data);
+    }
+
+    public function buyProduct()
+    {
+        $kode = date("YmdHis");
+        $waktu = date("Y-m-d H:i:s");
+
+        $jml_produk = ($this->request->getVar('jumlah') < 0 || $this->request->getVar('jumlah') == "") ? 1 : $this->request->getVar('jumlah');
+        $data = [
+            'id_pengguna' => $this->request->getVar('id_pengguna'),
+            'id_produk' => $this->request->getVar('id_produk'),
+            'kode' => $kode,
+            'waktu' =>  $waktu,
+            'nama_pembeli' => $this->request->getVar('nama_pembeli'),
+            'prodi' => $this->request->getVar('prodi'),
+            'jml_produk' => $jml_produk,
+            'tipe_pemesanan' => $this->request->getVar('pemesanan'),
+            'alamat_pengiriman' => $this->request->getVar('ruangan'),
+            'deskripsi' => $this->request->getVar('deskripsi'),
+        ];
+
+        if ($this->saleModel->saveData($data)) {
+            session()->setFlashdata('message', 'berhasil-disimpan');
+            return redirect()->to('Home');
+        }
     }
 }
