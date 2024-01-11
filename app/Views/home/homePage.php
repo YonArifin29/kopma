@@ -25,7 +25,7 @@
           </div>
           <div class="mb-5 d-flex justify-content-around">
             <h4><?= rupiah($data['harga']) ?></h4>
-            <a href="#" class="btn btn-dark t_pembelian" data-bs-toggle="modal" data-bs-target="#modalPenjualan" data-id="<?= $data['id_produk']; ?>">Beli Sekarang</a>
+            <a href="#" class="btn btn-dark t_pembelian" data-bs-toggle="modal" data-bs-target="#modalPenjualan" data-id="<?= $data['id_produk']; ?>">Beli Ayena</a>
           </div>
         </div>
       </div>
